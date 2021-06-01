@@ -20,6 +20,11 @@ const Wrapper = styled(ContentWrapper)`
   justify-content: space-between;
   position: relative;
   z-index: 1;
+
+  ${props => props.theme.mediaQueries.desktop} {
+    padding-top: ${rem(110)};
+    padding-bottom: ${rem(110)};
+  }
 `
 
 const Header = () => {
@@ -33,7 +38,7 @@ const Header = () => {
     <HeaderWrapper>
       <HamburgerMenu isMenuOpen={isMenuOpen}/>
       <Wrapper>
-        <Logo />
+        <Logo type={isMenuOpen ? 'colored' : 'white'}/>
         <Hamburger toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
       </Wrapper>
     </HeaderWrapper>

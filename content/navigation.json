@@ -1,0 +1,38 @@
+{
+  "mainNavigation": [
+    {
+      "title": "Home",
+      "url": "#"
+    },
+    {
+      "title": "Our Work",
+      "url": "#"
+    },
+    {
+      "title": "About Us",
+      "url": "#"
+    },
+    {
+      "title": "Get in Touch",
+      "url": "#"
+    }
+  ],
+  "social": [
+    {
+      "title": "Youtube",
+      "url": "#"
+    },
+    {
+      "title": "Instagram",
+      "url": "#"
+    },
+    {
+      "title": "Linkedin",
+      "url": "#"
+    },
+    {
+      "title": "Twitter",
+      "url": "#"
+    }
+  ]
+}

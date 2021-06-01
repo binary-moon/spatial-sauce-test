@@ -4,7 +4,11 @@ import styled from 'styled-components'
 import { rem } from '../utils/mixins'
 
 const Wrapper = styled.div`
-  padding: 0 ${rem(30)};
+  padding-right: ${rem(30)};
+  padding-left: ${rem(30)};
+  max-width: ${rem(1160)};
+  margin-left: auto;
+  margin-right: auto;
 `
 
 const ContentWrapper = ({ children, className }) => (

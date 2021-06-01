@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 import '@fontsource/poppins'
 import '@fontsource/poppins/900.css'
 import '@fontsource/poppins/700.css'
+import '@fontsource/poppins/500.css'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -14,6 +15,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+  }
+
+  a {
+    text-decoration: none;
   }
 `
 

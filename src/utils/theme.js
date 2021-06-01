@@ -6,5 +6,9 @@ export const theme = {
     yellow: '#F5CD2C',
     white: '#FFFFFF',
     black: '#101010',
+  },
+  mediaQueries: {
+    tablet: '@media (min-width: 768px)',
+    desktop: '@media (min-width: 1025px)',
   }
 }

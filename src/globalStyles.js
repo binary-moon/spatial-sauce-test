@@ -7,8 +7,8 @@ import '@fontsource/poppins/500.css'
 const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Poppins', sans-serif;
-    background: ${props => props.theme.colors.red};
-    background: linear-gradient(152deg, ${props => props.theme.colors.red} 0%, ${props => props.theme.colors.blue} 100%);
+    background: ${props => props.theme.background.red};
+    background: linear-gradient(90deg, ${props => props.theme.background.red} 0%, ${props => props.theme.background.blue} 100%);
   }
 
   * {

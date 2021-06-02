@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import styled from 'styled-components'
+import { animated, useTransition } from 'react-spring';
 
 import ContentWrapper from '../components/ContentWrapper'
 import Logo from '../components/Logo'
@@ -9,23 +10,27 @@ import HamburgerMenu from '../components/HamburgerMenu'
 import { rem } from '../utils/mixins'
 
 const HeaderWrapper = styled.header`
-  position: relative;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 `
 
 const Wrapper = styled(ContentWrapper)`
   display: flex;
-  padding-top: ${rem(75)};
-  padding-bottom: ${rem(75)};
+  padding-top: ${rem(60)};
+  padding-bottom: ${rem(60)};
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 1;
 
   ${props => props.theme.mediaQueries.desktop} {
     padding-top: ${rem(110)};
     padding-bottom: ${rem(110)};
   }
 `
+
+const AnimatedHamburgerMenu = animated(HamburgerMenu);
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -34,9 +39,17 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen)
   }, [isMenuOpen])
 
+  const menuTransitions = useTransition(isMenuOpen, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 },
+  })
+
   return (
     <HeaderWrapper>
-      <HamburgerMenu isMenuOpen={isMenuOpen}/>
+      {
+        menuTransitions((styles, item) => item && <AnimatedHamburgerMenu style={styles} />)
+      }
       <Wrapper>
         <Logo type={isMenuOpen ? 'colored' : 'white'}/>
         <Hamburger toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />

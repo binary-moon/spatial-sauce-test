@@ -17,9 +17,9 @@ const Wrapper = styled.div`
 `
 
 
-const Logo = ({ type }) => {
+const Logo = ({ type, className, style }) => {
   return (
-    <Wrapper>
+    <Wrapper className={className} style={style}>
       {type === 'colored' ? <LogoColored /> : <LogoWhite />}
     </Wrapper>
   )

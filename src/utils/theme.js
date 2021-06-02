@@ -7,6 +7,13 @@ export const theme = {
     white: '#FFFFFF',
     black: '#101010',
   },
+  background: {
+    red: '#AE3871',
+    blue: '#556CC5',
+  },
+  shapes: {
+    red: '#D11A43',
+  },
   mediaQueries: {
     tablet: '@media (min-width: 768px)',
     desktop: '@media (min-width: 1025px)',

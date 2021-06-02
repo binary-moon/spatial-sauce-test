@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'gatsby'
+import { useTrail, animated } from 'react-spring'
 
 import navigationData from '../../content/navigation.json'
 
@@ -18,7 +18,7 @@ const MenuWrapper = styled.div`
   padding-top: ${rem(160)};
   
   ${props => props.theme.mediaQueries.desktop} {
-    padding-top: ${rem(315)};
+    padding-top: ${rem(270)};
   }
 `
 
@@ -47,7 +47,7 @@ const Navigation = styled.nav`
   }
 `
 
-const NavigationItem = styled(Link)`
+const NavigationItem = styled(animated(Link))`
   display: flex;
   color: ${props => props.theme.colors.white};
   position: relative;
@@ -119,7 +119,7 @@ const Social = styled.nav`
   }
 `
 
-const SocialItem = styled.a`
+const SocialItem = styled(animated.a)`
   color: ${props => props.theme.colors.white};
   display: flex;
 `
@@ -204,45 +204,51 @@ const Circle = styled.div`
   }
 `
 
-const variants = {
-  visible: { opacity: 1 },
-  hidden: { opacity: 0 }
-}
-
-const HamburgerMenu = ({ isMenuOpen }) => {
+const HamburgerMenu = ({ className, style }) => {
   const { mainNavigation, social } = navigationData;
+
+  const navigationTrail = useTrail(mainNavigation.length, {
+    delay: 200,
+    config: { mass: 10, tension: 2000, friction: 200 },
+    opacity: 1,
+    x: 0,
+    from: { opacity: 0, x: -20 }
+  })
+
+  const socialTrail = useTrail(social.length, {
+    delay: 350,
+    config: { mass: 10, tension: 2000, friction: 200 },
+    opacity: 1,
+    x: 0,
+    from: { opacity: 0, x: -20 }
+  })
+
   return (
-    <AnimatePresence>
-      {isMenuOpen &&
-        <motion.div initial="hidden" animate="visible" exit="hidden" transition={{ duration: 0.3}} variants={variants}>
-          <MenuWrapper>
-            <Decoration>
-              <Triangle1></Triangle1>
-              <Triangle2></Triangle2>
-              <Triangle3></Triangle3>
-              <Circle></Circle>
-            </Decoration>
-            <Wrapper>
-              <Navigation>
-                {mainNavigation.map(item => (
-                  <NavigationItem to={item.url}>
-                    <Arrow className="navigationArrow">&#8594;</Arrow>
-                    <Text>{item.title}</Text>
-                  </NavigationItem>
-                ))}
-              </Navigation>
-              <Social>
-                {social.map(item => (
-                  <SocialItem href={item.url}>
-                    <SocialText>{item.title}</SocialText>
-                  </SocialItem>
-                ))}
-              </Social>
-            </Wrapper>
-          </MenuWrapper>
-        </motion.div>
-      }
-    </AnimatePresence>
+    <MenuWrapper className={className} style={style}>
+      <Decoration>
+        <Triangle1></Triangle1>
+        <Triangle2></Triangle2>
+        <Triangle3></Triangle3>
+        <Circle></Circle>
+      </Decoration>
+      <Wrapper>
+        <Navigation>
+        {navigationTrail.map((styles, index) => (
+          <NavigationItem to={mainNavigation[index].url} style={styles}>
+            <Arrow className="navigationArrow">&#8594;</Arrow>
+            <Text>{mainNavigation[index].title}</Text>
+          </NavigationItem>
+        ))}
+        </Navigation>
+        <Social>
+          {socialTrail.map((styles, index) => (
+            <SocialItem href={social[index].url} style={styles}>
+              <SocialText>{social[index].title}</SocialText>
+            </SocialItem>
+          ))}
+        </Social>
+      </Wrapper>
+    </MenuWrapper>
   )
 }
 

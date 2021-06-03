@@ -105,17 +105,17 @@ const BackgroundImage = () => {
   return <StyledHeroBackgroundImageMobile></StyledHeroBackgroundImageMobile>
 }
 
-const ContentComponent = () => (
+const ContentComponent = ({title, description}) => (
   <Content>
     <ContentWrapper>
-      <Title>We are <br />Spatial Sauce.</Title>
-      <Description>We use magical technology to infuse engaging ideas into amazing spaces.</Description>
+      <Title dangerouslySetInnerHTML={{ __html: title }}></Title>
+      <Description>{description}</Description>
       <Arrow>&#8595;</Arrow>
     </ContentWrapper>
   </Content>
 )
 
-export const Hero = () => {
+export const Hero = ({title, description}) => {
   
   return (
     <StyledParallaxBanner
@@ -132,7 +132,7 @@ export const Hero = () => {
           expanded: false,
         },
         {
-          children: (<ContentComponent />),
+          children: (<ContentComponent title={title} description={description} />),
           amount: 0.5,
           expanded: false,
         }

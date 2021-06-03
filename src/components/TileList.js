@@ -3,9 +3,8 @@ import ContentWrapper from './ContentWrapper';
 
 import Tile from './Tile';
 
-const TileList = () => (
+const TileList = ({style}) => (
   <ContentWrapper>
-    <Tile />
     <Tile />
   </ContentWrapper>
 )

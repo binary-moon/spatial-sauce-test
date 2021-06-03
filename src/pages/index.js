@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { Parallax, ParallaxLayer} from '@react-spring/parallax'
+import { ParallaxProvider } from 'react-scroll-parallax'
+import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
@@ -8,17 +9,12 @@ import TileList from '../components/TileList'
 // markup
 const IndexPage = () => {
   return (
-    <Layout>
-      <Parallax pages={2} style={{top: '0', left: '0'}}>
+    <ParallaxProvider>
+      <Layout>
         <Hero />
-        <ParallaxLayer
-          offset={0.9}
-          speed={0}
-        >
-          <TileList />
-        </ParallaxLayer>
-      </Parallax>
-    </Layout>
+        <TileList />
+      </Layout>
+    </ParallaxProvider>
   )
 }
 

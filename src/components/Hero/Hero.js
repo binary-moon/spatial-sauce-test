@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useMediaQuery } from 'react-responsive'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import { ParallaxBanner } from 'react-scroll-parallax';
 
 import { HeroBackgroundImage } from './HeroBackgroundImage'
 import { HeroBackgroundImageMobile } from './HeroBackgroundImageMobile'
@@ -10,8 +10,7 @@ import ContentWrapper from '../../components/ContentWrapper';
 
 import { rem } from '../../utils/mixins'
 
-const Wrapper = styled.div`
-  position: relative;
+const StyledParallaxBanner = styled(ParallaxBanner)`
   width: 100%;
   height: ${rem(620)};
 
@@ -98,34 +97,47 @@ const StyledHeroDecoration = styled(HeroDecoration)`
   left: 0;
 `
 
-export const Hero = () => {
+const BackgroundImage = () => {
   const isDesktop = useMediaQuery({ query: '(min-width: 1025px)' })
+  if (isDesktop) {
+    return <StyledHeroBackgroundImage />
+  }
+  return <StyledHeroBackgroundImageMobile></StyledHeroBackgroundImageMobile>
+}
+
+const ContentComponent = () => (
+  <Content>
+    <ContentWrapper>
+      <Title>We are <br />Spatial Sauce.</Title>
+      <Description>We use magical technology to infuse engaging ideas into amazing spaces.</Description>
+      <Arrow>&#8595;</Arrow>
+    </ContentWrapper>
+  </Content>
+)
+
+export const Hero = () => {
+  
   return (
-    <Wrapper>
-      <ParallaxLayer
-        offset={0}
-        speed={0}
-      >
-        {isDesktop ? <StyledHeroBackgroundImage /> : <StyledHeroBackgroundImageMobile />}
-      </ParallaxLayer>
-      <ParallaxLayer
-        offset={0}
-        speed={0.25}
-      >
-        <StyledHeroDecoration />
-      </ParallaxLayer>
-      <ParallaxLayer
-        offset={0}
-        speed={0.5}
-      >
-        <Content>
-          <ContentWrapper>
-            <Title>We are <br />Spatial Sauce.</Title>
-            <Description>We use magical technology to infuse engaging ideas into amazing spaces.</Description>
-            <Arrow>&#8595;</Arrow>
-          </ContentWrapper>
-        </Content>
-      </ParallaxLayer>
-    </Wrapper>
+    <StyledParallaxBanner
+      style={{height: '100vh'}}
+      layers={[
+        {
+          children: (<BackgroundImage />),
+          amount: 0,
+          expanded: false,
+        },
+        {
+          children: (<StyledHeroDecoration />),
+          amount: -0.5,
+          expanded: false,
+        },
+        {
+          children: (<ContentComponent />),
+          amount: 0.5,
+          expanded: false,
+        }
+      ]}
+    >
+    </StyledParallaxBanner>
   )
 }

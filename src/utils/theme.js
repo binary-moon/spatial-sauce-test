@@ -10,6 +10,7 @@ export const theme = {
   background: {
     red: '#AE3871',
     blue: '#556CC5',
+    green: '#6CB644',
   },
   shapes: {
     red: '#D11A43',

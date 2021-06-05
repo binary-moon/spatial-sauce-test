@@ -107,6 +107,7 @@ const Tile = ({ tileData }) => {
   const { background, tag, title, location, image, alignment } = tileData
   const { ref, inView } = useInView({
     threshold: 0,
+    triggerOnce: true,
   })
   const springProps = useSpring({
     y: inView ? 0 : 200,

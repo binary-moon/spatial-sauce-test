@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Poppins', sans-serif;
     background: ${props => props.theme.background.red};
-    background: linear-gradient(90deg, ${props => props.theme.background.red} 0%, ${props => props.theme.background.blue} 100%);
   }
 
   * {
@@ -19,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+  }
+
+  button {
+    font-family: 'Poppins', sans-serif;
   }
 `
 

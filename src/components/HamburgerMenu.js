@@ -234,7 +234,7 @@ const HamburgerMenu = ({ className, style }) => {
       <Wrapper>
         <Navigation>
         {navigationTrail.map((styles, index) => (
-          <NavigationItem to={mainNavigation[index].url} style={styles}>
+          <NavigationItem key={mainNavigation[index].id} to={mainNavigation[index].url} style={styles}>
             <Arrow className="navigationArrow">&#8594;</Arrow>
             <Text>{mainNavigation[index].title}</Text>
           </NavigationItem>
@@ -242,7 +242,7 @@ const HamburgerMenu = ({ className, style }) => {
         </Navigation>
         <Social>
           {socialTrail.map((styles, index) => (
-            <SocialItem href={social[index].url} style={styles}>
+            <SocialItem key={social[index].id} href={social[index].url} style={styles} target="_blank">
               <SocialText>{social[index].title}</SocialText>
             </SocialItem>
           ))}

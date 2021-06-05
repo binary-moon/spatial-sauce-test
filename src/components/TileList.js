@@ -28,10 +28,10 @@ const TileList = ({tiles}) => {
   console.log({tiles})
   return (
     <StyledContentWrapper>
-      {tiles.map((data => {
+      {tiles.map(((data, index) => {
         return (
-          <TileRow>
-            {data.row.map((tileData) => <Tile tileData={tileData}/>)}
+          <TileRow key={index}>
+            {data.row.map((tileData) => <Tile tileData={tileData} key={tileData.id} />)}
           </TileRow>
         )
       }))}

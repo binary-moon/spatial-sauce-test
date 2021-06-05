@@ -1,0 +1,13 @@
+{
+  "components": [
+    {
+      "id": 0,
+      "type": "ContentHero",
+      "props": {
+        "tag": "About Us",
+        "title": "We infuse creative ideas with innovative technology and spatial design.",
+        "background": "blueGreen"
+      }
+    }
+  ]
+}

@@ -7,6 +7,7 @@
     {
       "row": [
         {
+          "id": 0,
           "tag": "WE MADE",
           "title": "Cherry Blossom Festival.",
           "location": "World Square",
@@ -20,6 +21,7 @@
     {
       "row": [
         {
+          "id": 1,
           "tag": "WE MADE",
           "title": "200 Women Listening Ground.",
           "location": "With Maverick",
@@ -33,6 +35,7 @@
     {
       "row": [
         {
+          "id": 2,
           "tag": "We Explored",
           "title": "Reactive generative production & reproduction.",
           "location": null,
@@ -42,6 +45,7 @@
           "alignment": "vertical"
         },
         {
+          "id": 3,
           "tag": "We like",
           "title": "Scrooble a doodle. Bring it to life.",
           "location": "By Google",
@@ -55,6 +59,7 @@
     {
       "row": [
         {
+          "id": 4,
           "tag": "We made",
           "title": "The Giving Tree.",
           "location": "ANZ Tower Liberty Place",
@@ -68,6 +73,7 @@
     {
       "row": [
         {
+          "id": 5,
           "tag": "We said",
           "title": "“The campaign that turned Fanta around”.",
           "location": null,

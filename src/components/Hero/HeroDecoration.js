@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { rem } from '../../utils/mixins'
-
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
@@ -30,9 +28,9 @@ const Circle = styled.div`
 
   ${props => props.theme.mediaQueries.desktop} {
     height: 512px;
-  width: 268px;
-  border-bottom-left-radius: 512px;
-  border-top-left-radius: 512px;
+    width: 268px;
+    border-bottom-left-radius: 512px;
+    border-top-left-radius: 512px;
   }
 `
 

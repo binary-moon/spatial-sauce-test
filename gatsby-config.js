@@ -10,6 +10,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
@@ -23,6 +24,13 @@ module.exports = {
       options: {
         name: "images",
         path: path.join(__dirname, "src", "images"),
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: `${__dirname}/content`,
       },
     }
   ],

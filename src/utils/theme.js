@@ -14,6 +14,8 @@ export const theme = {
   },
   shapes: {
     red: '#D11A43',
+    green: '#6CB644',
+    blue: '#556DC6',
   },
   mediaQueries: {
     tablet: '@media (min-width: 768px)',

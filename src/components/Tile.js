@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import classnames from 'classnames'
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { Link } from 'gatsby'
 
 import { rem } from '../utils/mixins'
 
-const Wrapper = styled(animated.a)`
+const Wrapper = styled(animated(Link))`
   background: white;
   display: flex;
   flex-direction: column;
@@ -57,7 +59,7 @@ const Content = styled.div`
   }
 `
 
-const Tag = styled.span`
+const Client = styled.span`
   font-weight: 900;
   font-size: ${rem(12)};
   line-height: ${rem(14)};
@@ -91,7 +93,7 @@ const Location = styled.span`
   }
 `
 
-const Image = styled.img`
+const ImageContainer = styled.div`
   width: 100%;
 
   ${props => props.theme.mediaQueries.desktop} {
@@ -104,7 +106,8 @@ const Image = styled.img`
 `
 
 const Tile = ({ tileData }) => {
-  const { background, tag, title, location, image, alignment } = tileData
+  const { background, client, title, location, image, alignment, slug } = tileData
+
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
@@ -114,16 +117,21 @@ const Tile = ({ tileData }) => {
     opacity: inView ? 1 : 0,
     from: { y: 200, opacity: 0 },
   })
+
+  const imageData = getImage(image)
+
   return (
-    <Wrapper ref={ref} className={classnames(background, alignment)} style={springProps}>
+    <Wrapper ref={ref} to={`/our-work/${slug}`} className={classnames(background, alignment)} style={springProps}>
       <Content>
-        <Tag>{tag}</Tag>
+        <Client>{client}</Client>
         <Title>{title}</Title>
         {location &&
           <Location>{location}</Location>
         }
       </Content>
-      <Image src={image} />
+      <ImageContainer>
+        <GatsbyImage image={imageData} alt={title} />
+      </ImageContainer>
     </Wrapper>
   )
 }

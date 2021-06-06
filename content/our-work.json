@@ -1,0 +1,233 @@
+[
+  {
+    "title": "Cherry Blossom Festival.",
+    "slug": "cherry-blossom-festival",
+    "hero": {
+      "tag": "Our Work",
+      "title": "Cherry Blossom Festival.",
+      "client": "WorldSquare",
+      "image": "./images/200-women-hero.png"
+    },
+    "card": {
+      "slug": "cherry-blossom-festival",
+      "tag": "WE MADE",
+      "title": "Cherry Blossom Festival.",
+      "client": "World Square",
+      "image": "./images/cards/cherry-blossom.png",
+      "background": "white",
+      "alignment": "default"
+    },
+    "components": [
+      {
+       "type": "ContentFullScreen",
+       "shape": null,
+       "props": {
+         "title": "THE CONCEPT",
+         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
+       } 
+      }
+    ]
+  },
+  {
+    "title": "200 Women Listening Ground",
+    "slug": "200-women-listening-ground",
+    "hero": {
+      "tag": "Our Work",
+      "title": "200 Women Listening Ground. ",
+      "client": "With Maverick",
+      "image": "./images/200-women-hero.png"
+    },
+    "card": {
+      "slug": "200-women-listening-ground",
+      "tag": "WE MADE",
+      "title": "200 Women Listening Ground.",
+      "client": "With Maverick",
+      "image": "./images/cards/200-women.png",
+      "background": "red",
+      "alignment": "reverse"
+    },
+    "components": [
+      {
+       "type": "ContentFullScreen",
+       "shape": null,
+       "props": {
+         "title": "THE CONCEPT",
+         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
+       } 
+      },
+      {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/200-women-1.png",
+            "alt": "200 Women Listening Ground - 1"
+          }
+        }
+      },
+      {
+        "type": "TextBanner",
+        "shape": null,
+        "props": {
+          "title": "THEY SAID",
+          "text": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend”"
+        } 
+      },
+      {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/200-women-2.png",
+            "alt": "200 Women Listening Ground - 2"
+          }
+        }
+      },
+      {
+        "type": "ContentRowWithImage",
+        "shape": null,
+        "props": {
+          "alignment": "default",
+          "image": {
+            "src": "./images/about-col.png",
+            "alt": "THE OUTCOMES"
+          },
+          "title": "THE OUTCOMES",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
+        }
+      },
+      {
+        "type": "ContentRowWithImage",
+        "shape": null,
+        "props": {
+          "alignment": "reverse",
+          "image": {
+            "src": "./images/about-col.png",
+            "alt": "THE CHALLENGE"
+          },
+          "title": "THE CHALLENGE",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
+        }
+      }
+    ]
+  },
+  {
+    "title": "Reactive generative production & reproduction.",
+    "slug": "reactive-generative-production-reproduction",
+    "hero": {
+      "tag": "We Explored",
+      "title": "Reactive generative production & reproduction.",
+      "client": "With Maverick",
+      "image": "./images/200-women-hero.png"
+    },
+    "card": {
+      "slug": "reactive-generative-production-reproduction",
+      "tag": "We Explored",
+      "title": "Reactive generative production & reproduction.",
+      "client": null,
+      "image": "./images/cards/reactive-generative.png",
+      "background": "black",
+      "alignment": "vertical"
+    },
+    "components": [
+      {
+       "type": "ContentFullScreen",
+       "shape": null,
+       "props": {
+         "title": "THE CONCEPT",
+         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
+       } 
+      }
+    ]
+  },
+  {
+    "title": "Scrooble a doodle. Bring it to life.",
+    "slug": "scrooble-a-doodle-bring-it-to-life",
+    "hero": {
+      "tag": "We like",
+      "title": "Scrooble a doodle. Bring it to life.",
+      "client": "By Google",
+      "image": "./images/200-women-hero.png"
+    },
+    "card": {
+      "slug": "scrooble-a-doodle-bring-it-to-life",
+      "tag": "We like",
+      "title": "Scrooble a doodle. Bring it to life.",
+      "client": "By Google",
+      "url": "#",
+      "image": "./images/cards/scrooble.png",
+      "background": "white",
+      "alignment": "vertical"
+    },
+    "components": [
+      {
+       "type": "ContentFullScreen",
+       "shape": null,
+       "props": {
+         "title": "THE CONCEPT",
+         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
+       } 
+      }
+    ]
+  },
+  {
+    "title": "The Giving Tree.",
+    "slug": "the-giving-tree",
+    "hero": {
+      "tag": "We made",
+      "title": "The Giving Tree.",
+      "client": "ANZ Tower Liberty Place",
+      "image": "./images/200-women-hero.png"
+    },
+    "card": {
+      "slug": "the-giving-tree",
+      "tag": "We made",
+      "title": "The Giving Tree.",
+      "client": "ANZ Tower Liberty Place",
+      "url": "#",
+      "image": "./images/cards/giving-tree.png",
+      "background": "white",
+      "alignment": "default"
+    },
+    "components": [
+      {
+       "type": "ContentFullScreen",
+       "shape": null,
+       "props": {
+         "title": "THE CONCEPT",
+         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
+       } 
+      }
+    ]
+  },
+  {
+    "title": "“The campaign that turned Fanta around”.",
+    "slug": "the-campaign-that-turned-fanta-around",
+    "hero": {
+      "tag": "We said",
+      "title": "“The campaign that turned Fanta around”.",
+      "client": null,
+      "image": "./images/200-women-hero.png"
+    },
+    "card": {
+      "slug": "the-campaign-that-turned-fanta-around",
+      "tag": "We said",
+      "title": "“The campaign that turned Fanta around”.",
+      "client": null,
+      "url": "#",
+      "image": "./images/cards/fanta.png",
+      "background": "white",
+      "alignment": "reverse"
+    },
+    "components": [
+      {
+       "type": "ContentFullScreen",
+       "shape": null,
+       "props": {
+         "title": "THE CONCEPT",
+         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
+       } 
+      }
+    ]
+  }
+]

@@ -3,7 +3,7 @@
     {
       "id": 0,
       "title": "Home",
-      "url": "#"
+      "url": "/"
     },
     {
       "id": 1,
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "title": "About Us",
-      "url": "#"
+      "url": "/about-us"
     },
     {
       "id": 3,

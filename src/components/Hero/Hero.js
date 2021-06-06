@@ -5,7 +5,7 @@ import { ParallaxBanner } from 'react-scroll-parallax';
 
 import { HeroBackgroundImage } from './HeroBackgroundImage'
 import { HeroBackgroundImageMobile } from './HeroBackgroundImageMobile'
-import {HeroDecoration } from './HeroDecoration'
+import { HeroDecoration } from '../HeroDecoration'
 import ContentWrapper from '../../components/ContentWrapper';
 
 import { rem } from '../../utils/mixins'

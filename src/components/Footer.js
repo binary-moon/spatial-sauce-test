@@ -127,6 +127,10 @@ const Circle = styled.div`
     border-bottom-left-radius: 512px;
     border-top-left-radius: 512px;
   }
+
+  .blueGreen & {
+    background: ${props => props.theme.shapes.blue};
+  }
 `
 
 const Footer = () => {

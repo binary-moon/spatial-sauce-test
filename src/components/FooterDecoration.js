@@ -23,6 +23,10 @@ const Triangle = styled.div`
     height: 100%;
   }
 
+  .blueGreen &:after {
+    background: ${props => props.theme.background.green};
+  }
+
   ${props => props.theme.mediaQueries.desktop} {
     height: 512px;
   }

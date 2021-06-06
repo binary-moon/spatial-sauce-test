@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { rem } from '../utils/mixins'
 
 const Wrapper = styled.div`
+  position: relative;
   padding-right: ${rem(30)};
   padding-left: ${rem(30)};
   max-width: ${rem(1160)};

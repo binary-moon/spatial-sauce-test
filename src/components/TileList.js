@@ -27,7 +27,7 @@ const TileRow = styled.div`
 const TileList = ({tiles}) => {
   console.log({tiles})
   return (
-    <StyledContentWrapper>
+    <ContentWrapper>
       {tiles.map(((data, index) => {
         return (
           <TileRow key={index}>
@@ -35,7 +35,7 @@ const TileList = ({tiles}) => {
           </TileRow>
         )
       }))}
-    </StyledContentWrapper>
+    </ContentWrapper>
   )
 }
 

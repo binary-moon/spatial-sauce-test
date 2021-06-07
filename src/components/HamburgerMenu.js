@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { useTrail, animated } from 'react-spring'
@@ -240,6 +240,10 @@ const HamburgerMenu = ({ className, style }) => {
     x: 0,
     from: { opacity: 0, x: -20 }
   })
+
+  useEffect(() => {
+    return () => document.body.classList.remove('scrollLock');
+  }, [])
 
   return (
     <MenuWrapper className={className} style={style}>

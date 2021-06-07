@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
@@ -13,7 +13,9 @@ const OurWorkDetail = ({ data }) => {
   const pageData = data.ourWorkJson;
   const { hero, components } = pageData
 
-  updateBackgroundColor()
+  useEffect(() => {
+    updateBackgroundColor();
+  }, [])
 
   return (
     <Layout>

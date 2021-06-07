@@ -1,5 +1,4 @@
-import * as React from 'react'
-import { graphql } from 'gatsby'
+import React, { useEffect } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
 
 import homeData from "../../content/home.json"
@@ -15,7 +14,9 @@ import { updateBackgroundColor } from '../utils/theme'
 const IndexPage = () => {
   const { hero } = homeData;
 
-  updateBackgroundColor('redBlue');
+  useEffect(() => {
+    updateBackgroundColor('redBlue');
+  }, [])
   
   return (
     <ParallaxProvider>

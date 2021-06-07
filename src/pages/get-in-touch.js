@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useEffect } from 'react'
 
 import Layout from '../components/Layout'
 import ContentHero from '../components/ContentHero'
@@ -8,7 +8,9 @@ import ContactForm from '../components/ContactForm'
 import { updateBackgroundColor } from '../utils/theme'
 
 const GetInTouch = () => {
-  updateBackgroundColor("yellowRed")
+  useEffect(() => {
+    updateBackgroundColor('yellowRed');
+  }, [])
 
   const hero = {
     background: "yellowRed",

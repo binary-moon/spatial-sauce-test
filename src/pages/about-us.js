@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
@@ -12,7 +12,9 @@ import { renderComponent } from '../utils/components';
 const AboutUs = ({ data }) => {
   const components = data.allAboutContentJson.edges;
 
-  updateBackgroundColor('blueGreen');
+  useEffect(() => {
+    updateBackgroundColor('blueGreen');
+  }, [])
 
   const hero = {
     background: "blueGreen",

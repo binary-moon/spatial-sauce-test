@@ -29,12 +29,14 @@ export const theme = {
 }
 
 export const updateBackgroundColor = (backgroundColor) => {
-  document.body.classList.remove("redBlue")
-  document.body.classList.remove("blueGreen")
-  document.body.classList.remove("greenYellow")
-  document.body.classList.remove("yellowRed")
+  if (document) {
+    document.body.classList.remove("redBlue")
+    document.body.classList.remove("blueGreen")
+    document.body.classList.remove("greenYellow")
+    document.body.classList.remove("yellowRed")
 
-  if (backgroundColor) {
-    document.body.classList.add(backgroundColor)
+    if (backgroundColor) {
+      document.body.classList.add(backgroundColor)
+    }
   }
 }

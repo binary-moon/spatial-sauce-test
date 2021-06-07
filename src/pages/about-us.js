@@ -5,13 +5,14 @@ import Layout from '../components/Layout'
 import ContentHero from '../components/ContentHero'
 import ContentLifter from '../components/ContentLifter'
 
+import { updateBackgroundColor } from '../utils/theme'
 import { renderComponent } from '../utils/components';
 
 // markup
 const AboutUs = ({ data }) => {
   const components = data.allAboutContentJson.edges;
 
-  document.body.classList.add("blueGreen")
+  updateBackgroundColor('blueGreen');
 
   const hero = {
     background: "blueGreen",

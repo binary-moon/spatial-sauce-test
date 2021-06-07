@@ -9,19 +9,20 @@ import Hero from '../components/Hero'
 import TileList from '../components/TileList'
 import ContentLifter from '../components/ContentLifter'
 
-import { prepareTileListData } from '../utils/data'
+import { updateBackgroundColor } from '../utils/theme'
 
 // markup
-const IndexPage = ({ data }) => {
-  const { hero, tiles } = homeData;
-  console.log({ data })
-  const tileListData = prepareTileListData(data.allOurWorkJson.edges);
+const IndexPage = () => {
+  const { hero } = homeData;
+
+  updateBackgroundColor('redBlue');
+  
   return (
     <ParallaxProvider>
       <Layout>
         <Hero title={hero.title} description={hero.description} />
         <ContentLifter>
-          <TileList tiles={tileListData}/>
+          <TileList />
         </ContentLifter>
       </Layout>
     </ParallaxProvider>
@@ -29,30 +30,3 @@ const IndexPage = ({ data }) => {
 }
 
 export default IndexPage
-
-export const query = graphql`
-  {
-    allOurWorkJson {
-      edges {
-        node {
-          slug
-          title
-          card {
-            slug
-            tag
-            title
-            client
-            background
-            alignment
-            url
-            image {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`

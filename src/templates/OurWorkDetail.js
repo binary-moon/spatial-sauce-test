@@ -6,15 +6,14 @@ import ContentHero from '../components/ContentHero'
 import ContentLifter from '../components/ContentLifter'
 import MoreWork from '../components/MoreWork'
 
-import { renderComponent } from '../utils/components';
+import { renderComponent } from '../utils/components'
+import { updateBackgroundColor } from '../utils/theme'
 
 const OurWorkDetail = ({ data }) => {
   const pageData = data.ourWorkJson;
   const { hero, components } = pageData
 
-  console.log({pageData})
-
-  console.log({data})
+  updateBackgroundColor()
 
   return (
     <Layout>
@@ -24,7 +23,7 @@ const OurWorkDetail = ({ data }) => {
           components.map(element => renderComponent(element.id, element.type, element.props, element.shape))
         }
       </ContentLifter>
-      <MoreWork />
+      <MoreWork currentWork={pageData.title} />
     </Layout>
   )
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { useTrail, animated } from 'react-spring'
+import classnames from 'classnames'
 
 import navigationData from '../../content/navigation.json'
 
@@ -17,7 +18,7 @@ const MenuWrapper = styled.div`
   height: 100%;
   padding-top: ${rem(160)};
   
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.largeDesktop} {
     padding-top: ${rem(270)};
   }
 `
@@ -36,13 +37,14 @@ const Wrapper = styled(ContentWrapper)`
 const Navigation = styled.nav`
   display: flex;
   flex-direction: column;
-  padding-left: ${rem(92)};
+  padding-left: ${rem(60)};
 
   > * + * {
     margin-top: ${rem(20)};
   }
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.largeDesktop} {
+    padding-left: ${rem(92)};
     margin-left: ${rem(-92)};
   }
 `
@@ -53,23 +55,28 @@ const NavigationItem = styled(animated(Link))`
   position: relative;
   transition: color .2s;
 
-  &:nth-child(1):hover {
+  &:nth-child(1):hover,
+  &:nth-child(1).active {
     color: ${props => props.theme.colors.red};
   }
 
-  &:nth-child(2):hover {
+  &:nth-child(2):hover,
+  &:nth-child(2).active {
     color: ${props => props.theme.colors.green};
   }
 
-  &:nth-child(3):hover {
+  &:nth-child(3):hover,
+  &:nth-child(3).active {
     color: ${props => props.theme.colors.blue};
   }
 
-  &:nth-child(4):hover {
+  &:nth-child(4):hover,
+  &:nth-child(4).active {
     color: ${props => props.theme.colors.yellow};
   }
 
-  &:hover .navigationArrow {
+  &:hover .navigationArrow,
+  &.active .navigationArrow {
     opacity: 1;
     transform: translate(-100%, 0);
   }
@@ -107,14 +114,19 @@ const Text = styled.span`
 const Social = styled.nav`
   display: flex;
   flex-direction: column;
-  padding-left: ${rem(92)};
-  margin-top: ${rem(60)};
+  padding-left: ${rem(60)};
+  margin-top: ${rem(30)};
 
   > * + * {
     margin-top: ${rem(10)};
   }
 
+  ${props => props.theme.mediaQueries.largePhone} {
+    margin-top: ${rem(60)};
+  }
+
   ${props => props.theme.mediaQueries.desktop} {
+    padding-left: ${rem(92)};
     margin-top: ${rem(0)};
   }
 `
@@ -128,10 +140,14 @@ const SocialText = styled.span`
   border-bottom-width: 2px;
   border-bottom-style: solid;
   padding-bottom: 3px;
-  font-size: ${rem(28)};
+  font-size: ${rem(24)};
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0;
+
+  ${props => props.theme.mediaQueries.largePhone} {
+    font-size: ${rem(28)};
+  }
 `
 
 const Decoration = styled.div`
@@ -151,7 +167,7 @@ const Triangle1 = styled.div`
   bottom: 0;
   left: 0;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     border-width: 0 81px 154px 81px;
   }
 `
@@ -166,7 +182,7 @@ const Triangle2 = styled.div`
   bottom: 0;
   left: 33%;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     border-width: 0 81px 154px 81px;
   }
 `
@@ -181,7 +197,7 @@ const Triangle3 = styled.div`
   bottom: 0;
   left: 66%;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     border-width: 0 81px 154px 81px;
   }
 `
@@ -196,7 +212,7 @@ const Circle = styled.div`
   border-bottom-left-radius: 45px;
   border-top-left-radius: 45px;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     height: 154px;
     width: 80px;
     border-bottom-left-radius: 154px;
@@ -206,6 +222,8 @@ const Circle = styled.div`
 
 const HamburgerMenu = ({ className, style }) => {
   const { mainNavigation, social } = navigationData;
+
+  const { pathname } = window.location
 
   const navigationTrail = useTrail(mainNavigation.length, {
     delay: 200,
@@ -234,7 +252,12 @@ const HamburgerMenu = ({ className, style }) => {
       <Wrapper>
         <Navigation>
         {navigationTrail.map((styles, index) => (
-          <NavigationItem key={mainNavigation[index].id} to={mainNavigation[index].url} style={styles}>
+          <NavigationItem 
+            key={mainNavigation[index].id} 
+            to={mainNavigation[index].url} 
+            style={styles}
+            className={classnames({active: pathname === mainNavigation[index].url})}
+          >
             <Arrow className="navigationArrow">&#8594;</Arrow>
             <Text>{mainNavigation[index].title}</Text>
           </NavigationItem>

@@ -14,7 +14,7 @@ const Wrapper = styled(animated(Link))`
   flex-direction: column;
   color: ${props => props.theme.colors.black};
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     flex-direction: row;
   }
 
@@ -30,7 +30,7 @@ const Wrapper = styled(animated(Link))`
 
   &.reverse {
 
-    ${props => props.theme.mediaQueries.desktop} {
+    ${props => props.theme.mediaQueries.tablet} {
       flex-direction: row-reverse;
     }
   }
@@ -38,7 +38,7 @@ const Wrapper = styled(animated(Link))`
   &.vertical {
     flex-direction: column-reverse;
 
-    ${props => props.theme.mediaQueries.desktop} {
+    ${props => props.theme.mediaQueries.tablet} {
       width: 50%;
     }
   }
@@ -50,16 +50,25 @@ const Content = styled.div`
   width: 100%;
   padding: ${rem(82)} ${rem(32)};
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
+    padding: ${rem(42)} ${rem(32)};
     width: 50%;
 
     .vertical & {
       width: 100%;
     }
   }
+
+  ${props => props.theme.mediaQueries.desktop} {
+    padding: ${rem(82)} ${rem(32)};
+  }
+
+  > * + * {
+
+  }
 `
 
-const Client = styled.span`
+const Tag = styled.span`
   font-weight: 900;
   font-size: ${rem(12)};
   line-height: ${rem(14)};
@@ -81,8 +90,8 @@ const Title = styled.span`
   }
 `
 
-const Location = styled.span`
-  font-weight: 700;
+const Client = styled.span`
+  font-weight: 900;
   font-size: ${rem(18)};
   line-height: ${rem(18)};
   margin-top: ${rem(24)};
@@ -96,7 +105,7 @@ const Location = styled.span`
 const ImageContainer = styled.div`
   width: 100%;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     width: 50%;
 
     .vertical & {
@@ -106,7 +115,7 @@ const ImageContainer = styled.div`
 `
 
 const Tile = ({ tileData }) => {
-  const { background, client, title, location, image, alignment, slug } = tileData
+  const { background, client, tag, title, image, alignment, slug } = tileData
 
   const { ref, inView } = useInView({
     threshold: 0,
@@ -123,10 +132,10 @@ const Tile = ({ tileData }) => {
   return (
     <Wrapper ref={ref} to={`/our-work/${slug}`} className={classnames(background, alignment)} style={springProps}>
       <Content>
-        <Client>{client}</Client>
+        <Tag>{tag}</Tag>
         <Title>{title}</Title>
-        {location &&
-          <Location>{location}</Location>
+        {client &&
+          <Client>{client}</Client>
         }
       </Content>
       <ImageContainer>

@@ -25,7 +25,7 @@ const Content = styled.div`
   left: 0;
   width: 100%;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.largeDesktop} {
     top: ${rem(255)};
   }
 `
@@ -36,7 +36,12 @@ const Title = styled.h1`
   line-height: ${rem(60)};
   font-weight: 900;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
+    font-size: ${rem(100)};
+    line-height: ${rem(110)};
+  }
+
+  ${props => props.theme.mediaQueries.largeDesktop} {
     font-size: ${rem(130)};
     line-height: ${rem(120)};
   }
@@ -49,7 +54,7 @@ const Description = styled.p`
   font-weight: 700;
   margin-top: ${rem(21)};
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     font-size: ${rem(30)};
     line-height: ${rem(40)};
     margin-top: ${rem(60)};
@@ -64,7 +69,7 @@ const Arrow = styled.span`
   margin-top: ${rem(21)};
   display: block;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.largeDesktop} {
     margin-top: ${rem(60)};
   }
 `

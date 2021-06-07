@@ -17,9 +17,16 @@ const Wrapper = styled.div`
     background: linear-gradient(126deg, ${props => props.theme.background.blue} 52%, ${props => props.theme.background.green} 100%);
   }
 
-  ${props => props.theme.mediaQueries.desktop} {
+  &.greenYellow {
+    background: linear-gradient(126deg, ${props => props.theme.background.green} 52%, ${props => props.theme.background.yellow} 100%);
+  }
+
+  ${props => props.theme.mediaQueries.tablet} {
     min-height: ${rem(917)};
-    padding: ${rem(255)} 0 0;
+
+    ${props => props.theme.mediaQueries.largeDesktop} {
+      padding: ${rem(255)} 0 0;
+    }
   }
 `
 
@@ -35,7 +42,7 @@ const Tag = styled.h4`
   margin: 0;
   color: ${props => props.theme.colors.white};
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     font-size: ${rem(14)};
   }
 `
@@ -47,7 +54,7 @@ const Title = styled.h1`
   color: ${props => props.theme.colors.white};
   margin: ${rem(24)} 0 0;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     font-size: ${rem(80)};
     line-height: ${rem(90)};
   }
@@ -60,7 +67,7 @@ const Arrow = styled.span`
   margin-top: ${rem(60)};
   display: block;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     margin-top: ${rem(60)};
   }
 `

@@ -12,13 +12,17 @@ const Row = styled.div`
   flex-direction: column;
   background: ${props => props.theme.colors.white};
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.tablet} {
     flex-direction: row;
+    padding: ${rem(60)} ${rem(55)};
+  }
+
+  ${props => props.theme.mediaQueries.desktop} {
     padding: ${rem(80)} ${rem(55)};
   }
 
   &.reverse {
-    ${props => props.theme.mediaQueries.desktop} {
+    ${props => props.theme.mediaQueries.tablet} {
       flex-direction: row-reverse;
     }
   }

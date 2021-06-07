@@ -20,3 +20,10 @@ export const prepareTileListData = (workData) => {
   })
   return tileListData;
 }
+
+export const filterTileListData = (allTiles, maxLimit) => {
+  const nonVerticalTiles = allTiles.filter(item => item.node.card.alignment !== 'vertical')
+  console.log(nonVerticalTiles)
+
+  return nonVerticalTiles.slice(0, maxLimit);
+}

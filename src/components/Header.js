@@ -24,7 +24,7 @@ const Wrapper = styled(ContentWrapper)`
   justify-content: space-between;
   position: relative;
 
-  ${props => props.theme.mediaQueries.desktop} {
+  ${props => props.theme.mediaQueries.largeDesktop} {
     padding-top: ${rem(110)};
     padding-bottom: ${rem(110)};
   }
@@ -36,6 +36,13 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = useCallback(() => {
+    if (!isMenuOpen) {
+      window.scroll(0, 0)
+      document.body.classList.add('scrollLock')
+    } else {
+      document.body.classList.remove('scrollLock')
+    }
+
     setIsMenuOpen(!isMenuOpen)
   }, [isMenuOpen])
 

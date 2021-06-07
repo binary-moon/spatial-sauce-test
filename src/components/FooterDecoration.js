@@ -23,8 +23,20 @@ const Triangle = styled.div`
     height: 100%;
   }
 
+  .redBlue &:after {
+    background: ${props => props.theme.background.blue};
+  }
+
   .blueGreen &:after {
     background: ${props => props.theme.background.green};
+  }
+
+  .greenYellow &:after {
+    background: ${props => props.theme.background.yellow};
+  }
+
+  .yellowRed &:after {
+    background: ${props => props.theme.background.red};
   }
 
   ${props => props.theme.mediaQueries.desktop} {

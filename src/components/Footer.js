@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import { useLocation } from "@reach/router"
 
 import navigationData from '../../content/navigation.json'
 
@@ -10,12 +11,30 @@ import FooterDecoration from './FooterDecoration'
 
 import { rem } from '../utils/mixins'
 
+
 const Wrapper = styled.footer`
   position: relative;
   padding: ${rem(96)} 0 ${rem(72)};
   overflow: hidden;
   margin-top: ${rem(-30)};
+`
+
+const FooterBackground = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, ${props => props.theme.background.red} 0%, ${props => props.theme.background.blue} 100%);
   z-index: -1;
+
+  .redBlue &,
+  .blueGreen &,
+  .greenYellow &,
+  .yellowRed & {
+    background: transparent;
+  }
+
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
@@ -88,7 +107,7 @@ const TopButton = styled.button`
   width: ${rem(49)};
   height: ${rem(49)};
   background: ${props => props.theme.colors.white};
-  color: ${props => props.theme.background.blue};
+  color: ${props => props.theme.background.black};
   font-size: ${rem(30)};
   display: flex;
   justify-content: center;
@@ -128,19 +147,43 @@ const Circle = styled.div`
     border-top-left-radius: 512px;
   }
 
+  .redBlue & {
+    background: ${props => props.theme.background.red};
+  }
+
   .blueGreen & {
-    background: ${props => props.theme.shapes.blue};
+    background: ${props => props.theme.background.blue};
+  }
+
+  .greenYellow & {
+    background: ${props => props.theme.background.green};
+  }
+
+  .yellowRed & {
+    background: ${props => props.theme.background.yellow};
   }
 `
 
 const Footer = () => {
   const { social } = navigationData;
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  } 
+  const location = useLocation();
+  console.log({location})
   return (
     <Wrapper>
-      <StyledFooterDecoration />
-      <Circle />
+      <FooterBackground>
+        <StyledFooterDecoration />
+        <Circle />
+      </FooterBackground>
       <StyledContentWrapper>
-        <Copy>Let's chat about your next project. <br/><Link to="#">Get in touch</Link></Copy>
+        {location.pathname !== '/get-in-touch' &&
+          <Copy>Let's chat about your next project. <br/><Link to="/get-in-touch">Get in touch</Link></Copy>
+        }
+        {location.pathname === '/get-in-touch' &&
+          <Copy>We’re based in Sydney, available globally.</Copy>
+        }
         <SocialContainer>
           <SocialTitle>See us on social</SocialTitle>
           <SocialNav>
@@ -149,7 +192,7 @@ const Footer = () => {
         </SocialContainer>
         <StyledLogo type="white"/>
         <Terms>Spatial Sauce is a subsidiary of Spatial Effects Pty Ltd. ABN: 23621851465</Terms>
-        <TopButton><Arrow>&#8593;</Arrow></TopButton>
+        <TopButton onClick={scrollTop}><Arrow>&#8593;</Arrow></TopButton>
       </StyledContentWrapper>
     </Wrapper>
   )

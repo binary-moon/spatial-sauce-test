@@ -21,9 +21,13 @@ export const prepareTileListData = (workData) => {
   return tileListData;
 }
 
-export const filterTileListData = (allTiles, maxLimit) => {
-  const nonVerticalTiles = allTiles.filter(item => item.node.card.alignment !== 'vertical')
-  console.log(nonVerticalTiles)
+export const filterTileListData = (allTiles, maxLimit, displayOnlyWeMade) => {
+  let filteredTiles = []
+  if (displayOnlyWeMade) {
+    filteredTiles = allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE MADE')
+  } else {
+    filteredTiles = allTiles;
+  }
 
-  return nonVerticalTiles.slice(0, maxLimit);
+  return maxLimit ? filteredTiles.slice(0, maxLimit) : filteredTiles;
 }

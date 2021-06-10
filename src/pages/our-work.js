@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 import Layout from '../components/Layout'
 import ContentHero from '../components/ContentHero'
@@ -6,6 +7,7 @@ import ContentLifter from '../components/ContentLifter'
 import TileList from '../components/TileList'
 
 import { updateBackgroundColor } from '../utils/theme'
+
 
 
 const OurWork = () => {
@@ -20,12 +22,14 @@ const OurWork = () => {
   }
   
   return (
-    <Layout>
-      <ContentHero {...hero} />
-      <ContentLifter>
-        <TileList />
-      </ContentLifter>
-    </Layout>
+    <ParallaxProvider>
+      <Layout>
+        <ContentHero {...hero} />
+        <ContentLifter>
+          <TileList displayOnlyWeMade/>
+        </ContentLifter>
+      </Layout>
+    </ParallaxProvider>
   )
 }
 

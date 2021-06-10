@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 import Layout from '../components/Layout'
 import ContentHero from '../components/ContentHero'
@@ -23,14 +24,16 @@ const AboutUs = ({ data }) => {
   }
 
   return (
-    <Layout>
-      <ContentHero {...hero} />
-      <ContentLifter>
-        {
-          components.map(element => renderComponent(element.node.id, element.node.type, element.node.props, element.node.shape))
-        }
-      </ContentLifter>
-    </Layout>
+    <ParallaxProvider>
+      <Layout>
+        <ContentHero {...hero} />
+        <ContentLifter>
+          {
+            components.map(element => renderComponent(element.node.id, element.node.type, element.node.props, element.node.shape))
+          }
+        </ContentLifter>
+      </Layout>
+    </ParallaxProvider>
   )
 }
 

@@ -14,6 +14,7 @@ const Wrapper = styled.button`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: background .3s;
 
   > div {
     width: ${rem(18)};
@@ -39,10 +40,20 @@ const Wrapper = styled.button`
       left: -3px;
     }
   }
+
+  &.isDark {
+    background: ${props => props.theme.colors.black};
+
+    > div {
+      background: ${props => props.theme.colors.white};
+    }
+  }
 `
 
-const Hamburger = ({ toggleMenu, isMenuOpen }) => {
-  const classes = classnames({isMenuOpen})
+const Hamburger = ({ toggleMenu, isMenuOpen, isDark }) => {
+  const classes = classnames({isMenuOpen, isDark})
+
+  console.log(isDark)
 
   return (
     <Wrapper className={classes} onClick={toggleMenu}>

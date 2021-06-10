@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
 import Layout from '../components/Layout'
 import ContentHero from '../components/ContentHero'
@@ -19,12 +20,14 @@ const GetInTouch = () => {
   }
 
   return (
-    <Layout>
-      <ContentHero {...hero} />
-      <ContentLifter>
-        <ContactForm />
-      </ContentLifter>
-    </Layout>
+    <ParallaxProvider>
+      <Layout>
+        <ContentHero {...hero} />
+        <ContentLifter>
+          <ContactForm />
+        </ContentLifter>
+      </Layout>
+    </ParallaxProvider>
   )
 }
 

@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import classnames from 'classnames'
 import BackgroundImage from 'gatsby-background-image'
+import { ParallaxBanner } from 'react-scroll-parallax';
 
 import ContentWrapper from './ContentWrapper';
 import { HeroDecoration } from './HeroDecoration'
 
 import { rem } from '../utils/mixins'
 
-const Wrapper = styled.div`
+const StyledParallaxBanner = styled(ParallaxBanner)`
   position: relative;
   padding: ${rem(149)} 0 0;
   min-height: ${rem(620)};
@@ -32,6 +33,11 @@ const Wrapper = styled.div`
 
 const StyledContentWrapper = styled(ContentWrapper)`
   position: relative;
+  top: ${rem(160)};
+
+  ${props => props.theme.mediaQueries.desktop} {
+    top: ${rem(200)};
+  }
 `
 
 const Tag = styled.h4`
@@ -91,21 +97,67 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   height: 100%;
 `
 
+const ParallaxBackground = ({ image }) => {
+  if (image) {
+    return (
+      <StyledBackgroundSection image={image} />
+    )
+  }
+  return null
+}
+
+const ParallaxMidground = ({background, image}) => {
+  if (!image) {
+    return (
+      <StyledHeroDecoration className={classnames(background)} />
+    )
+  }
+  return null
+}
+
+const ParallaxForeground = ({tag, title}) => (
+  <StyledContentWrapper>
+    <Tag>{tag}</Tag>
+    <Title>{title}</Title>
+    <Arrow>&#8595;</Arrow>
+  </StyledContentWrapper>
+)
+
+const StyledParallaxBackground = styled(ParallaxBackground)`
+`
+
+const StyledParallaxMidground = styled(ParallaxMidground)`
+  position: absolute;
+  bottom: ${rem(30)};
+  left: 0;
+`
+
+const StyledParallaxForeground = styled(ParallaxForeground)`
+`
+
 const ContentHero = ({ background, tag, title, image }) => {
   return (
-    <Wrapper className={classnames(background)}>
-      {!image &&
-        <StyledHeroDecoration className={classnames(background)} />
-      }
-      {image &&
-        <StyledBackgroundSection image={image} />
-      }
-      <StyledContentWrapper>
-        <Tag>{tag}</Tag>
-        <Title>{title}</Title>
-        <Arrow>&#8595;</Arrow>
-      </StyledContentWrapper>
-    </Wrapper>
+    <StyledParallaxBanner
+      style={{height: '100vh'}}
+      layers = {[
+        {
+          children: (<StyledParallaxBackground image={image} />),
+          amount: 0.5,
+          expanded: false,
+        },
+        {
+          children:(<StyledParallaxMidground background={background} image={image}/>),
+          amount: -0.5,
+          expanded: false,
+        },
+        {
+          children: (<StyledParallaxForeground tag={tag} title={title} />),
+          amount: 0,
+          expanded: false,
+        }
+      ]}
+      className={classnames(background)}>
+    </StyledParallaxBanner>
   )
 }
 

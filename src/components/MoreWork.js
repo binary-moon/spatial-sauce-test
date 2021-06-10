@@ -33,7 +33,7 @@ const MoreWork = () => {
   return (
     <Wrapper>
       <Title>More of our work</Title>
-      <StyledTileList maxLimit={3} />
+      <StyledTileList maxLimit={3} displayOnlyWeMade />
     </Wrapper>
   )
 }

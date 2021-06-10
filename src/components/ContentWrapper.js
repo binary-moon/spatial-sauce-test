@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   margin-right: auto;
 `
 
-const ContentWrapper = ({ children, className }) => (
+const ContentWrapper = ({ children, className}) => (
   <Wrapper className={className}>{children}</Wrapper>  
 )
 

@@ -2,6 +2,7 @@
   {
     "title": "Cherry Blossom Festival.",
     "slug": "cherry-blossom-festival",
+    "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "title": "Cherry Blossom Festival.",
@@ -9,6 +10,7 @@
       "image": "./images/200-women-hero.png"
     },
     "card": {
+      "externalLink": null,
       "slug": "cherry-blossom-festival",
       "tag": "WE MADE",
       "title": "Cherry Blossom Festival.",
@@ -31,6 +33,7 @@
   {
     "title": "200 Women Listening Ground",
     "slug": "200-women-listening-ground",
+    "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "title": "200 Women Listening Ground. ",
@@ -38,6 +41,7 @@
       "image": "./images/200-women-hero.png"
     },
     "card": {
+      "externalLink": null,
       "slug": "200-women-listening-ground",
       "tag": "WE MADE",
       "title": "200 Women Listening Ground.",
@@ -114,6 +118,7 @@
   {
     "title": "Reactive generative production & reproduction.",
     "slug": "reactive-generative-production-reproduction",
+    "isExternal": true,
     "hero": {
       "tag": "We Explored",
       "title": "Reactive generative production & reproduction.",
@@ -121,6 +126,7 @@
       "image": "./images/200-women-hero.png"
     },
     "card": {
+      "externalLink": "http://google.com.au",
       "slug": "reactive-generative-production-reproduction",
       "tag": "We Explored",
       "title": "Reactive generative production & reproduction.",
@@ -143,6 +149,7 @@
   {
     "title": "Scrooble a doodle. Bring it to life.",
     "slug": "scrooble-a-doodle-bring-it-to-life",
+    "isExternal": false,
     "hero": {
       "tag": "We like",
       "title": "Scrooble a doodle. Bring it to life.",
@@ -150,11 +157,11 @@
       "image": "./images/200-women-hero.png"
     },
     "card": {
+      "externalLink": null,
       "slug": "scrooble-a-doodle-bring-it-to-life",
       "tag": "We like",
       "title": "Scrooble a doodle. Bring it to life.",
       "client": "By Google",
-      "url": "#",
       "image": "./images/cards/scrooble.png",
       "background": "white",
       "alignment": "vertical"
@@ -173,6 +180,7 @@
   {
     "title": "The Giving Tree.",
     "slug": "the-giving-tree",
+    "isExternal": false,
     "hero": {
       "tag": "We made",
       "title": "The Giving Tree.",
@@ -180,11 +188,11 @@
       "image": "./images/200-women-hero.png"
     },
     "card": {
+      "externalLink": null,
       "slug": "the-giving-tree",
       "tag": "We made",
       "title": "The Giving Tree.",
       "client": "ANZ Tower Liberty Place",
-      "url": "#",
       "image": "./images/cards/giving-tree.png",
       "background": "white",
       "alignment": "default"
@@ -203,6 +211,7 @@
   {
     "title": "“The campaign that turned Fanta around”.",
     "slug": "the-campaign-that-turned-fanta-around",
+    "isExternal": true,
     "hero": {
       "tag": "We said",
       "title": "“The campaign that turned Fanta around”.",
@@ -210,11 +219,11 @@
       "image": "./images/200-women-hero.png"
     },
     "card": {
+      "externalLink": "http://google.com.au",
       "slug": "the-campaign-that-turned-fanta-around",
       "tag": "We said",
       "title": "“The campaign that turned Fanta around”.",
       "client": null,
-      "url": "#",
       "image": "./images/cards/fanta.png",
       "background": "white",
       "alignment": "reverse"

@@ -100,7 +100,6 @@ const Terms = styled.span`
   font-weight: 500;
   color: ${props => props.theme.colors.white};
   margin-top: ${rem(26)};
-  max-width: ${rem(251)};
 `
 
 const TopButton = styled.button`

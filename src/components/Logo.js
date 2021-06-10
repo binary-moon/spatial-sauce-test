@@ -5,6 +5,7 @@ import { Link } from 'gatsby'
 
 import LogoWhite from '../images/logo.svg';
 import LogoColored from '../images/logo-colored.svg';
+import LogoBlack from '../images/logo-black.svg';
 
 import { rem } from '../utils/mixins'
 
@@ -21,7 +22,10 @@ const Wrapper = styled(Link)`
 const Logo = ({ type, className, style }) => {
   return (
     <Wrapper to={'/'} className={className} style={style}>
-      {type === 'colored' ? <LogoColored /> : <LogoWhite />}
+      {/* {type === 'colored' ? <LogoColored /> : <LogoWhite />} */}
+      {type === 'colored' && <LogoColored />}
+      {type === 'black' && <LogoBlack />}
+      {type === 'white' && <LogoWhite />}
     </Wrapper>
   )
 }

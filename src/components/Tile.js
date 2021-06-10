@@ -4,15 +4,15 @@ import classnames from 'classnames'
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Link } from 'gatsby'
 
 import { rem } from '../utils/mixins'
 
-const Wrapper = styled(animated(Link))`
+const Wrapper = styled(animated.div)`
   background: white;
   display: flex;
   flex-direction: column;
   color: ${props => props.theme.colors.black};
+  height: 100%;
 
   ${props => props.theme.mediaQueries.tablet} {
     flex-direction: row;
@@ -39,8 +39,17 @@ const Wrapper = styled(animated(Link))`
     flex-direction: column-reverse;
 
     ${props => props.theme.mediaQueries.tablet} {
-      width: 50%;
+      width: 100%;
     }
+  }
+
+  .tileImageTransitionContainer {
+    transition: transform .3s;
+    transform-origin: 50% 50%;
+  }
+
+  &:hover .tileImageTransitionContainer {
+    transform: scale(1.15);
   }
 `
 
@@ -72,6 +81,7 @@ const Tag = styled.span`
   font-weight: 900;
   font-size: ${rem(12)};
   line-height: ${rem(14)};
+  text-transform: uppercase;
 
   ${props => props.theme.mediaQueries.desktop} {
     font-size: ${rem(14)};
@@ -104,6 +114,7 @@ const Client = styled.span`
 
 const ImageContainer = styled.div`
   width: 100%;
+  overflow: hidden;
 
   ${props => props.theme.mediaQueries.tablet} {
     width: 50%;
@@ -114,7 +125,7 @@ const ImageContainer = styled.div`
   }
 `
 
-const Tile = ({ tileData }) => {
+const Tile = ({ tileData, displayOnlyWeMade }) => {
   const { background, client, tag, title, image, alignment, slug } = tileData
 
   const { ref, inView } = useInView({
@@ -130,16 +141,18 @@ const Tile = ({ tileData }) => {
   const imageData = getImage(image)
 
   return (
-    <Wrapper ref={ref} to={`/our-work/${slug}`} className={classnames(background, alignment)} style={springProps}>
+    <Wrapper ref={ref} className={classnames(background, alignment)} style={springProps}>
       <Content>
-        <Tag>{tag}</Tag>
+        <Tag>{displayOnlyWeMade ? 'Case Study' : tag }</Tag>
         <Title>{title}</Title>
         {client &&
           <Client>{client}</Client>
         }
       </Content>
       <ImageContainer>
-        <GatsbyImage image={imageData} alt={title} />
+        <div className="tileImageTransitionContainer">
+          <GatsbyImage image={imageData} alt={title} />
+        </div>
       </ImageContainer>
     </Wrapper>
   )

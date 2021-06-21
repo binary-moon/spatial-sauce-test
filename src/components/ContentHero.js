@@ -138,7 +138,6 @@ const StyledParallaxForeground = styled(ParallaxForeground)`
 const ContentHero = ({ background, tag, title, image }) => {
   return (
     <StyledParallaxBanner
-      style={{height: '100vh'}}
       layers = {[
         {
           children: (<StyledParallaxBackground image={image} />),

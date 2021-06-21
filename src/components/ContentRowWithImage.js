@@ -36,6 +36,10 @@ const Content = styled.div`
     width: calc(100% - ${rem(420)});
     padding: 0;
   }
+
+  > * + * {
+    margin: ${rem(30)} 0 0;  
+  }
 `
 
 const ImageContainer = styled.div`
@@ -79,17 +83,51 @@ const Copy = styled.p`
     line-height: ${rem(40)};
     margin: ${rem(40)} 0 0;
   }
+
+  &.small {
+    font-size: ${rem(12)};
+    line-height: ${rem(14)};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      font-size: ${rem(16)};
+      line-height: ${rem(24)};
+    }
+  }
 `
 
-const ContentRowWithImage = ({ alignment, image, title, copy, children }) => {
+const HTMLContent = styled.div`
+  p {
+    font-size: ${rem(12)};
+    line-height: ${rem(14)};
+    font-weight: 500;
+
+    ${props => props.theme.mediaQueries.desktop} {
+      font-size: ${rem(16)};
+      line-height: ${rem(24)};
+    }
+  }
+
+  > * + * {
+    margin: ${rem(30)} 0 0;  
+  }
+`
+
+const ContentRowWithImage = ({ alignment, image, title, copy, children, textSize, content }) => {
   const imageData = getImage(image.src)
   return (
     <ContentWrapper>
       {children}
       <Row className={classnames(alignment)}>
         <Content>
-          <Title>{title}</Title>
-          <Copy>{copy}</Copy>
+          {title &&
+            <Title>{title}</Title>
+          }
+          {copy &&
+            <Copy className={classnames({small: textSize === 'small'})}>{copy}</Copy>
+          }
+          {
+            <HTMLContent dangerouslySetInnerHTML={{ __html: content }} />
+          }
         </Content>
         <ImageContainer>
           <GatsbyImage image={imageData} alt={image.alt} />

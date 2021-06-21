@@ -21,12 +21,54 @@
     },
     "components": [
       {
-       "type": "ContentFullScreen",
-       "shape": null,
-       "props": {
-         "title": "THE CONCEPT",
-         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend, mi vel molestie vehicula, lectus turpis sollicitudin neque, ac egestas ex metus a tortor. Sed ultricies purus sit amet quam interdum fringilla."
-       } 
+        "type": "ContentRowWithImage",
+        "shape": null,
+        "props": {
+          "textSize": "small",
+          "alignment": "default",
+          "image": {
+            "src": "./images/cherry-blossom-1.jpg",
+            "alt": "THE OUTCOMES"
+          },
+          "title": "World Square - Cherry Blossoms Festival",
+          "content": "<p>World Square’s annual Cherry Blossom Festival brings Japan’s cherry blossom phenomenon to Sydney, in a jam packed 3 week event.</p><p>We helped bring the Cherry Blossom Festival to life via a series of digital placemaking activities that combined the physical and virtual together in magical ways, to create impactful and immersive experiences.</p>"
+        }
+      },
+      {
+        "type": "ContentRowWithImage",
+        "shape": null,
+        "props": {
+          "textSize": "small",
+          "alignment": "reverse",
+          "image": {
+            "src": "./images/cherry-blossom-2.jpg",
+            "alt": "THE OUTCOMES"
+          },
+          "title": null,
+          "content": "<p>The centerpiece of the festivities was the custom built Torii Gate, that not only created 1000s of ‘grammable moments, but also acted as a portal to another dimension via AR, virtually converting the whole square into a dreamy cherry blossom experience in real time.</p><p>This AR experience seamlessly transitioned into an “offer hunt” that ushered our shoppers from one retailer to another to find virtual origami boxes full of goodies. A dynamic “petal path” guided them to the next offer box and  encouraged them to seek and unlock more offers, promoting footfall and dwell time.</p>"
+        }
+      },
+      {
+        "type": "ContentRowWithImage",
+        "shape": null,
+        "props": {
+          "textSize": "small",
+          "alignment": "default",
+          "image": {
+            "src": "./images/cherry-blossom-3.jpg",
+            "alt": "THE OUTCOMES"
+          },
+          "title": null,
+          "content": "<p>Finally, we have activated the giant screen via three Japanese inspired gamified experiences, using our unique platform combining augmented reality, skeletal and gesture tracking, depth mapping and artificial intelligence-driven live characters.</p><p>These experiences were wildly popular, hosting up to a hundred engaged users at the busiest sessions, leading to an average of 7,500 active and passive engagements per day.</p>"
+        }
+      },
+      {
+        "type": "ContentVideo",
+        "shape": null,
+        "props": {
+          "videoSrc": "https://www.youtube.com/embed/zFs7xkMJ1w4",
+          "title": "Spatial Sauce Case Study: World Square's Cherry Blossom Festival"
+        }
       }
     ]
   },

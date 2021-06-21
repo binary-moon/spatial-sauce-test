@@ -47,6 +47,9 @@ export const query = graphql`
           text
           alignment
           copy
+          content
+          textSize
+          videoSrc
           image {
             src {
               childImageSharp {

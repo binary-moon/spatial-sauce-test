@@ -8,6 +8,7 @@ import ContentFullScreen from '../components/ContentFullScreen'
 import SectionTitle from '../components/SectionTitle'
 import TextTwoCol from '../components/TextTwoCol'
 import Shape from '../components/Shape'
+import ContentVideo from '../components/ContentVideo'
 
 
 const getComponent = (type) => {
@@ -26,6 +27,8 @@ const getComponent = (type) => {
       return SectionTitle
     case 'TextTwoCol':
       return TextTwoCol
+    case 'ContentVideo':
+      return ContentVideo
   }
 }
 

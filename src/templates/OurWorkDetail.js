@@ -14,6 +14,8 @@ const OurWorkDetail = ({ data }) => {
   const pageData = data.ourWorkJson;
   const { hero, components } = pageData
 
+  console.log({ hero })
+
   useEffect(() => {
     updateBackgroundColor();
   }, [])
@@ -64,6 +66,7 @@ export const query = graphql`
         client
         tag
         title
+        video
         image {
           childImageSharp {
             fluid(quality: 90, maxWidth: 2880) {

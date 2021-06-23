@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import classnames from 'classnames'
 import BackgroundImage from 'gatsby-background-image'
 import { ParallaxBanner } from 'react-scroll-parallax';
+import { useMediaQuery } from 'react-responsive'
 
 import ContentWrapper from './ContentWrapper';
 import { HeroDecoration } from './HeroDecoration'
@@ -22,13 +23,16 @@ const StyledParallaxBanner = styled(ParallaxBanner)`
     background: linear-gradient(126deg, ${props => props.theme.background.green} 52%, ${props => props.theme.background.yellow} 100%);
   }
 
-  ${props => props.theme.mediaQueries.tablet} {
-    min-height: ${rem(917)};
+  &.largeHero {
+    ${props => props.theme.mediaQueries.tablet} {
+      min-height: ${rem(860)};
 
-    ${props => props.theme.mediaQueries.largeDesktop} {
-      padding: ${rem(255)} 0 0;
+      ${props => props.theme.mediaQueries.largeDesktop} {
+        padding: ${rem(255)} 0 0;
+      }
     }
   }
+
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
@@ -89,15 +93,41 @@ const BackgroundSection = ({ className, image }) => (
   <BackgroundImage className={className} Tag="section" fluid={image.childImageSharp.fluid}/>
 )
 
+const VideoWrapper = styled.div`
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  > iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+  }
+`
+
 const StyledBackgroundSection = styled(BackgroundSection)`
   position: absolute !important;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 `
 
-const ParallaxBackground = ({ image }) => {
+const ParallaxBackground = ({ image, video }) => {
+  const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' })
+  if (isDesktop && video) {
+    return (
+      <VideoWrapper>
+        <iframe src={video} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      </VideoWrapper>
+    )
+  }
   if (image) {
     return (
       <StyledBackgroundSection image={image} />
@@ -135,14 +165,14 @@ const StyledParallaxMidground = styled(ParallaxMidground)`
 const StyledParallaxForeground = styled(ParallaxForeground)`
 `
 
-const ContentHero = ({ background, tag, title, image }) => {
+const ContentHero = ({ background, tag, title, image, video }) => {
   return (
     <StyledParallaxBanner
       layers = {[
         {
-          children: (<StyledParallaxBackground image={image} />),
-          amount: 0.5,
-          expanded: false,
+          children: (<StyledParallaxBackground image={image} video={video}/>),
+          amount: 0,
+          expanded: true,
         },
         {
           children:(<StyledParallaxMidground background={background} image={image}/>),
@@ -155,7 +185,7 @@ const ContentHero = ({ background, tag, title, image }) => {
           expanded: false,
         }
       ]}
-      className={classnames(background)}>
+      className={classnames(background, {largeHero: !video})}>
     </StyledParallaxBanner>
   )
 }

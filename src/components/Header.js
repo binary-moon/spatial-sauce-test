@@ -2,6 +2,7 @@ import React, { useMemo, useState, useCallback, useEffect } from 'react';
 import styled from 'styled-components'
 import { animated, useTransition, useSpring } from 'react-spring';
 import classnames from 'classnames'
+import { useMediaQuery } from 'react-responsive'
 
 import ContentWrapper from '../components/ContentWrapper'
 import Logo from '../components/Logo'
@@ -33,9 +34,11 @@ const Wrapper = styled(ContentWrapper)`
 
 const AnimatedHamburgerMenu = animated(HamburgerMenu);
 
-const Header = () => {
+const Header = ({ isOurWorkDetail, noVideo }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+
+  const isDesktop = useMediaQuery({ query: '(min-width: 1024px)' })
 
   const handleScroll = () => {
     if (window.pageYOffset !== 0) {
@@ -84,12 +87,43 @@ const Header = () => {
     if (isMenuOpen) {
       return 'colored'
     } else {
-      if (isScrolled) {
-        return 'black'
+      if (isOurWorkDetail) {
+        if (!isDesktop) {
+          return 'black'
+        } else {
+          if (isScrolled) {
+            return 'black'
+          } else {
+            if (noVideo) {
+              return 'black'
+            }
+            return 'white'
+          }
+        }
+      } else {
+        if (!isDesktop) {
+          return 'white'
+        } else {
+          if (isScrolled) {
+            return 'black'
+          }
+          return 'white'
+        }
       }
-      return 'white'
     }
-  }, [isMenuOpen, isScrolled])
+  }, [isMenuOpen, isScrolled, isDesktop, isOurWorkDetail, noVideo])
+
+  const isHamburgerDark = useMemo(() => {
+    if (!isOurWorkDetail) {
+      return isScrolled && !isMenuOpen
+    }
+
+    if (!isDesktop) {
+      return !isMenuOpen
+    }
+
+    return noVideo && !isMenuOpen
+  }, [isScrolled, isMenuOpen, isDesktop, isOurWorkDetail, noVideo])
 
   return (
     <HeaderWrapper className={classnames({isScrolled})} style={headerTransitions}>
@@ -98,7 +132,7 @@ const Header = () => {
       }
       <Wrapper>
         <Logo type={logoColor}/>
-        <Hamburger toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} isDark={isScrolled && !isMenuOpen} />
+        <Hamburger toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} isDark={isHamburgerDark} />
       </Wrapper>
     </HeaderWrapper>
   )

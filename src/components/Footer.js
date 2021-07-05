@@ -169,7 +169,7 @@ const Footer = () => {
     window.scroll(0, 0)
   } 
   const location = useLocation();
-  console.log({location})
+  
   return (
     <Wrapper>
       <FooterBackground>
@@ -177,10 +177,10 @@ const Footer = () => {
         <Circle />
       </FooterBackground>
       <StyledContentWrapper>
-        {location.pathname !== '/get-in-touch' &&
-          <Copy>Let's chat about your next project. <br/><Link to="/get-in-touch">Get in touch</Link></Copy>
+        {location.pathname !== '/lets-talk' &&
+          <Copy>Let's chat about your next project. <br/><Link to="/lets-talk">Get in touch</Link></Copy>
         }
-        {location.pathname === '/get-in-touch' &&
+        {location.pathname === '/lets-talk' &&
           <Copy>We’re based in Sydney, available globally.</Copy>
         }
         <SocialContainer>

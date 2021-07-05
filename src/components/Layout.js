@@ -7,11 +7,11 @@ import Footer from '../components/Footer'
 import GlobalStyle from '../globalStyles'
 import { theme } from '../utils/theme'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, noVideo, isOurWorkDetail }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Header />
+      <Header noVideo={noVideo} isOurWorkDetail={isOurWorkDetail} />
       {children}
       <Footer />
     </ThemeProvider>

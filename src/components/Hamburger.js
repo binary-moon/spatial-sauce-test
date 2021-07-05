@@ -53,8 +53,6 @@ const Wrapper = styled.button`
 const Hamburger = ({ toggleMenu, isMenuOpen, isDark }) => {
   const classes = classnames({isMenuOpen, isDark})
 
-  console.log(isDark)
-
   return (
     <Wrapper className={classes} onClick={toggleMenu}>
       <div></div>

@@ -3,6 +3,7 @@ import React from 'react';
 import ContentHero from '../components/ContentHero'
 import ImageFullScreen from '../components/ImageFullScreen'
 import ContentRowWithImage from '../components/ContentRowWithImage'
+import ContentHTMLWithImages from '../components/ContentHTMLWithImages'
 import TextBanner from '../components/TextBanner'
 import ContentFullScreen from '../components/ContentFullScreen'
 import SectionTitle from '../components/SectionTitle'
@@ -19,6 +20,8 @@ const getComponent = (type) => {
       return ImageFullScreen
     case 'ContentRowWithImage':
       return ContentRowWithImage
+    case 'ContentHTMLWithImages':
+      return ContentHTMLWithImages
     case 'TextBanner':
       return TextBanner
     case 'ContentFullScreen':

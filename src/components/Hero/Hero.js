@@ -58,7 +58,7 @@ const Description = styled.p`
     font-size: ${rem(30)};
     line-height: ${rem(40)};
     margin-top: ${rem(60)};
-    max-width: ${rem(600)};
+    max-width: ${rem(700)};
   }
 `
 

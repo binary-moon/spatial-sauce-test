@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ContentWrapper from './ContentWrapper';
 import styled from 'styled-components'
 import { useStaticQuery, graphql, Link } from 'gatsby'
@@ -20,7 +20,8 @@ const TileRow = styled.div`
   }
 `
 
-const TileList = ({ className, maxLimit, displayOnlyWeMade }) => {
+const TileList = ({ className, displayOnlyWeMade, maxLimit }) => {
+  console.log(displayOnlyWeMade)
   const queryData = useStaticQuery(graphql`
     {
       allOurWorkJson {
@@ -35,8 +36,9 @@ const TileList = ({ className, maxLimit, displayOnlyWeMade }) => {
               title
               client
               background
-              alignment
               externalLink
+              isFeatured
+              alignment
               image {
                 childImageSharp {
                   gatsbyImageData
@@ -49,10 +51,14 @@ const TileList = ({ className, maxLimit, displayOnlyWeMade }) => {
     }
   `)
 
-  const allTiles = queryData.allOurWorkJson.edges
-  let filteredTiles = []
-  filteredTiles = filterTileListData(allTiles, maxLimit, displayOnlyWeMade)
-  const tileListData = prepareTileListData(filteredTiles);
+  const [tileListData, setTileListData] = useState([])
+
+  useEffect(() => {
+    const allTiles = queryData.allOurWorkJson.edges
+    let filteredTiles = []
+    filteredTiles = filterTileListData(allTiles, displayOnlyWeMade, maxLimit)
+    setTileListData(prepareTileListData(filteredTiles));
+  }, [])
   
   return (
     <ContentWrapper className={className}>
@@ -60,18 +66,17 @@ const TileList = ({ className, maxLimit, displayOnlyWeMade }) => {
         return (
           <TileRow key={index}>
             {data.row.map((tileData) => {
-              console.log({tileData})
               const { slug, externalLink } = tileData
               if (!externalLink) {
                 return (
                   <Link to={`/our-work/${slug}`}>
-                    <Tile tileData={tileData} key={tileData.id} displayOnlyWeMade />
+                    <Tile tileData={tileData} key={tileData.id} reverse={index % 2 === 1} displayOnlyWeMade={displayOnlyWeMade} />
                   </Link>
                 )
               }
               return (
                 <a href={externalLink} target="_blank">
-                  <Tile tileData={tileData} key={tileData.id} displayOnlyWeMade />
+                  <Tile tileData={tileData} key={tileData.id} reverse={index % 2 === 1} displayOnlyWeMade={displayOnlyWeMade} />
                 </a>
               )
             })}

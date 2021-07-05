@@ -14,6 +14,7 @@ const StyledParallaxBanner = styled(ParallaxBanner)`
   position: relative;
   padding: ${rem(149)} 0 0;
   min-height: ${rem(620)};
+  background: white;
 
   &.blueGreen {
     background: linear-gradient(126deg, ${props => props.theme.background.blue} 52%, ${props => props.theme.background.green} 100%);
@@ -21,6 +22,10 @@ const StyledParallaxBanner = styled(ParallaxBanner)`
 
   &.greenYellow {
     background: linear-gradient(126deg, ${props => props.theme.background.green} 52%, ${props => props.theme.background.yellow} 100%);
+  }
+
+  &.yellowRed {
+    background: linear-gradient(126deg, ${props => props.theme.background.yellow} 52%, ${props => props.theme.background.red} 100%);
   }
 
   &.largeHero {
@@ -55,6 +60,27 @@ const Tag = styled.h4`
   ${props => props.theme.mediaQueries.tablet} {
     font-size: ${rem(14)};
   }
+
+  ${props => props.theme.mediaQueries.desktop} {
+    color: ${props => props.theme.colors.white};
+  }
+
+  .isOurWorkDetail & {
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      color: ${props => props.theme.colors.white};
+    }
+  }
+
+
+  .isOurWorkDetail.noVideo & {
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      color: ${props => props.theme.colors.black};
+    }
+  }
 `
 
 const Title = styled.h1`
@@ -68,6 +94,26 @@ const Title = styled.h1`
     font-size: ${rem(80)};
     line-height: ${rem(90)};
   }
+
+  ${props => props.theme.mediaQueries.desktop} {
+    color: ${props => props.theme.colors.white};
+  }
+
+  .isOurWorkDetail & {
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      color: ${props => props.theme.colors.white};
+    }
+  }
+
+  .isOurWorkDetail.noVideo & {
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      color: ${props => props.theme.colors.black};
+    }
+  }
 `
 
 const Arrow = styled.span`
@@ -80,6 +126,26 @@ const Arrow = styled.span`
   ${props => props.theme.mediaQueries.tablet} {
     margin-top: ${rem(60)};
   }
+
+  ${props => props.theme.mediaQueries.desktop} {
+    color: ${props => props.theme.colors.white};
+  }
+
+  .isOurWorkDetail & {
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      color: ${props => props.theme.colors.white};
+    }
+  }
+
+  .isOurWorkDetail.noVideo & {
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      color: ${props => props.theme.colors.black};
+    }
+  }
 `
 
 const StyledHeroDecoration = styled(HeroDecoration)`
@@ -87,6 +153,10 @@ const StyledHeroDecoration = styled(HeroDecoration)`
   bottom: 0;
   left: 0;
   width: 100%;
+
+  .isOurWorkDetail & {
+    display: none;
+  }
 `
 
 const BackgroundSection = ({ className, image }) => (
@@ -111,6 +181,16 @@ const VideoWrapper = styled.div`
   }
 `
 
+const FadeFilm = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .35;
+`
+
 const StyledBackgroundSection = styled(BackgroundSection)`
   position: absolute !important;
   top: 0;
@@ -125,6 +205,7 @@ const ParallaxBackground = ({ image, video }) => {
     return (
       <VideoWrapper>
         <iframe src={video} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <FadeFilm />
       </VideoWrapper>
     )
   }
@@ -136,8 +217,8 @@ const ParallaxBackground = ({ image, video }) => {
   return null
 }
 
-const ParallaxMidground = ({background, image}) => {
-  if (!image) {
+const ParallaxMidground = ({background, video}) => {
+  if (!video) {
     return (
       <StyledHeroDecoration className={classnames(background)} />
     )
@@ -145,7 +226,7 @@ const ParallaxMidground = ({background, image}) => {
   return null
 }
 
-const ParallaxForeground = ({tag, title}) => (
+const ParallaxForeground = ({tag, title, video}) => (
   <StyledContentWrapper>
     <Tag>{tag}</Tag>
     <Title>{title}</Title>
@@ -165,7 +246,7 @@ const StyledParallaxMidground = styled(ParallaxMidground)`
 const StyledParallaxForeground = styled(ParallaxForeground)`
 `
 
-const ContentHero = ({ background, tag, title, image, video }) => {
+const ContentHero = ({ background, tag, title, image, video, isOurWorkDetail }) => {
   return (
     <StyledParallaxBanner
       layers = {[
@@ -175,17 +256,17 @@ const ContentHero = ({ background, tag, title, image, video }) => {
           expanded: true,
         },
         {
-          children:(<StyledParallaxMidground background={background} image={image}/>),
+          children:(<StyledParallaxMidground background={background} video={video}/>),
           amount: -0.5,
           expanded: false,
         },
         {
-          children: (<StyledParallaxForeground tag={tag} title={title} />),
+          children: (<StyledParallaxForeground tag={tag} title={title} background={background} video={video} />),
           amount: 0,
           expanded: false,
         }
       ]}
-      className={classnames(background, {largeHero: !video})}>
+      className={classnames(background, {largeHero: !video}, {isOurWorkDetail}, {noVideo: !video})}>
     </StyledParallaxBanner>
   )
 }

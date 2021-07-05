@@ -19,8 +19,6 @@ const Wrapper = styled.div`
 `
 
 const ContentVideo = ({videoSrc, title}) => {
-  console.log({videoSrc, title})
-
   return (
     <ContentWrapper>
       <Wrapper>

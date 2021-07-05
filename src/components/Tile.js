@@ -125,8 +125,8 @@ const ImageContainer = styled.div`
   }
 `
 
-const Tile = ({ tileData, displayOnlyWeMade }) => {
-  const { background, client, tag, title, image, alignment, slug } = tileData
+const Tile = ({ tileData, displayOnlyWeMade, reverse }) => {
+  const { background, client, tag, title, image, alignment } = tileData
 
   const { ref, inView } = useInView({
     threshold: 0,
@@ -141,7 +141,7 @@ const Tile = ({ tileData, displayOnlyWeMade }) => {
   const imageData = getImage(image)
 
   return (
-    <Wrapper ref={ref} className={classnames(background, alignment)} style={springProps}>
+    <Wrapper ref={ref} className={classnames(background, alignment, { reverse })} style={springProps}>
       <Content>
         <Tag>{displayOnlyWeMade ? 'Case Study' : tag }</Tag>
         <Title>{title}</Title>

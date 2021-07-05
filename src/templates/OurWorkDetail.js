@@ -14,16 +14,16 @@ const OurWorkDetail = ({ data }) => {
   const pageData = data.ourWorkJson;
   const { hero, components } = pageData
 
-  console.log({ hero })
-
   useEffect(() => {
     updateBackgroundColor();
   }, [])
 
+  console.log({pageData})
+
   return (
     <ParallaxProvider>
-      <Layout>
-        <ContentHero {...hero} />
+      <Layout noVideo={!pageData.hero.video} isOurWorkDetail>
+        <ContentHero {...hero} isOurWorkDetail />
         <ContentLifter>
           {
             components.map(element => renderComponent(element.id, element.type, element.props, element.shape))
@@ -46,14 +46,18 @@ export const query = graphql`
         type
         props {
           title
-          text
-          alignment
-          copy
           content
-          textSize
           videoSrc
           image {
-            src {
+	 					src {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
+            alt
+          }
+          images {
+	 					src {
               childImageSharp {
                 gatsbyImageData
               }
@@ -66,14 +70,8 @@ export const query = graphql`
         client
         tag
         title
+        background
         video
-        image {
-          childImageSharp {
-            fluid(quality: 90, maxWidth: 2880) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
       }
     }
   }

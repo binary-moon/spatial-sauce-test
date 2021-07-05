@@ -5,6 +5,7 @@ exports.createPages = async ({ actions: {createPage}, graphql }) => {
         edges {
           node {
             slug
+            isExternal
           }
         }
       }
@@ -19,12 +20,16 @@ exports.createPages = async ({ actions: {createPage}, graphql }) => {
   results.data.allOurWorkJson.edges.forEach(edge => {
     const ourWork = edge.node;
 
-    createPage({
-      path: `/our-work/${ourWork.slug}`,
-      component: require.resolve('./src/templates/OurWorkDetail.js'),
-      context: {
-        slug: ourWork.slug
-      }
-    })
+    console.log(edge.node)
+
+    if (!ourWork.isExternal) {
+      createPage({
+        path: `/our-work/${ourWork.slug}`,
+        component: require.resolve('./src/templates/OurWorkDetail.js'),
+        context: {
+          slug: ourWork.slug
+        }
+      })
+    }
   })
 }

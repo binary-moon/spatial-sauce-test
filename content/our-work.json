@@ -724,7 +724,7 @@
       "tag": "We Explored",
       "title": "Foot tracking model prototype",
       "client": null,
-      "image": "./images/Img_WeExperimented_04@2x.jpg",
+      "image": "./images/cards/reactive-generative.png",
       "background": "black",
       "alignment": "vertical"
     },
@@ -740,7 +740,7 @@
       "tag": "We Explored",
       "title": "Object tracking demo for retail ",
       "client": null,
-      "image": "./images/Img_WeExperimented_03@2x.jpg",
+      "image": "./images/cards/reactive-generative.png",
       "background": "black",
       "alignment": "vertical"
     },
@@ -756,7 +756,7 @@
       "tag": "We Explored",
       "title": "Machine learning ballet critic",
       "client": null,
-      "image": "./images/Img_WorldofAI_02@2x.jpg",
+      "image": "./images/cards/reactive-generative.png",
       "background": "black",
       "alignment": "vertical"
     },
@@ -788,7 +788,7 @@
       "tag": "We love",
       "title": "Freddiemeter. Can you sing like Freedy?",
       "client": "By Google & Youtube",
-      "image": "./images/Img_MelCupLibertyPlace_04@2x.jpg",
+      "image": "./images/cards/scrooble.png",
       "background": "white",
       "alignment": "vertical"
     },

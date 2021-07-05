@@ -9,8 +9,9 @@ import ContentWrapper from './ContentWrapper'
 
 const Container = styled.div`
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   background: ${props => props.theme.colors.white};
+  padding: 0 0 ${rem(30)};
 
   ${props => props.theme.mediaQueries.tablet} {
     padding: ${rem(60)} ${rem(55)};

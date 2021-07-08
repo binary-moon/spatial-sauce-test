@@ -101,14 +101,10 @@ const Header = ({ isOurWorkDetail, noVideo }) => {
           }
         }
       } else {
-        if (!isDesktop) {
-          return 'white'
-        } else {
-          if (isScrolled) {
-            return 'black'
-          }
-          return 'white'
+        if (isScrolled) {
+          return 'black'
         }
+        return 'white'
       }
     }
   }, [isMenuOpen, isScrolled, isDesktop, isOurWorkDetail, noVideo])

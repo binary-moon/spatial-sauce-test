@@ -23,6 +23,16 @@
     },
     "components": [
       {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/CherryBlossom_Wide@2x.jpg",
+            "alt": "oxapalooza-1"
+          }
+        }
+      },
+      {
         "type": "ContentHTMLWithImages",
         "shape": null,
         "props": {
@@ -77,6 +87,16 @@
       "alignment": "default"
     },
     "components": [
+      {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/GivingTree_Wide@2x.jpg",
+            "alt": "oxapalooza-1"
+          }
+        }
+      },
       {
         "type": "ContentHTMLWithImages",
         "shape": null,

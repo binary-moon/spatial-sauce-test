@@ -13,8 +13,12 @@ import { rem } from '../utils/mixins'
 const StyledParallaxBanner = styled(ParallaxBanner)`
   position: relative;
   padding: ${rem(149)} 0 0;
-  min-height: ${rem(620)};
+  min-height: ${rem(520)};
   background: white;
+
+  ${props => props.theme.mediaQueries.desktop} {
+    min-height: ${rem(780)};
+  }
 
   &.blueGreen {
     background: linear-gradient(126deg, ${props => props.theme.background.blue} 52%, ${props => props.theme.background.green} 100%);
@@ -29,7 +33,7 @@ const StyledParallaxBanner = styled(ParallaxBanner)`
   }
 
   &.largeHero {
-    min-height: ${rem(620)};
+    min-height: ${rem(580)};
     
     ${props => props.theme.mediaQueries.tablet} {
       min-height: ${rem(860)};

@@ -59,11 +59,11 @@ const Column = styled.div`
   }
 `
 
-const TextTwoCol = ({ content }) => (
+const TextTwoCol = ({ columns }) => (
   <ContentWrapper>
     <Wrapper>
-      <Column dangerouslySetInnerHTML={{ __html: content[0] }}/>
-      <Column dangerouslySetInnerHTML={{ __html: content[1] }}/>
+      <Column dangerouslySetInnerHTML={{ __html: columns[0] }}/>
+      <Column dangerouslySetInnerHTML={{ __html: columns[1] }}/>
     </Wrapper>
   </ContentWrapper>
 )

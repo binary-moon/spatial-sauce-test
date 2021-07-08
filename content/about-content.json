@@ -10,36 +10,24 @@
     }
   },
   {
-    "type": "ContentRowWithImage",
+    "type": "ContentHTMLWithImages",
     "shape": null,
     "props": {
-      "alignment": "default",
-      "image": {
+      "images": [{
         "src": "./images/about-col.png",
         "alt": "WE ARE SPATIAL SAUCE"
-      },
-      "title": "WE ARE SPATIAL SAUCE",
-      "copy": "We infuse creative ideas with innovative technology and spatial design to  create experiences that people love and remember; for retail, digital placemaking, experiential marketing, entertainment and communications."
+      }],
+      "title": null,
+      "content": "<p>Spatial Sauce combines inspiring creative ideas with innovative technology and immersive spatial design, to create experiences that people love and remember; for digital placemaking, retail,  experiential marketing, entertainment and communications.</p><p>Our speciality is “magical” technology, so our concepts are more often than not based on a tech driven engagement, but they are always highly relevant and human at heart.</p><p>We never forget that after all is said and done we create experiences for people, and we will only succeed when they absolutely love what we do.</p>"
     }
   },
   {
-    "type": "ContentRowWithImage",
+    "type": "SectionTitle",
     "shape": null,
     "props": {
-      "alignment": "reverse",
-      "image": {
-        "src": "./images/about-col.png",
-        "alt": "MAKING MAGIC"
-      },
-      "title": "MAKING MAGIC",
-      "copy": "Our speciality is “magical” technology, so our concepts are more often than not based on a tech driven engagement, but they will always be highly relevant and human at heart. "
-    }
-  },
-  {
-    "type": "TextFullScreen",
-    "shape": null,
-    "props": {
-      "text": "We never forget that after all is said and done we create experiences for people, and we will only succeed when they absolutely love what we do."
+      "tag": "What we do",
+      "title": "We use magical technology to infuse inspiring ideas into amazing spaces.",
+      "background": "blueGreen"
     }
   },
   {
@@ -53,47 +41,24 @@
     }
   },
   {
-    "type": "SectionTitle",
+    "type": "ContentHTMLWithImages",
     "shape": null,
     "props": {
-      "tag": "What We Do",
-      "title": "We use magical tech to infuse awesome ideas into amazing spaces.",
-      "background": "blueGreen"
-    }
-  },
-  {
-    "type": "ContentRowWithImage",
-    "shape": null,
-    "props": {
-      "alignment": "default",
-      "image": {
+      "images": [{
         "src": "./images/about-col.png",
-        "alt": "MULTI-SENSORY"
-      },
-      "title": "MULTI-SENSORY",
-      "copy": "We use magical technology to infuse awesome ideas into amazing spaces, with a vision to take our audience “beyond the expected” and allow them to experience with all their senses. "
-    }
-  },
-  {
-    "type": "ContentRowWithImage",
-    "shape": null,
-    "props": {
-      "alignment": "reverse",
-      "image": {
-        "src": "./images/about-col.png",
-        "alt": "FROM START TO FINISH"
-      },
-      "title": "FROM START TO FINISH",
-      "copy": "We can provide end-to-end solutions from ideation to installation and management, or bring your idea to life alongside your team and partners, as and where required."
+        "alt": "WE ARE SPATIAL SAUCE"
+      }],
+      "title": null,
+      "content": "<p>Simply put, we create experiences that go “beyond the screen” and emotionally connect with the audience physically and spatially, encouraging them to experience with all their senses. </p><p>We provide end-to-end solutions from creative ideation to production, installation and management, for;</p><ul><li>Digital placemaking</li><li>Experiential marketing</li><li>Retail activations and installations</li><li>Events, exhibitions and conferences</li><li>Cultural and educational activations</li><li>Branded social filters and campaigns</li></ul><p>We can also help bring your idea to life alongside your team and partners, providing specialist services, as below:</p>"
     }
   },
   {
     "type": "TextTwoCol",
     "shape": null,
     "props": {
-      "content": [
-        "<ul><li>Experience concept development.</li><li>Technology consulting for experiential activations.</li><li>Immersive and innovative technology development.</li><li>Hardware and display setups</li><li>Creative development and production services</li></ul>",
-        "<ul><li>Live data visualisations / interactions.</li><li>Spatial / stand / industrial design (with the help of our partners).</li><li>Fabrication, printing and installation (with the help of our partners).</li><li>Brand ambassador / promo staffing and management (with the help of our partners).</li></ul>"
+      "columns": [
+        "<ul><li>Experiential concept development</li><li>Immersive and innovative technology consulting and development</li><li>Creative development and production services</li><li>Custom hardware and display setups</li><li>Instagram, Facebook and Snapchat filters</li><li>Live data visualisations / interactions</li></ul>",
+        "<ul><li>XR production and development</li><li>Spatial / stand / industrial design (with the help of our partners)</li><li>Fabrication, printing and installation (with the help of our partners)</li><li>Brand ambassador / promo staffing (with the help of our partners)</li></ul>"
       ]
     }
   },
@@ -102,7 +67,7 @@
     "shape": null,
     "props": {
       "tag": "How we do it",
-      "title": "We create custom and unique applications.",
+      "title": "Immersive, tactile and spatially aware creative technology is our beating heart. ",
       "background": "blueGreen"
     }
   },
@@ -117,38 +82,24 @@
     }
   },
   {
-    "type": "ContentRowWithImage",
+    "type": "ContentHTMLWithImages",
     "shape": null,
     "props": {
-      "alignment": "default",
-      "image": {
+      "images": [{
         "src": "./images/about-col.png",
-        "alt": "SMART TECH"
-      },
-      "title": "SMART TECH",
-      "copy": "We create custom and unique applications that take advantage of the smartest technologies out there, creating seamless and exciting interactions."
-    }
-  },
-  {
-    "type": "ContentRowWithImage",
-    "shape": null,
-    "props": {
-      "alignment": "reverse",
-      "image": {
-        "src": "./images/about-col.png",
-        "alt": "TRUSTED PARTNERS"
-      },
-      "title": "TRUSTED PARTNERS",
-      "copy": "We oversee the spatial design, fabrication and installation of our ideas through our best in class partners."
+        "alt": "WE ARE SPATIAL SAUCE"
+      }],
+      "title": null,
+      "content": "<p>Beyond anything else, what drives us is the relentless pursuit of “magical” technology. We push and tinker away until we reach something that people will be drawn to, can’t resist playing with and want more of. We do not stop until it puts a smile -and every so often that look of awe and disbelief- on the faces of our audience, and that’s as human as it gets.</p><p>So, most of our experience journeys start with developing a unique creative technology that people love engaging with. We then match it with a pitch perfect creative idea, delivering a custom experience that is the best fit for the brand, objectives, audience, medium and space.</p><p>We then deliver a holistic solution via overseeing the spatial design, fabrication and installation, through our best in class partners.</p><p>Our capabilities include;</p>"
     }
   },
   {
     "type": "TextTwoCol",
     "shape": null,
     "props": {
-      "content": [
-        "<ul><li>AR / VR / XR / MR</li><li>Touch screen and interactive table setups and custom content.</li><li>Gesture / body / finger / face tracking based interactions & games.</li><li>Demographics / sentiment recognition driven interactions</li><li>Sound / speech recognition based experiences.</li></ul>",
-        "<ul><li>Deep learning AI based object / product recognition & contextual content presentation.</li><li>Digital photo booths / live lenses & filters.</li><li>Sensor triggered content experiences (movement, proximity, acceleration and more).</li><li>Interactive and immersive projection mapping.</li><li>Robotics and custom device creation (through partners).</li></ul>"
+      "columns": [
+        "<ul><li>AR / VR / XR / MR</li><li>Touch screen and interactive surface setups and custom content</li><li>Gesture / body / ﬁnger / facial tracking based interactions & games</li><li>Demographics / sentiment recognition driven interactions</li><li>Sound / speech recognition based experiences</li><li>Deep learning AI based object / product recognition and contextual content presentation</li></ul>",
+        "<ul><li>Digital photo booths with live lenses & ﬁlters</li><li>Sensor triggered content experiences (movement, proximity, acceleration, temperature etc)</li><li>Interactive and immersive projection mapping</li><li>Robotics and custom device creation (with the help of our partners)</li></ul>"
       ]
     }
   }

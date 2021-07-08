@@ -19,8 +19,8 @@ const AboutUs = ({ data }) => {
 
   const hero = {
     background: "blueGreen",
-    tag: "About Us",
-    title: "We infuse creative ideas with innovative technology and spatial design."
+    tag: "Who we are",
+    title: "We create experiences that people fall in love with."
   }
 
   return (
@@ -47,14 +47,20 @@ export const query = graphql`
           id
           type
           props {
-            alignment
             title
-            copy
-            text
             tag
             background
             content
+            columns
             image {
+              src {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+              alt
+            }
+            images {
               src {
                 childImageSharp {
                   gatsbyImageData

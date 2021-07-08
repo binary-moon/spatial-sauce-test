@@ -98,6 +98,35 @@ const HTMLContent = styled.div`
   > * + * {
     margin: ${rem(30)} 0 0;  
   }
+
+  ul {
+    list-style: none;
+  }
+
+  ul > li {
+    position: relative;
+    font-size: ${rem(12)};
+    line-height: ${rem(14)};
+    padding: 0 0 0 ${rem(20)};
+    font-weight: 500;
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      font-size: ${rem(16)};
+      line-height: ${rem(24)};
+    }
+
+    &:before {
+      content: '‣';
+      font-family: 'Poppins', sans-serif;
+      font-size: ${rem(30)};
+      font-weight: 500;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: ${props => props.theme.colors.black};
+    }
+  }
 `
 
 const ContentHTMLWithImages = ({ images, title, children, content }) => {

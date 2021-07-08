@@ -18,7 +18,7 @@ const OurWork = () => {
   const hero = {
     background: "greenYellow",
     tag: "Our Work",
-    title: "Experiences that engage the senses, create memories and make places. "
+    title: "Experiences that win hearts & minds, forge memories and make places."
   }
   
   return (

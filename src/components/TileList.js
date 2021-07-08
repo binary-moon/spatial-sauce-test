@@ -13,6 +13,7 @@ const TileRow = styled.div`
 
   ${props => props.theme.mediaQueries.tablet} {
     flex-direction: row;
+    align-items: flex-start;
   }
 
   a {
@@ -20,8 +21,7 @@ const TileRow = styled.div`
   }
 `
 
-const TileList = ({ className, displayOnlyWeMade, maxLimit }) => {
-  console.log(displayOnlyWeMade)
+const TileList = ({ className, displayOnlyWeMade, maxLimit, randomize }) => {
   const queryData = useStaticQuery(graphql`
     {
       allOurWorkJson {
@@ -56,7 +56,7 @@ const TileList = ({ className, displayOnlyWeMade, maxLimit }) => {
   useEffect(() => {
     const allTiles = queryData.allOurWorkJson.edges
     let filteredTiles = []
-    filteredTiles = filterTileListData(allTiles, displayOnlyWeMade, maxLimit)
+    filteredTiles = filterTileListData(allTiles, displayOnlyWeMade, maxLimit, randomize)
     setTileListData(prepareTileListData(filteredTiles));
   }, [])
   

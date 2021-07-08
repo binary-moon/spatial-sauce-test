@@ -46,14 +46,6 @@ export const query = graphql`
         node {
           id
           type
-          shape {
-            type
-            color
-            position {
-              x
-              y
-            }
-          }
           props {
             alignment
             title

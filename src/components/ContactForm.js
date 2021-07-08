@@ -100,7 +100,7 @@ const ContactForm = () => {
   return (
     <ContentWrapper>
       <Wrapper>
-        <Title>Pop in your details below or give <br />Deniz a call on <a href="tel:0414 760 035">0414 760 035</a></Title>
+        <Title>It’s easy to get in touch. Pop in your details below or give<br />Deniz a call on <a href="tel:0414 760 035">0414 760 035</a></Title>
         <Form method="POST" action="https://formspree.io/f/xpzkdgyj">
           <FormRow>
             <label>First Name</label>

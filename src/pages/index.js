@@ -23,7 +23,7 @@ const IndexPage = () => {
       <Layout>
         <Hero title={hero.title} description={hero.description} />
         <ContentLifter>
-          <TileList />
+          <TileList randomize />
         </ContentLifter>
       </Layout>
     </ParallaxProvider>

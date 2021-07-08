@@ -1,13 +1,13 @@
 [
   {
-    "title": "Cherry Blossom Festival.",
+    "title": "Cherry Blossom Festival",
     "slug": "cherry-blossom-festival",
     "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "background": "white",
       "title": "Cherry Blossom Festival.",
-      "client": "WorldSquare",
+      "client": "World Square",
       "video": "https://player.vimeo.com/video/565885252?background=1"
     },
     "card": {
@@ -15,7 +15,7 @@
       "isFeatured": true,
       "slug": "cherry-blossom-festival",
       "tag": "WE MADE",
-      "title": "Cherry Blossom Festival.",
+      "title": "Cherry Blossom Festival",
       "client": "World Square",
       "image": "./images/cards/cherry-blossom.png",
       "background": "white",
@@ -61,7 +61,7 @@
     "hero": {
       "tag": "We made",
       "background": "white",
-      "title": "The Giving Tree.",
+      "title": "The Giving Tree",
       "client": "ANZ Tower Liberty Place",
       "video": "https://player.vimeo.com/video/569685965?background=1"
     },
@@ -70,7 +70,7 @@
       "isFeatured": true,
       "slug": "giving-tree",
       "tag": "We made",
-      "title": "The Giving Tree.",
+      "title": "The Giving Tree",
       "client": "ANZ Tower Liberty Place",
       "image": "./images/cards/giving-tree.png",
       "background": "white",
@@ -81,7 +81,12 @@
         "type": "ContentHTMLWithImages",
         "shape": null,
         "props": {
-          "images": [],
+          "images": [
+            {
+              "src": "./images/giving-tree.png",
+              "alt": "vespa-1"
+            }
+          ],
           "title": "ANZ Tower Liberty Place - The Giving Tree",
           "content": "<p>The Giving Tree is a project very close to our hearts. We have collaborated with JLL and The Smith Family for this compelling installation at Liberty Place / ANZ Tower, one that really brings the spirit of Christmas to life.</p><p>Combining innovative technology with very engaging content, we have transformed the traditional foyer Xmas tree installation into a fun donation kiosk, one that engages passers-by and encourages them to donate to Toy & Book Appeal for Australian kids in need.</p><p>The interplay within the kiosk and the tree, and the loveable antics of our cheeky Elf “Libby” rewarded our donors very memorable moments, putting smiles in the hearts and minds of the donors and spectators alike. </p><p>Doing great work for a great cause is double the fun and satisfaction, and this project definitely had it all.</p>"
         }
@@ -112,7 +117,7 @@
       "isFeatured": true,
       "slug": "200-women-listening-ground",
       "tag": "WE MADE",
-      "title": "200 Women Listening Ground.",
+      "title": "200 Women Listening Ground",
       "client": "With Maverick",
       "image": "./images/cards/200-women.png",
       "background": "white",
@@ -120,194 +125,27 @@
     },
     "components": [
       {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/200-women-1.png",
+            "alt": "oxapalooza-1"
+          }
+        }
+      },
+      {
         "type": "ContentHTMLWithImages",
         "shape": null,
         "props": {
           "images": [
             {
-              "image": "./images/cards/200-women.png",
+              "src": "./images/200-women.png",
               "alt": "vespa-1"
             }
           ],
           "title": "Westpac - 200 Women: The Listening Ground",
           "content": "<p>This interactive exhibition was as inspiring as the amazing backdrop it was set in, at the concourse of the one and only Sydney Opera House.</p><p>Supported by Westpac, the exhibition is an extension of a storytelling project and book of the same name. It is founded on 200 interviews with women in different parts of the world and different circumstances, who are asked five fundamental questions on the theme; 'what is most important to them'.</p><p>The exhibition featured the stories of these 200 women from around the world in photos and video content presented via custom-built listening pods. Stories covering leadership, overcoming challenges and pain, happiness, and change. Stories from everyday women you wouldn’t recognise, and stories from the iconic and influential. Extraordinary women such as Rosie Batty, Collette Dinnigan, Miranda Tapsell, and Margaret Atwood.</p><p>Working closely with partner agencies, we have created these sculpturesque interactive pods that tell the stories of 200 remarkable women, using innovative technologies such as motion detection and spatial sound, driven by custom and unique UX design for the circular screens for creating a seamless experience, and a digital “guest book” for social advocacy that was installed in the central “beacon” structure.</p><p><small>*Our team has developed this project for Westpac’s agency Maverick.</small></p>"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Piaggio - Zip out with Vespa",
-    "slug": "zip-out-with-vespa",
-    "isExternal": false,
-    "hero": {
-      "tag": "Our Work",
-      "background": "white",
-      "title": "Zip out with Vespa",
-      "client": "Piaggio",
-      "video": "https://player.vimeo.com/video/569686431?background=1"
-    },
-    "card": {
-      "externalLink": null,
-      "isFeatured": true,
-      "slug": "zip-out-with-vespa",
-      "tag": "WE MADE",
-      "title": "Zip out with Vespa",
-      "client": "Piaggio",
-      "image": "./images/Img_VespaJapan_02@2x.jpg",
-      "background": "white",
-      "alignment": "default"
-    },
-    "components": [
-      {
-        "type": "ContentHTMLWithImages",
-        "shape": null,
-        "props": {
-          "images": [
-            {
-              "src": "./images/Img_VespaJapan_02@2x.jpg",
-              "alt": "vespa-1"
-            },
-            {
-              "src": "./images/Img_VespaJapan_03@2x.jpg",
-              "alt": "vespa-2"
-            },
-            {
-              "src": "./images/Img_VespaJapan_05@2x.jpg",
-              "alt": "vespa-3"
-            }
-          ],
-          "title": "Piaggio - Zip out with Vespa",
-          "content": "<p>“Zip out with Vespa” is a lighthearted, quick and fun Instagram AR filter for the iconic Vespa brand, with a vision to offer a short and fun virtual escape for the Vespa fans around the world locked in their homes during the pandemic. As they were not able to get on the road, we brought the road to them!</p><p>It encourages fans to “zip out” for a ride for a quick beverage on their virtual Vespa, randomly taking them to one of the five most desired destinations around the world. Users can enjoy the perfect cup of espresso in Milan, a delicious bubble tea in Singapore, a hot brewed green tea in Tokyo, a rich chocolate milkshake in Paris and a colorful mocktail in Sydney!</p><p>Using augmented reality, we have seamlessly embedded the users’ face onto the virtual Vespa rider in the filter in real time, allowing them to “drive” their Vespa by the head and face gestures, and “drink” the beverages for a fun effect.</p><p>The filter encourages users to record their trip as a video and share as an Instagram story, achieving social advocacy and spread for the brand, and has been picked up by numerous  industry influencers around the world.</p>"
-        }
-      }
-    ]
-  },
-  {
-    "title": "World Square - Ratrobats",
-    "slug": "ratrobats",
-    "isExternal": false,
-    "hero": {
-      "tag": "Our Work",
-      "background": "white",
-      "title": "Ratrobats",
-      "client": "World Square",
-      "video": "https://player.vimeo.com/video/569719932?background=1"
-    },
-    "card": {
-      "externalLink": null,
-      "isFeatured": true,
-      "slug": "ratrobats",
-      "tag": "WE MADE",
-      "title": "Ratrobats",
-      "client": "World Square",
-      "image": "./images/Img_Ratrobats_03@2x.jpg",
-      "background": "white",
-      "alignment": "default"
-    },
-    "components": [
-      {
-        "type": "ImageFullScreen",
-        "shape": null,
-        "props": {
-          "image": {
-            "src": "./images/Img_Ratrobats_01@2x.jpg",
-            "alt": "ratrobat-1"
-          }
-        }
-      },
-      {
-        "type": "ContentHTMLWithImages",
-        "shape": null,
-        "props": {
-          "images": [
-            {
-              "src": "./images/Img_Ratrobats_02@2x.jpg",
-              "alt": "ratrobat-1"
-            },
-            {
-              "src": "./images/Img_Ratrobats_03@2x.jpg",
-              "alt": "ratrobat-2"
-            },
-            {
-              "src": "./images/Img_Ratrobats_05@2x.jpg",
-              "alt": "ratrobat-3"
-            }
-          ],
-          "title": "World Square - Ratrobats",
-          "content": "<p>To celebrate the Year of the Rat, World Square developed an artistic program that took Lunar New Year celebrations to grand heights, including the high-flying Ratrobats.</p><p>Inspired by the ancient tradition of Chinese acrobats and performers, a troupe of eight larger-than-life ‘Rats’ that show off their acrobatic skills were developed as custom built sculptures. The friendly Rats are dressed in brightly coloured costumes, each in a different energetic pose.</p><p>But, when the cheeky Ratrobats came to life in Augmented Reality on the interactive giant screen, the fun really began! Shoppers were transformed into Ratrobats on the screen in real time; as they saw themselves on the screen, a beam of light hit them and transformed them into one of the Ratrobats, just like magic!</p><p>They were then challenged to compete in a number of physical games such as juggling, spinning hoops and balancing wind spinners, as the timer runs down for a nail biting finish.</p><p>The installation was exciting, amusing, engaging and interactive, and created a lot of buzz for World Square.</p>"
-        }
-      },
-      {
-        "type": "ContentVideo",
-        "shape": null,
-        "props": {
-          "videoSrc": "https://www.youtube.com/embed/R3dNuaBAFnA",
-          "title": "World Square - Ratrobats"
-        }
-      }
-    ]
-  },
-  {
-    "title": "JLL - Virtually Wild",
-    "slug": "virtually-wild",
-    "isExternal": false,
-    "hero": {
-      "tag": "Our Work",
-      "background": "white",
-      "title": "Virtually Wild",
-      "client": "JLL",
-      "video": "https://player.vimeo.com/video/569719354?background=1"
-    },
-    "card": {
-      "externalLink": null,
-      "isFeatured": true,
-      "slug": "virtually-wild",
-      "tag": "WE MADE",
-      "title": "Virtually Wild",
-      "client": "JLL",
-      "image": "./images/Img_VirtuallyWild_03@2x.jpg",
-      "background": "white",
-      "alignment": "default"
-    },
-    "components": [
-      {
-        "type": "ImageFullScreen",
-        "shape": null,
-        "props": {
-          "image": {
-            "src": "./images/Img_VirtuallyWild_01@2x.jpg",
-            "alt": "Img_VirtuallyWild_03-1"
-          }
-        }
-      },
-      {
-        "type": "ContentHTMLWithImages",
-        "shape": null,
-        "props": {
-          "images": [
-            {
-              "src": "./images/Img_VirtuallyWild_03@2x.jpg",
-              "alt": "Img_VirtuallyWild_03-1"
-            },
-            {
-              "src": "./images/Img_VirtuallyWild_03@2x.jpg",
-              "alt": "Img_VirtuallyWild_03-2"
-            },
-            {
-              "src": "./images/Img_VirtuallyWild_04@2x.jpg",
-              "alt": "Img_VirtuallyWild_03-3"
-            }
-          ],
-          "title": "JLL - Virtually Wild",
-          "content": "<p>Virtually Wild is an \"edutainment\" experience like no other, developed as a school break activity to entice family audiences back to M Group shopping centres around the country.</p><p>The activation virtually puts the kids in the same space with the most beloved wild animals, such as elephants, lions and gorillas using a custom built big screen installation.</p><p>Using AR with AI, we created a unique immersive space with \"live\" animals that interact with our guests, freely roaming the space, reacting to the visitors’ actions and even eating from their hands! </p><p>Unlike other AR installations with pre-rendered linear 3D content, our experience is 100% LIVE and our AI driven animals roam the area freely interacting with guests, engaging with them naturally walking in front and behind them in 3D space with no need for green screen setups. </p><p>Each animal had a unique habitat that was created by augmented digital content onto the physical set, and a custom soundscape.  We have created the character Sir Edward G. Hamilton as the insightful and inspiring naturalist and narrator, helping us balance exciting and fun interactions with respectful and educational encounters, ensuring we educate and inspire our young guests as we entertain them.</p><p>The activation had to tour multiple Centres nationally, so had to be portable and flexible enough to set up in different spaces and formats. It's a great proof that experiences of this calibre are not exclusive to big museums, and can be brought to local centre setups as well.</p>"
-        }
-      },
-      {
-        "type": "ContentVideo",
-        "shape": null,
-        "props": {
-          "videoSrc": "https://www.youtube.com/embed/FsYmGV2BdJA",
-          "title": "JLL - Virtually Wild"
         }
       }
     ]
@@ -374,24 +212,24 @@
     ]
   },
   {
-    "title": "Various - Santa’s Magic Mailbox",
-    "slug": "santas-magic-mailbox",
+    "title": "Piaggio - Zip out with Vespa",
+    "slug": "zip-out-with-vespa",
     "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "background": "white",
-      "title": "Santa’s Magic Mailbox",
-      "client": "Various",
-      "video": "https://player.vimeo.com/video/569723834?background=1"
+      "title": "Zip out with Vespa",
+      "client": "Piaggio",
+      "video": "https://player.vimeo.com/video/569686431?background=1"
     },
     "card": {
       "externalLink": null,
       "isFeatured": true,
-      "slug": "santas-magic-mailbox",
+      "slug": "zip-out-with-vespa",
       "tag": "WE MADE",
-      "title": "Santa’s Magic Mailbox",
-      "client": "Various",
-      "image": "./images/Img_MagicMailBox_02@2x.jpg",
+      "title": "Zip out with Vespa",
+      "client": "Piaggio",
+      "image": "./images/Img_VespaJapan_02@2x.jpg",
       "background": "white",
       "alignment": "default"
     },
@@ -401,7 +239,7 @@
         "shape": null,
         "props": {
           "image": {
-            "src": "./images/Img_MagicMailBox_01@2x.jpg",
+            "src": "./images/Img_VespaJapan_01@2x.jpg",
             "alt": "oxapalooza-1"
           }
         }
@@ -412,28 +250,215 @@
         "props": {
           "images": [
             {
-              "src": "./images/Img_MagicMailBox_02@2x.jpg",
+              "src": "./images/Img_VespaJapan_02@2x.jpg",
+              "alt": "vespa-1"
+            },
+            {
+              "src": "./images/Img_VespaJapan_03@2x.jpg",
+              "alt": "vespa-2"
+            },
+            {
+              "src": "./images/Img_VespaJapan_05@2x.jpg",
+              "alt": "vespa-3"
+            }
+          ],
+          "title": "Piaggio - Zip out with Vespa",
+          "content": "<p>“Zip out with Vespa” is a lighthearted, quick and fun Instagram AR filter for the iconic Vespa brand, with a vision to offer a short and fun virtual escape for the Vespa fans around the world locked in their homes during the pandemic. As they were not able to get on the road, we brought the road to them!</p><p>It encourages fans to “zip out” for a ride for a quick beverage on their virtual Vespa, randomly taking them to one of the five most desired destinations around the world. Users can enjoy the perfect cup of espresso in Milan, a delicious bubble tea in Singapore, a hot brewed green tea in Tokyo, a rich chocolate milkshake in Paris and a colorful mocktail in Sydney!</p><p>Using augmented reality, we have seamlessly embedded the users’ face onto the virtual Vespa rider in the filter in real time, allowing them to “drive” their Vespa by the head and face gestures, and “drink” the beverages for a fun effect.</p><p>The filter encourages users to record their trip as a video and share as an Instagram story, achieving social advocacy and spread for the brand, and has been picked up by numerous  industry influencers around the world.</p>"
+        }
+      }
+    ]
+  },
+  {
+    "title": "AMP Shopping Centres  -  Meet the Natives",
+    "slug": "meet-the-natives",
+    "isExternal": false,
+    "hero": {
+      "tag": "Our Work",
+      "background": "white",
+      "title": " Meet the Natives",
+      "client": "AMP Shopping Centres",
+      "video": "https://player.vimeo.com/video/569719134?background=1"
+    },
+    "card": {
+      "externalLink": null,
+      "isFeatured": false,
+      "slug": "meet-the-natives",
+      "tag": "WE MADE",
+      "title": " Meet the Natives",
+      "client": "AMP Shopping Centres",
+      "image": "./images/Img_MeetTheNatives_02@2x.jpg",
+      "background": "white",
+      "alignment": "default"
+    },
+    "components": [
+      {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/Img_MeetTheNatives_01@2x.jpg",
+            "alt": "oxapalooza-1"
+          }
+        }
+      },
+      {
+        "type": "ContentHTMLWithImages",
+        "shape": null,
+        "props": {
+          "images": [
+            {
+              "src": "./images/Img_MeetTheNatives_02@2x.jpg",
               "alt": "oxapalooza-1"
             },
             {
-              "src": "./images/Img_MagicMailBox_03@2x.jpg",
+              "src": "./images/Img_MeetTheNatives_03@2x.jpg",
               "alt": "oxapalooza-2"
             },
             {
-              "src": "./images/Img_MagicMailBox_04@2x.jpg",
-              "alt": "oxapalooza-2"
+              "src": "./images/Img_MeetTheNatives_04@2x.jpg",
+              "alt": "oxapalooza-1"
             }
           ],
-          "title": "Various - Santa’s Magic Mailbox",
-          "content": "<p>Writing letters to Santa is an Xmas classic, and an activity kids and parents enjoy together. Many shopping centres install  physical “Santa Letter Mailboxes” to capitalise on this existing user behaviour, to create goodwill within the community as well as  footfall into the property. However, this age-old activity lacks an “instant reward” mechanism that today’s audiences crave.<p>Santa’s Magical Mailbox  is created to change that, and to add a fun and “magical” instant reward mechanic to the process; one that attracts and engages family audiences. Combined with the in-built Santa Photos mechanic, it’s the perfect Christmas installation for any size Centre!<p>At the heart of it is a custom built “post office” with an embedded screen and a custom mailbox equipped with a special scanner. As the kids drop their letter into the mailbox, it’s scanned and digitized in real time.<p>Then the very letter they just dropped in appears as a part of the virtual content that starts playing within the screen. They can magically see it go through its journey from the mailbox to Santa’s Mailroom, or even all the way to Santa’s hands via the cheeky Elf!  This gives the child an instant gratification, as well as a magical “sneak peek” into the inner workings of Santa’s Magical Kingdom, making the whole process of sending a letter feel so very real.<p>The kiosk also doubles as a virtual Santa Photo Booth, allowing visitors to take photos with Santa in a fun and lighthearted way. Once this mode is activated, Santa appears on the big screen as an augmented reality video live character, and encourages the users to take four photos with him. It’s designed to work just for one person or the whole family, in a very versatile approach.<p>Santa shows them fun poses to do, and once they strike the pose, a photo is taken automatically. At the end of  the sequence, the users can download the four shots they have with Santa to their mobiles using the provided on screen QR code and share to their socials directly. This no-touch and fun way of doing Santa photos is a great alternative for Santa sets, especially in the Covid era.</p>"
+          "title": "AMP Shopping Centres  -  Meet the Natives",
+          "content": "<p>Santa’s Secret Garden is an unique Christmas Santa Set built for Macquarie Centre; with a design  based on Australian native fauna and flora, made of thousands of live Australian native plants.</p><p>We wanted to also feature native Australian animals as a part of the experience, but it’s not as easy to have live animals on set as it is to have live plants of course. So, we have used the power of AR in the form of a custom Instagram / Facebook filter, one that the visitors can activate on location and seek, find and experience Australian native animals within the set virtually.</p><p>The UI of the app works like a “sonar” which encourages the user to “scan” the area and follow the “blips” until they hone in on the location of the animal and reveal it in AR. Each animal has different behaviour, animations and custom soundscape, making the experience fun and exciting for the little ones.</p><p>Meet the Natives is a lighthearted, quick and fun Instagram AR filter that augments the existing physical set, and gives the visitors another reason to explore it and spend more time on location. The filter also encourages users to record their animal encounters and share as an Instagram story, achieving social advocacy and spread for the Centre.</p>"
         }
       },
       {
         "type": "ContentVideo",
         "shape": null,
         "props": {
-          "videoSrc": "https://www.youtube.com/embed/1SSPDCKf5dE",
-          "title": "Varius - Santas Magic Mailbox"
+          "videoSrc": "https://www.youtube.com/embed/lDQf6q_ouJU",
+          "title": "AMP Shopping Centres - Meet the Natives"
+        }
+      }
+    ]
+  },
+  {
+    "title": "World Square - Ratrobats",
+    "slug": "ratrobats",
+    "isExternal": false,
+    "hero": {
+      "tag": "Our Work",
+      "background": "white",
+      "title": "Ratrobats",
+      "client": "World Square",
+      "video": "https://player.vimeo.com/video/569719932?background=1"
+    },
+    "card": {
+      "externalLink": null,
+      "isFeatured": true,
+      "slug": "ratrobats",
+      "tag": "WE MADE",
+      "title": "Ratrobats",
+      "client": "World Square",
+      "image": "./images/Img_Ratrobats_02@2x.jpg",
+      "background": "white",
+      "alignment": "default"
+    },
+    "components": [
+      {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/Img_Ratrobats_01@2x.jpg",
+            "alt": "ratrobat-1"
+          }
+        }
+      },
+      {
+        "type": "ContentHTMLWithImages",
+        "shape": null,
+        "props": {
+          "images": [
+            {
+              "src": "./images/Img_Ratrobats_02@2x.jpg",
+              "alt": "ratrobat-1"
+            },
+            {
+              "src": "./images/Img_Ratrobats_03@2x.jpg",
+              "alt": "ratrobat-2"
+            },
+            {
+              "src": "./images/Img_Ratrobats_05@2x.jpg",
+              "alt": "ratrobat-3"
+            }
+          ],
+          "title": "World Square - Ratrobats",
+          "content": "<p>To celebrate the Year of the Rat, World Square developed an artistic program that took Lunar New Year celebrations to grand heights, including the high-flying Ratrobats.</p><p>Inspired by the ancient tradition of Chinese acrobats and performers, a troupe of eight larger-than-life ‘Rats’ that show off their acrobatic skills were developed as custom built sculptures. The friendly Rats are dressed in brightly coloured costumes, each in a different energetic pose.</p><p>But, when the cheeky Ratrobats came to life in Augmented Reality on the interactive giant screen, the fun really began! Shoppers were transformed into Ratrobats on the screen in real time; as they saw themselves on the screen, a beam of light hit them and transformed them into one of the Ratrobats, just like magic!</p><p>They were then challenged to compete in a number of physical games such as juggling, spinning hoops and balancing wind spinners, as the timer runs down for a nail biting finish.</p><p>The installation was exciting, amusing, engaging and interactive, and created a lot of buzz for World Square.</p>"
+        }
+      },
+      {
+        "type": "ContentVideo",
+        "shape": null,
+        "props": {
+          "videoSrc": "https://www.youtube.com/embed/R3dNuaBAFnA",
+          "title": "World Square - Ratrobats"
+        }
+      }
+    ]
+  },
+  {
+    "title": "JLL - Virtually Wild",
+    "slug": "virtually-wild",
+    "isExternal": false,
+    "hero": {
+      "tag": "Our Work",
+      "background": "white",
+      "title": "Virtually Wild",
+      "client": "JLL",
+      "video": "https://player.vimeo.com/video/569719354?background=1"
+    },
+    "card": {
+      "externalLink": null,
+      "isFeatured": true,
+      "slug": "virtually-wild",
+      "tag": "WE MADE",
+      "title": "Virtually Wild",
+      "client": "JLL",
+      "image": "./images/Img_VirtuallyWild_02@2x.jpg",
+      "background": "white",
+      "alignment": "default"
+    },
+    "components": [
+      {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/Img_VirtuallyWild_01@2x.jpg",
+            "alt": "Img_VirtuallyWild_03-1"
+          }
+        }
+      },
+      {
+        "type": "ContentHTMLWithImages",
+        "shape": null,
+        "props": {
+          "images": [
+            {
+              "src": "./images/Img_VirtuallyWild_03@2x.jpg",
+              "alt": "Img_VirtuallyWild_03-1"
+            },
+            {
+              "src": "./images/Img_VirtuallyWild_03@2x.jpg",
+              "alt": "Img_VirtuallyWild_03-2"
+            },
+            {
+              "src": "./images/Img_VirtuallyWild_04@2x.jpg",
+              "alt": "Img_VirtuallyWild_03-3"
+            }
+          ],
+          "title": "JLL - Virtually Wild",
+          "content": "<p>Virtually Wild is an \"edutainment\" experience like no other, developed as a school break activity to entice family audiences back to M Group shopping centres around the country.</p><p>The activation virtually puts the kids in the same space with the most beloved wild animals, such as elephants, lions and gorillas using a custom built big screen installation.</p><p>Using AR with AI, we created a unique immersive space with \"live\" animals that interact with our guests, freely roaming the space, reacting to the visitors’ actions and even eating from their hands! </p><p>Unlike other AR installations with pre-rendered linear 3D content, our experience is 100% LIVE and our AI driven animals roam the area freely interacting with guests, engaging with them naturally walking in front and behind them in 3D space with no need for green screen setups. </p><p>Each animal had a unique habitat that was created by augmented digital content onto the physical set, and a custom soundscape.  We have created the character Sir Edward G. Hamilton as the insightful and inspiring naturalist and narrator, helping us balance exciting and fun interactions with respectful and educational encounters, ensuring we educate and inspire our young guests as we entertain them.</p><p>The activation had to tour multiple Centres nationally, so had to be portable and flexible enough to set up in different spaces and formats. It's a great proof that experiences of this calibre are not exclusive to big museums, and can be brought to local centre setups as well.</p>"
+        }
+      },
+      {
+        "type": "ContentVideo",
+        "shape": null,
+        "props": {
+          "videoSrc": "https://www.youtube.com/embed/FsYmGV2BdJA",
+          "title": "JLL - Virtually Wild"
         }
       }
     ]
@@ -490,6 +515,71 @@
         "props": {
           "videoSrc": "https://www.youtube.com/embed/4okaHqIv68U",
           "title": "AMP Shopping Centres - The Little BIG Roadtrip"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Various - Santa’s Magical Mailbox",
+    "slug": "santas-magical-mailbox",
+    "isExternal": false,
+    "hero": {
+      "tag": "Our Work",
+      "background": "white",
+      "title": "Santa’s Magical Mailbox",
+      "client": "Various",
+      "video": "https://player.vimeo.com/video/569723834?background=1"
+    },
+    "card": {
+      "externalLink": null,
+      "isFeatured": true,
+      "slug": "santas-magical-mailbox",
+      "tag": "WE MADE",
+      "title": "Santa’s Magical Mailbox",
+      "client": "Various",
+      "image": "./images/Img_MagicMailBox_03@2x.jpg",
+      "background": "white",
+      "alignment": "default"
+    },
+    "components": [
+      {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/Img_MagicMailBox_01@2x.jpg",
+            "alt": "oxapalooza-1"
+          }
+        }
+      },
+      {
+        "type": "ContentHTMLWithImages",
+        "shape": null,
+        "props": {
+          "images": [
+            {
+              "src": "./images/Img_MagicMailBox_02@2x.jpg",
+              "alt": "oxapalooza-1"
+            },
+            {
+              "src": "./images/Img_MagicMailBox_03@2x.jpg",
+              "alt": "oxapalooza-2"
+            },
+            {
+              "src": "./images/Img_MagicMailBox_04@2x.jpg",
+              "alt": "oxapalooza-2"
+            }
+          ],
+          "title": "Various - Santa’s Magical Mailbox",
+          "content": "<p>Writing letters to Santa is an Xmas classic, and an activity kids and parents enjoy together. Many shopping centres install  physical “Santa Letter Mailboxes” to capitalise on this existing user behaviour, to create goodwill within the community as well as  footfall into the property. However, this age-old activity lacks an “instant reward” mechanism that today’s audiences crave.<p>Santa’s Magical Mailbox  is created to change that, and to add a fun and “magical” instant reward mechanic to the process; one that attracts and engages family audiences. Combined with the in-built Santa Photos mechanic, it’s the perfect Christmas installation for any size Centre!<p>At the heart of it is a custom built “post office” with an embedded screen and a custom mailbox equipped with a special scanner. As the kids drop their letter into the mailbox, it’s scanned and digitized in real time.<p>Then the very letter they just dropped in appears as a part of the virtual content that starts playing within the screen. They can magically see it go through its journey from the mailbox to Santa’s Mailroom, or even all the way to Santa’s hands via the cheeky Elf!  This gives the child an instant gratification, as well as a magical “sneak peek” into the inner workings of Santa’s Magical Kingdom, making the whole process of sending a letter feel so very real.<p>The kiosk also doubles as a virtual Santa Photo Booth, allowing visitors to take photos with Santa in a fun and lighthearted way. Once this mode is activated, Santa appears on the big screen as an augmented reality video live character, and encourages the users to take four photos with him. It’s designed to work just for one person or the whole family, in a very versatile approach.<p>Santa shows them fun poses to do, and once they strike the pose, a photo is taken automatically. At the end of  the sequence, the users can download the four shots they have with Santa to their mobiles using the provided on screen QR code and share to their socials directly. This no-touch and fun way of doing Santa photos is a great alternative for Santa sets, especially in the Covid era.</p>"
+        }
+      },
+      {
+        "type": "ContentVideo",
+        "shape": null,
+        "props": {
+          "videoSrc": "https://www.youtube.com/embed/1SSPDCKf5dE",
+          "title": "Varius - Santas Magical Mailbox"
         }
       }
     ]
@@ -582,6 +672,16 @@
     },
     "components": [
       {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/Img_MelCupLibertyPlace_01@2x.jpg",
+            "alt": "oxapalooza-1"
+          }
+        }
+      },
+      {
         "type": "ContentHTMLWithImages",
         "shape": null,
         "props": {
@@ -593,71 +693,6 @@
           ],
           "title": "ANZ Tower Liberty Place - Melbourne Cup Event",
           "content": "<p>We helped Liberty Place to take their annual Melbourne Cup Event for the Precinct to the next level, by integrating a number of innovative tools and activations to streamline and enhance the activities.</p><p>The key activation was the “Super Sweeps” which was developed as an innovative and automated new way to do the age-old “Melbourne Cup Office Sweeps” for the entire precinct, allowing hundreds of tenants to play in the same sweeps. </p><p>We have built a custom kiosk that automates the sweep entry process end to end; including payment collection via integrated “tap to pay” technology. It randomly assigns a horse to each player at the sweep value they’d like to play in, and once all horses in that value are taken, it automatically creates another round, so that new players can join in as well. </p><p>The sweeps system also automatically selected the winners based on the race results, and transacted their winnings to their accounts directly.</p><p>We have also built an integrated invite, RSVP and door check-in system, that automated the entire process and helped manage the guests in an efficient manner, and also installed a photo booth with custom creative content developed exclusively for Liberty Place.</p>"
-        }
-      }
-    ]
-  },
-  {
-    "title": "AMP Shopping Centres  -  Meet the Natives",
-    "slug": "meet-the-natives",
-    "isExternal": false,
-    "hero": {
-      "tag": "Our Work",
-      "background": "white",
-      "title": " Meet the Natives",
-      "client": "AMP Shopping Centres",
-      "video": "https://player.vimeo.com/video/569719134?background=1"
-    },
-    "card": {
-      "externalLink": null,
-      "isFeatured": false,
-      "slug": "meet-the-natives",
-      "tag": "WE MADE",
-      "title": " Meet the Natives",
-      "client": "AMP Shopping Centres",
-      "image": "./images/Img_MeetTheNatives_02@2x.jpg",
-      "background": "white",
-      "alignment": "default"
-    },
-    "components": [
-      {
-        "type": "ImageFullScreen",
-        "shape": null,
-        "props": {
-          "image": {
-            "src": "./images/Img_MeetTheNatives_01@2x.jpg",
-            "alt": "oxapalooza-1"
-          }
-        }
-      },
-      {
-        "type": "ContentHTMLWithImages",
-        "shape": null,
-        "props": {
-          "images": [
-            {
-              "src": "./images/Img_MeetTheNatives_02@2x.jpg",
-              "alt": "oxapalooza-1"
-            },
-            {
-              "src": "./images/Img_MeetTheNatives_03@2x.jpg",
-              "alt": "oxapalooza-2"
-            },
-            {
-              "src": "./images/Img_MeetTheNatives_04@2x.jpg",
-              "alt": "oxapalooza-1"
-            }
-          ],
-          "title": "AMP Shopping Centres  -  Meet the Natives",
-          "content": "<p>Santa’s Secret Garden is an unique Christmas Santa Set built for Macquarie Centre; with a design  based on Australian native fauna and flora, made of thousands of live Australian native plants.</p><p>We wanted to also feature native Australian animals as a part of the experience, but it’s not as easy to have live animals on set as it is to have live plants of course. So, we have used the power of AR in the form of a custom Instagram / Facebook filter, one that the visitors can activate on location and seek, find and experience Australian native animals within the set virtually.</p><p>The UI of the app works like a “sonar” which encourages the user to “scan” the area and follow the “blips” until they hone in on the location of the animal and reveal it in AR. Each animal has different behaviour, animations and custom soundscape, making the experience fun and exciting for the little ones.</p><p>Meet the Natives is a lighthearted, quick and fun Instagram AR filter that augments the existing physical set, and gives the visitors another reason to explore it and spend more time on location. The filter also encourages users to record their animal encounters and share as an Instagram story, achieving social advocacy and spread for the Centre.</p>"
-        }
-      },
-      {
-        "type": "ContentVideo",
-        "shape": null,
-        "props": {
-          "videoSrc": "https://www.youtube.com/embed/lDQf6q_ouJU",
-          "title": "AMP Shopping Centres - Meet the Natives"
         }
       }
     ]
@@ -724,7 +759,7 @@
       "tag": "We Explored",
       "title": "Foot tracking model prototype",
       "client": null,
-      "image": "./images/cards/reactive-generative.png",
+      "image": "./images/Img_WeExperimented_06b@2x.jpg",
       "background": "black",
       "alignment": "vertical"
     },
@@ -740,7 +775,7 @@
       "tag": "We Explored",
       "title": "Object tracking demo for retail ",
       "client": null,
-      "image": "./images/cards/reactive-generative.png",
+      "image": "./images/Img_WeExperimented_05@2x.jpg",
       "background": "black",
       "alignment": "vertical"
     },
@@ -756,21 +791,21 @@
       "tag": "We Explored",
       "title": "Machine learning ballet critic",
       "client": null,
-      "image": "./images/cards/reactive-generative.png",
+      "image": "./images/Img_WeExperimented_07@2x.jpg",
       "background": "black",
       "alignment": "vertical"
     },
     "components": []
   },
   {
-    "title": "Scrooble a doodle. Bring it to life.",
+    "title": "Scrooble a doodle. Bring it to life",
     "slug": "scrooble-doodle",
     "isExternal": true,
     "card": {
       "externalLink": "https://www.scroobly.com/",
       "slug": "scrooble-doodle",
       "tag": "We love",
-      "title": "Scrooble a doodle. Bring it to life.",
+      "title": "Scrooble a doodle. Bring it to life",
       "client": "By Google",
       "image": "./images/cards/scrooble.png",
       "background": "white",
@@ -779,16 +814,16 @@
     "components": []
   },
   {
-    "title": "Freddiemeter. Can you sing like Freedy?",
+    "title": "Freddiemeter. Can you sing like Freddy?",
     "slug": "freddiemeter",
     "isExternal": true,
     "card": {
       "externalLink": "https://freddiemeter.withyoutube.com/",
       "slug": "freddiemeter",
       "tag": "We love",
-      "title": "Freddiemeter. Can you sing like Freedy?",
+      "title": "Freddiemeter. Can you sing like Freddy?",
       "client": "By Google & Youtube",
-      "image": "./images/cards/scrooble.png",
+      "image": "./images/Img_WeLove_01@2x.jpg",
       "background": "white",
       "alignment": "vertical"
     },
@@ -804,8 +839,8 @@
       "tag": "We said",
       "title": "New breed experiences via AI + AR",
       "client": null,
-      "image": "./images/Img_LittleBigRoadtrip_03@2x.jpg",
-      "background": "white",
+      "image": "./images/Img_WeSaid_03@2x(1).jpg",
+      "background": "red",
       "alignment": "default"
     },
     "components": []
@@ -821,7 +856,7 @@
       "title": "Top 10 Techsperiantial Picks ",
       "client": null,
       "image": "./images/Img_WeSaid_03@2x.jpg",
-      "background": "white",
+      "background": "red",
       "alignment": "default"
     },
     "components": []

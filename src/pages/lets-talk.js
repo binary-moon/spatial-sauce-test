@@ -16,7 +16,7 @@ const GetInTouch = () => {
   const hero = {
     background: "yellowRed",
     tag: "Get in touch",
-    title: "Let’s create some magic together. Get in touch."
+    title: "Feeling Spatial yet? Let’s create some magic together."
   }
 
   return (

@@ -6,7 +6,7 @@ import ContentWrapper from './ContentWrapper'
 const ImageFullScreen = ({ image }) => {
   const imageData = getImage(image.src)
   return (
-    <ContentWrapper>
+    <ContentWrapper className="ImageFullScreen">
       <GatsbyImage image={imageData} alt={image.alt} />
     </ContentWrapper>
   )

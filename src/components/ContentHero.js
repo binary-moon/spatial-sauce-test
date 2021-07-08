@@ -29,6 +29,8 @@ const StyledParallaxBanner = styled(ParallaxBanner)`
   }
 
   &.largeHero {
+    min-height: ${rem(620)};
+    
     ${props => props.theme.mediaQueries.tablet} {
       min-height: ${rem(860)};
 
@@ -42,10 +44,10 @@ const StyledParallaxBanner = styled(ParallaxBanner)`
 
 const StyledContentWrapper = styled(ContentWrapper)`
   position: relative;
-  top: ${rem(160)};
+  top: ${rem(144)};
 
   ${props => props.theme.mediaQueries.desktop} {
-    top: ${rem(200)};
+    top: ${rem(184)};
   }
 `
 
@@ -59,6 +61,41 @@ const Tag = styled.h4`
 
   ${props => props.theme.mediaQueries.tablet} {
     font-size: ${rem(14)};
+  }
+
+  ${props => props.theme.mediaQueries.desktop} {
+    color: ${props => props.theme.colors.white};
+  }
+
+  .isOurWorkDetail & {
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      color: ${props => props.theme.colors.white};
+    }
+  }
+
+
+  .isOurWorkDetail.noVideo & {
+    color: ${props => props.theme.colors.black};
+
+    ${props => props.theme.mediaQueries.desktop} {
+      color: ${props => props.theme.colors.black};
+    }
+  }
+`
+
+const Client = styled.h4`
+  font-size: ${rem(18)};
+  line-height: ${rem(18)};
+  font-weight: 700;
+  margin: 0;
+  color: ${props => props.theme.colors.white};
+  margin: ${rem(24)} 0 0;
+
+  ${props => props.theme.mediaQueries.tablet} {
+    font-size: ${rem(28)};
+  line-height: ${rem(28)};
   }
 
   ${props => props.theme.mediaQueries.desktop} {
@@ -117,13 +154,14 @@ const Title = styled.h1`
 `
 
 const Arrow = styled.span`
-  font-size: ${rem(50)};
+  font-size: ${rem(40)};
   line-height: 1;
   color: ${props => props.theme.colors.white};
-  margin-top: ${rem(60)};
+  margin-top: ${rem(30)};
   display: block;
 
   ${props => props.theme.mediaQueries.tablet} {
+    font-size: ${rem(50)};
     margin-top: ${rem(60)};
   }
 
@@ -132,7 +170,7 @@ const Arrow = styled.span`
   }
 
   .isOurWorkDetail & {
-    color: ${props => props.theme.colors.black};
+    color: ${props => props.theme.colors.red};
 
     ${props => props.theme.mediaQueries.desktop} {
       color: ${props => props.theme.colors.white};
@@ -181,6 +219,15 @@ const VideoWrapper = styled.div`
   }
 `
 
+const Backdrop = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+`
+
 const FadeFilm = styled.div`
   position: absolute;
   top: 0;
@@ -204,6 +251,7 @@ const ParallaxBackground = ({ image, video }) => {
   if (isDesktop && video) {
     return (
       <VideoWrapper>
+        <Backdrop />
         <iframe src={video} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         <FadeFilm />
       </VideoWrapper>
@@ -226,10 +274,11 @@ const ParallaxMidground = ({background, video}) => {
   return null
 }
 
-const ParallaxForeground = ({tag, title, video}) => (
+const ParallaxForeground = ({tag, title, client}) => (
   <StyledContentWrapper>
     <Tag>{tag}</Tag>
     <Title>{title}</Title>
+    {client && <Client>{client}</Client>}
     <Arrow>&#8595;</Arrow>
   </StyledContentWrapper>
 )
@@ -246,7 +295,7 @@ const StyledParallaxMidground = styled(ParallaxMidground)`
 const StyledParallaxForeground = styled(ParallaxForeground)`
 `
 
-const ContentHero = ({ background, tag, title, image, video, isOurWorkDetail }) => {
+const ContentHero = ({ background, tag, title, client, image, video, isOurWorkDetail }) => {
   return (
     <StyledParallaxBanner
       layers = {[
@@ -261,12 +310,12 @@ const ContentHero = ({ background, tag, title, image, video, isOurWorkDetail }) 
           expanded: false,
         },
         {
-          children: (<StyledParallaxForeground tag={tag} title={title} background={background} video={video} />),
+          children: (<StyledParallaxForeground tag={tag} title={title} client={client} background={background} video={video} />),
           amount: 0,
           expanded: false,
         }
       ]}
-      className={classnames(background, {largeHero: !video}, {isOurWorkDetail}, {noVideo: !video})}>
+      className={classnames(background, {largeHero: !isOurWorkDetail}, {isOurWorkDetail}, {noVideo: !video})}>
     </StyledParallaxBanner>
   )
 }

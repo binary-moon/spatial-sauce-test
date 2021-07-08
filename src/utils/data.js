@@ -21,24 +21,36 @@ export const prepareTileListData = (workData) => {
   return tileListData;
 }
 
-export const filterTileListData = (allTiles, displayOnlyWeMade, maxLimit) => {
+export const filterTileListData = (allTiles, displayOnlyWeMade, maxLimit, randomize) => {
   let weMadeTiles = []
   let weExpoloredTiles = []
   let weLoveTiles = []
   let weSaidTiles = []
 
   if (!displayOnlyWeMade) {
-    weMadeTiles = shuffle(allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE MADE').filter(item => item.node.card.isFeatured)).slice(0, 4)
-    weExpoloredTiles = shuffle(allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE EXPLORED')).slice(0, 1)
-    weLoveTiles = shuffle(allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE LOVE')).slice(0, 1)
-    weSaidTiles = shuffle(allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE SAID')).slice(0, 1)
+    weMadeTiles = allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE MADE').filter(item => item.node.card.isFeatured)
+    weMadeTiles = randomize ? shuffle(weMadeTiles) : weMadeTiles
+    let weMadeTiles1 = weMadeTiles.slice(0, 2)
+    let weMadeTiles2 = weMadeTiles.slice(2, 4)
 
-    return [...weMadeTiles, ...weExpoloredTiles, ...weLoveTiles, ...weSaidTiles]
+    weExpoloredTiles = allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE EXPLORED')
+    weExpoloredTiles = randomize ? shuffle(weExpoloredTiles) : weExpoloredTiles
+    weExpoloredTiles = weExpoloredTiles.slice(0, 1)
+
+    weLoveTiles = allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE LOVE')
+    weLoveTiles = randomize ? shuffle(weLoveTiles) : weLoveTiles
+    weLoveTiles = weLoveTiles.slice(0, 1)
+
+    weSaidTiles = allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE SAID')
+    weSaidTiles = randomize ? shuffle(weSaidTiles) : weSaidTiles
+    weSaidTiles = weSaidTiles.slice(0, 1)
+
+    return [...weMadeTiles1, ...weExpoloredTiles, ...weLoveTiles, ...weSaidTiles, ...weMadeTiles2]
   } else {
     if (maxLimit) {
       weMadeTiles = shuffle(allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE MADE')).slice(0, maxLimit)
     } else {
-      weMadeTiles = shuffle(allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE MADE'))
+      weMadeTiles = allTiles.filter(item => item.node.card.tag.toUpperCase() === 'WE MADE')
     }
 
     return weMadeTiles;

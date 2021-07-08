@@ -25,22 +25,22 @@
     {
       "id": 0,
       "title": "Youtube",
-      "url": "#"
+      "url": "https://www.youtube.com/channel/UCa4L7u0QuaZBCbO9J-fug7A"
     },
     {
       "id": 1,
       "title": "Instagram",
-      "url": "#"
+      "url": "https://www.instagram.com/spatial_sauce/"
     },
     {
       "id": 2,
       "title": "Linkedin",
-      "url": "#"
+      "url": "https://www.linkedin.com/company/spatial-sauce/"
     },
     {
       "id": 3,
       "title": "Twitter",
-      "url": "#"
+      "url": "https://twitter.com/spatialspiel"
     }
   ]
 }

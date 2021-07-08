@@ -11,14 +11,7 @@
   },
   {
     "type": "ContentRowWithImage",
-    "shape": {
-      "type": "triangle",
-      "color": "red",
-      "position": {
-        "x": "100%",
-        "y": "50%"
-      }
-    },
+    "shape": null,
     "props": {
       "alignment": "default",
       "image": {

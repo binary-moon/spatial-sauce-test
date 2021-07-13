@@ -44,6 +44,37 @@ const StyledParallaxBanner = styled(ParallaxBanner)`
     }
   }
 
+  &.isOurWorkDetail.noVideo {
+    min-height: ${rem(480)};
+
+    ${props => props.theme.mediaQueries.tablet} {
+      min-height: ${rem(640)};
+    }
+  }
+
+  &.aboutUsHero {
+    min-height: ${rem(520)};
+
+    ${props => props.theme.mediaQueries.tablet} {
+      min-height: ${rem(740)};
+    }
+
+    ${props => props.theme.mediaQueries.desktop} {
+      min-height: ${rem(780)};
+    }
+  }
+
+  &.contactHero {
+    min-height: ${rem(560)};
+
+    ${props => props.theme.mediaQueries.tablet} {
+      min-height: ${rem(840)};
+    }
+
+    ${props => props.theme.mediaQueries.desktop} {
+      min-height: ${rem(780)};
+    }
+  }
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
@@ -130,6 +161,7 @@ const Title = styled.h1`
   font-weight: 900;
   color: ${props => props.theme.colors.white};
   margin: ${rem(24)} 0 0;
+  white-space: pre-line;
 
   ${props => props.theme.mediaQueries.tablet} {
     font-size: ${rem(80)};
@@ -299,7 +331,7 @@ const StyledParallaxMidground = styled(ParallaxMidground)`
 const StyledParallaxForeground = styled(ParallaxForeground)`
 `
 
-const ContentHero = ({ background, tag, title, client, image, video, isOurWorkDetail }) => {
+const ContentHero = ({ background, tag, title, client, image, video, isOurWorkDetail, aboutUsHero, contactHero }) => {
   return (
     <StyledParallaxBanner
       layers = {[
@@ -319,7 +351,7 @@ const ContentHero = ({ background, tag, title, client, image, video, isOurWorkDe
           expanded: false,
         }
       ]}
-      className={classnames(background, {largeHero: !isOurWorkDetail}, {isOurWorkDetail}, {noVideo: !video})}>
+      className={classnames(background, {largeHero: !isOurWorkDetail}, {isOurWorkDetail}, {aboutUsHero}, {contactHero}, {noVideo: !video})}>
     </StyledParallaxBanner>
   )
 }

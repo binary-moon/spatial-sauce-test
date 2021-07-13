@@ -13,6 +13,7 @@
     "type": "ContentHTMLWithImages",
     "shape": null,
     "props": {
+      "reverse": false,
       "images": [{
         "src": "./images/about-col.png",
         "alt": "WE ARE SPATIAL SAUCE"
@@ -35,7 +36,7 @@
     "shape": null,
     "props": {
       "image": {
-        "src": "./images/about-intro.png",
+        "src": "./images/givingtree_wide_2x.jpeg",
         "alt": "About Us"
       }
     }
@@ -44,22 +45,26 @@
     "type": "ContentHTMLWithImages",
     "shape": null,
     "props": {
+      "reverse": false,
       "images": [{
-        "src": "./images/about-col.png",
+        "src": "./images/AboutUs_04@2x.jpg",
         "alt": "WE ARE SPATIAL SAUCE"
       }],
       "title": null,
-      "content": "<p>Simply put, we create experiences that go “beyond the screen” and emotionally connect with the audience physically and spatially, encouraging them to experience with all their senses. </p><p>We provide end-to-end solutions from creative ideation to production, installation and management, for;</p><ul><li>Digital placemaking</li><li>Experiential marketing</li><li>Retail activations and installations</li><li>Events, exhibitions and conferences</li><li>Cultural and educational activations</li><li>Branded social filters and campaigns</li></ul><p>We can also help bring your idea to life alongside your team and partners, providing specialist services, as below:</p>"
+      "content": "<p>Simply put, we create experiences that go “beyond the screen” and emotionally connect with the audience physically and spatially, encouraging them to experience with all their senses. </p><p>We provide end-to-end solutions from creative ideation to production, installation and management, for;</p><ul><li>Digital placemaking</li><li>Experiential marketing</li><li>Retail activations and installations</li><li>Events, exhibitions and conferences</li><li>Cultural and educational activations</li><li>Branded social filters and campaigns</li></ul>"
     }
   },
   {
-    "type": "TextTwoCol",
+    "type": "ContentHTMLWithImages",
     "shape": null,
     "props": {
-      "columns": [
-        "<ul><li>Experiential concept development</li><li>Immersive and innovative technology consulting and development</li><li>Creative development and production services</li><li>Custom hardware and display setups</li><li>Instagram, Facebook and Snapchat filters</li><li>Live data visualisations / interactions</li></ul>",
-        "<ul><li>XR production and development</li><li>Spatial / stand / industrial design (with the help of our partners)</li><li>Fabrication, printing and installation (with the help of our partners)</li><li>Brand ambassador / promo staffing (with the help of our partners)</li></ul>"
-      ]
+      "reverse": true,
+      "images": [{
+        "src": "./images/Img_Ratrobats_02@2x.jpg",
+        "alt": "WE ARE SPATIAL SAUCE"
+      }],
+      "title": null,
+      "content": "<p>We can also help bring your idea to life alongside your team and partners, providing specialist services, as below:</p><ul><li>Experiential concept development</li><li>Immersive and innovative technology consulting and development</li><li>Creative development and production services</li><li>Custom hardware and display setups</li><li>Instagram, Facebook and Snapchat filters</li><li>Live data visualisations / interactions</li><li>XR production and development</li><li>Spatial / stand / industrial design (with the help of our partners)</li><li>Fabrication, printing and installation (with the help of our partners)</li><li>Brand ambassador / promo staffing (with the help of our partners)</li></ul>"
     }
   },
   {
@@ -76,7 +81,7 @@
     "shape": null,
     "props": {
       "image": {
-        "src": "./images/about-intro.png",
+        "src": "./images/AboutUs_Wide_02@2x.jpg",
         "alt": "About Us"
       }
     }
@@ -85,22 +90,26 @@
     "type": "ContentHTMLWithImages",
     "shape": null,
     "props": {
+      "reverse": false,
       "images": [{
-        "src": "./images/about-col.png",
+        "src": "./images/AboutUs_05@2x.jpg",
         "alt": "WE ARE SPATIAL SAUCE"
       }],
       "title": null,
-      "content": "<p>Beyond anything else, what drives us is the relentless pursuit of “magical” technology. We push and tinker away until we reach something that people will be drawn to, can’t resist playing with and want more of. We do not stop until it puts a smile -and every so often that look of awe and disbelief- on the faces of our audience, and that’s as human as it gets.</p><p>So, most of our experience journeys start with developing a unique creative technology that people love engaging with. We then match it with a pitch perfect creative idea, delivering a custom experience that is the best fit for the brand, objectives, audience, medium and space.</p><p>We then deliver a holistic solution via overseeing the spatial design, fabrication and installation, through our best in class partners.</p><p>Our capabilities include;</p>"
+      "content": "<p>Beyond anything else, what drives us is the relentless pursuit of “magical” technology. We push and tinker away until we reach something that people will be drawn to, can’t resist playing with and want more of. We do not stop until it puts a smile -and every so often that look of awe and disbelief- on the faces of our audience, and that’s as human as it gets.</p><p>So, most of our experience journeys start with developing a unique creative technology that people love engaging with. We then match it with a pitch perfect creative idea, delivering a custom experience that is the best fit for the brand, objectives, audience, medium and space.</p><p>We then deliver a holistic solution via overseeing the spatial design, fabrication and installation, through our best in class partners.</p>"
     }
   },
   {
-    "type": "TextTwoCol",
+    "type": "ContentHTMLWithImages",
     "shape": null,
     "props": {
-      "columns": [
-        "<ul><li>AR / VR / XR / MR</li><li>Touch screen and interactive surface setups and custom content</li><li>Gesture / body / ﬁnger / facial tracking based interactions & games</li><li>Demographics / sentiment recognition driven interactions</li><li>Sound / speech recognition based experiences</li><li>Deep learning AI based object / product recognition and contextual content presentation</li></ul>",
-        "<ul><li>Digital photo booths with live lenses & ﬁlters</li><li>Sensor triggered content experiences (movement, proximity, acceleration, temperature etc)</li><li>Interactive and immersive projection mapping</li><li>Robotics and custom device creation (with the help of our partners)</li></ul>"
-      ]
+      "reverse": true,
+      "images": [{
+        "src": "./images/AboutUs_05@2x.jpg",
+        "alt": "WE ARE SPATIAL SAUCE"
+      }],
+      "title": null,
+      "content": "<p>Our capabilities include;</p><ul><li>AR / VR / XR / MR</li><li>Touch screen and interactive surface setups and custom content</li><li>Gesture / body / ﬁnger / facial tracking based interactions & games</li><li>Demographics / sentiment recognition driven interactions</li><li>Sound / speech recognition based experiences</li><li>Deep learning AI based object / product recognition and contextual content presentation</li><li>Digital photo booths with live lenses & ﬁlters</li><li>Sensor triggered content experiences (movement, proximity, acceleration, temperature etc)</li><li>Interactive and immersive projection mapping</li><li>Robotics and custom device creation (with the help of our partners)</li></ul>"
     }
   }
 ]

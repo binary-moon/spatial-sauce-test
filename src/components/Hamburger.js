@@ -15,6 +15,7 @@ const Wrapper = styled.button`
   justify-content: center;
   align-items: center;
   transition: background .3s;
+  cursor: pointer;
 
   > div {
     width: ${rem(18)};

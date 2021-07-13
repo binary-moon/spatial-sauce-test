@@ -1,4 +1,14 @@
-export const prepareTileListData = (workData) => {
+const determineBackgroundColor = (index, displayOnlyWeMade) => {
+  if (!displayOnlyWeMade) {
+    if (index === 1) return 'red'
+    if (index === 2) return 'black'
+    if (index === 4) return 'blue'
+    return 'white'
+  }
+  return 'white';
+}
+
+export const prepareTileListData = (workData, displayOnlyWeMade) => {
   const tileListData = []
   let skipIndex = -1
   workData.forEach((work, index) => {
@@ -9,19 +19,37 @@ export const prepareTileListData = (workData) => {
     const { card } = work.node;
     if (card.alignment !== 'vertical') {
       tileListData.push({
-        row: [card]
+        row: [
+          {
+            ...card,
+            background: determineBackgroundColor(index, displayOnlyWeMade),
+          }
+        ]
       })
     } else {
       skipIndex = index + 1;
       tileListData.push({
-       row: [card, workData[index + 1].node.card]
+        row: [
+          {
+            ...card,
+            background: determineBackgroundColor(index, displayOnlyWeMade),
+          }, 
+          {
+            ...workData[index + 1].node.card,
+            background: "white",
+          }
+        ]
       }) 
     }
   })
   return tileListData;
 }
 
-export const filterTileListData = (allTiles, displayOnlyWeMade, maxLimit, randomize) => {
+export const filterTileListData = (allTiles, displayOnlyWeMade, maxLimit, randomize, currentWork) => {
+  if (currentWork) {
+    allTiles = allTiles.filter(item => item.node.title !== currentWork)
+  }
+  
   let weMadeTiles = []
   let weExpoloredTiles = []
   let weLoveTiles = []

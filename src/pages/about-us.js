@@ -26,7 +26,7 @@ const AboutUs = ({ data }) => {
   return (
     <ParallaxProvider>
       <Layout>
-        <ContentHero {...hero} />
+        <ContentHero {...hero} aboutUsHero />
         <ContentLifter>
           {
             components.map(element => renderComponent(element.node.id, element.node.type, element.node.props, element.node.shape))
@@ -51,7 +51,7 @@ export const query = graphql`
             tag
             background
             content
-            columns
+            reverse
             image {
               src {
                 childImageSharp {

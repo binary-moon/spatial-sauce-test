@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   padding: ${rem(40)} 0;
 
   ${props => props.theme.mediaQueries.desktop} {
-    padding: ${rem(66)} 0;
+    padding: ${rem(100)} 0;
   }
 `
 

@@ -13,6 +13,7 @@ const Container = styled.div`
   background: ${props => props.theme.colors.white};
   padding: 0 0 ${rem(30)};
 
+
   ${props => props.theme.mediaQueries.tablet} {
     padding: ${rem(60)} ${rem(55)};
     flex-direction: row;
@@ -20,6 +21,13 @@ const Container = styled.div`
 
   ${props => props.theme.mediaQueries.desktop} {
     padding: ${rem(80)} ${rem(55)};
+  }
+
+  &.reverse {
+
+    ${props => props.theme.mediaQueries.tablet} {
+      flex-direction: row-reverse;
+    }
   }
 `
 
@@ -47,6 +55,12 @@ const ImageContainer = styled.div`
   ${props => props.theme.mediaQueries.desktop} {
     width: ${rem(420)};
     margin: 0 0 0 ${rem(105)};
+  }
+
+  .reverse & {
+    ${props => props.theme.mediaQueries.desktop} {
+      margin: 0 ${rem(105)} 0 0;
+    }
   }
 `
 
@@ -129,11 +143,11 @@ const HTMLContent = styled.div`
   }
 `
 
-const ContentHTMLWithImages = ({ images, title, children, content }) => {
+const ContentHTMLWithImages = ({ images, title, children, content, reverse }) => {
   return (
     <ContentWrapper>
       {children}
-      <Container>
+      <Container className={classnames({ reverse })}>
         <Content>
           {title &&
             <Title>{title}</Title>

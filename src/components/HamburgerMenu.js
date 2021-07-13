@@ -220,7 +220,7 @@ const Circle = styled.div`
   }
 `
 
-const HamburgerMenu = ({ className, style }) => {
+const HamburgerMenu = ({ className, style, setIsMenuOpen }) => {
   const { mainNavigation, social } = navigationData;
 
   const { pathname } = window.location
@@ -245,6 +245,10 @@ const HamburgerMenu = ({ className, style }) => {
     return () => document.body.classList.remove('scrollLock');
   }, [])
 
+  const handleClick = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <MenuWrapper className={className} style={style}>
       <Decoration>
@@ -261,6 +265,7 @@ const HamburgerMenu = ({ className, style }) => {
             to={mainNavigation[index].url} 
             style={styles}
             className={classnames({active: pathname === mainNavigation[index].url})}
+            onClick={handleClick}
           >
             <Arrow className="navigationArrow">&#8594;</Arrow>
             <Text>{mainNavigation[index].title}</Text>

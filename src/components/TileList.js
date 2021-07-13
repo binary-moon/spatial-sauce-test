@@ -21,7 +21,7 @@ const TileRow = styled.div`
   }
 `
 
-const TileList = ({ className, displayOnlyWeMade, maxLimit, randomize }) => {
+const TileList = ({ className, displayOnlyWeMade, maxLimit, randomize, currentWork }) => {
   const queryData = useStaticQuery(graphql`
     {
       allOurWorkJson {
@@ -35,7 +35,6 @@ const TileList = ({ className, displayOnlyWeMade, maxLimit, randomize }) => {
               tag
               title
               client
-              background
               externalLink
               isFeatured
               alignment
@@ -56,8 +55,8 @@ const TileList = ({ className, displayOnlyWeMade, maxLimit, randomize }) => {
   useEffect(() => {
     const allTiles = queryData.allOurWorkJson.edges
     let filteredTiles = []
-    filteredTiles = filterTileListData(allTiles, displayOnlyWeMade, maxLimit, randomize)
-    setTileListData(prepareTileListData(filteredTiles));
+    filteredTiles = filterTileListData(allTiles, displayOnlyWeMade, maxLimit, randomize, currentWork)
+    setTileListData(prepareTileListData(filteredTiles, displayOnlyWeMade));
   }, [])
   
   return (

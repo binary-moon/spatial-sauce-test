@@ -29,11 +29,11 @@ const StyledTileList = styled(TileList)`
   }
 `
 
-const MoreWork = () => {
+const MoreWork = ({ currentWork }) => {
   return (
     <Wrapper>
       <Title>More of our work</Title>
-      <StyledTileList maxLimit={3} displayOnlyWeMade />
+      <StyledTileList maxLimit={3} currentWork={currentWork} displayOnlyWeMade />
     </Wrapper>
   )
 }

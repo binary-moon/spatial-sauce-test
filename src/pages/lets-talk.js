@@ -16,13 +16,13 @@ const GetInTouch = () => {
   const hero = {
     background: "yellowRed",
     tag: "Get in touch",
-    title: "Feeling Spatial yet? Let’s create some magic together."
+    title: "Feeling Spatial yet?\n Let’s create some magic together."
   }
 
   return (
     <ParallaxProvider>
       <Layout>
-        <ContentHero {...hero} />
+        <ContentHero {...hero} contactHero/>
         <ContentLifter>
           <ContactForm />
         </ContentLifter>

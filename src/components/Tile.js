@@ -28,6 +28,11 @@ const Wrapper = styled(animated.div)`
     color: ${props => props.theme.colors.white};
   }
 
+  &.blue {
+    background: ${props => props.theme.colors.blue};
+    color: ${props => props.theme.colors.white};
+  }
+
   &.reverse {
 
     ${props => props.theme.mediaQueries.tablet} {

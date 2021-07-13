@@ -20,8 +20,6 @@ exports.createPages = async ({ actions: {createPage}, graphql }) => {
   results.data.allOurWorkJson.edges.forEach(edge => {
     const ourWork = edge.node;
 
-    console.log(edge.node)
-
     if (!ourWork.isExternal) {
       createPage({
         path: `/our-work/${ourWork.slug}`,

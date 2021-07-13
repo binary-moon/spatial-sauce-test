@@ -124,7 +124,7 @@ const Header = ({ isOurWorkDetail, noVideo }) => {
   return (
     <HeaderWrapper className={classnames({isScrolled})} style={headerTransitions}>
       {
-        menuTransitions((styles, item) => item && <AnimatedHamburgerMenu style={styles} />)
+        menuTransitions((styles, item) => item && <AnimatedHamburgerMenu style={styles} setIsMenuOpen={setIsMenuOpen} />)
       }
       <Wrapper>
         <Logo type={logoColor}/>

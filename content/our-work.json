@@ -6,7 +6,7 @@
     "hero": {
       "tag": "Our Work",
       "background": "white",
-      "title": "Cherry Blossom Festival.",
+      "title": "Cherry Blossom Festival",
       "client": "World Square",
       "video": "https://player.vimeo.com/video/565885252?background=1"
     },
@@ -18,7 +18,6 @@
       "title": "Cherry Blossom Festival",
       "client": "World Square",
       "image": "./images/cards/cherry-blossom.png",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -38,7 +37,7 @@
         "props": {
           "images": [
             {
-              "src": "./images/cherry-blossom-1.jpg",
+              "src": "./images/cherry-blossom-3.jpg",
               "alt": "cherry-blossom-1"
             },
             {
@@ -46,7 +45,7 @@
               "alt": "cherry-blossom-2"
             },
             {
-              "src": "./images/cherry-blossom-3.jpg",
+              "src": "./images/cherry-blossom-1.jpg",
               "alt": "cherry-blossom-3"
             }
           ],
@@ -83,7 +82,6 @@
       "title": "The Giving Tree",
       "client": "ANZ Tower Liberty Place",
       "image": "./images/cards/giving-tree.png",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -122,14 +120,14 @@
     ]
   },
   {
-    "title": "Westpac - 200 Women: The Listening Ground",
+    "title": "200 Women: The Listening Ground",
     "slug": "200-women-listening-ground",
     "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "background": "white",
-      "title": "Westpac - 200 Women: The Listening Ground",
-      "client": "With Maverick",
+      "title": "200 Women: The Listening Ground",
+      "client": "Westpac",
       "video": "https://player.vimeo.com/video/569685714?background=1"
     },
     "card": {
@@ -137,10 +135,9 @@
       "isFeatured": true,
       "slug": "200-women-listening-ground",
       "tag": "WE MADE",
-      "title": "200 Women Listening Ground",
-      "client": "With Maverick",
+      "title": "200 Women: Listening Ground",
+      "client": "Westpac",
       "image": "./images/cards/200-women.png",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -161,6 +158,10 @@
           "images": [
             {
               "src": "./images/200-women.png",
+              "alt": "vespa-1"
+            },
+            {
+              "src": "./images/200_Women@2x.jpg",
               "alt": "vespa-1"
             }
           ],
@@ -189,7 +190,6 @@
       "title": "Oxapalooza",
       "client": "World Square",
       "image": "./images/Img_Oxapalooza_02@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -250,7 +250,6 @@
       "title": "Zip out with Vespa",
       "client": "Piaggio",
       "image": "./images/Img_VespaJapan_02@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -307,7 +306,6 @@
       "title": " Meet the Natives",
       "client": "AMP Shopping Centres",
       "image": "./images/Img_MeetTheNatives_02@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -333,10 +331,6 @@
             {
               "src": "./images/Img_MeetTheNatives_03@2x.jpg",
               "alt": "oxapalooza-2"
-            },
-            {
-              "src": "./images/Img_MeetTheNatives_04@2x.jpg",
-              "alt": "oxapalooza-1"
             }
           ],
           "title": "AMP Shopping Centres  -  Meet the Natives",
@@ -372,7 +366,6 @@
       "title": "Ratrobats",
       "client": "World Square",
       "image": "./images/Img_Ratrobats_02@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -394,10 +387,6 @@
             {
               "src": "./images/Img_Ratrobats_02@2x.jpg",
               "alt": "ratrobat-1"
-            },
-            {
-              "src": "./images/Img_Ratrobats_03@2x.jpg",
-              "alt": "ratrobat-2"
             },
             {
               "src": "./images/Img_Ratrobats_05@2x.jpg",
@@ -437,7 +426,6 @@
       "title": "Virtually Wild",
       "client": "JLL",
       "image": "./images/Img_VirtuallyWild_02@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -456,14 +444,6 @@
         "shape": null,
         "props": {
           "images": [
-            {
-              "src": "./images/Img_VirtuallyWild_03@2x.jpg",
-              "alt": "Img_VirtuallyWild_03-1"
-            },
-            {
-              "src": "./images/Img_VirtuallyWild_03@2x.jpg",
-              "alt": "Img_VirtuallyWild_03-2"
-            },
             {
               "src": "./images/Img_VirtuallyWild_04@2x.jpg",
               "alt": "Img_VirtuallyWild_03-3"
@@ -501,7 +481,6 @@
       "title": "The Little BIG Roadtrip",
       "client": "World Square",
       "image": "./images/Img_LittleBigRoadtrip_02@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -558,7 +537,6 @@
       "title": "Santa’s Magical Mailbox",
       "client": "Various",
       "image": "./images/Img_MagicMailBox_03@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -605,6 +583,53 @@
     ]
   },
   {
+    "title": "ANZ Tower Liberty Place - Melbourne Cup Event",
+    "slug": "melbourne-cup",
+    "isExternal": false,
+    "hero": {
+      "tag": "Our Work",
+      "background": "white",
+      "title": "Melbourne Cup Event",
+      "client": "ANZ Tower Liberty Place"
+    },
+    "card": {
+      "externalLink": null,
+      "isFeatured": false,
+      "slug": "melbourne-cup",
+      "tag": "WE MADE",
+      "title": "Melbourne Cup Event",
+      "client": "ANZ Tower Liberty Place",
+      "image": "./images/Img_MelCupLibertyPlace_02@2x.jpg",
+      "alignment": "default"
+    },
+    "components": [
+      {
+        "type": "ImageFullScreen",
+        "shape": null,
+        "props": {
+          "image": {
+            "src": "./images/Img_MelCupLibertyPlace_01@2x.jpg",
+            "alt": "oxapalooza-1"
+          }
+        }
+      },
+      {
+        "type": "ContentHTMLWithImages",
+        "shape": null,
+        "props": {
+          "images": [
+            {
+              "src": "./images/Img_MelCupLibertyPlace_02@2x.jpg",
+              "alt": "oxapalooza-1"
+            }
+          ],
+          "title": "ANZ Tower Liberty Place - Melbourne Cup Event",
+          "content": "<p>We helped Liberty Place to take their annual Melbourne Cup Event for the Precinct to the next level, by integrating a number of innovative tools and activations to streamline and enhance the activities.</p><p>The key activation was the “Super Sweeps” which was developed as an innovative and automated new way to do the age-old “Melbourne Cup Office Sweeps” for the entire precinct, allowing hundreds of tenants to play in the same sweeps. </p><p>We have built a custom kiosk that automates the sweep entry process end to end; including payment collection via integrated “tap to pay” technology. It randomly assigns a horse to each player at the sweep value they’d like to play in, and once all horses in that value are taken, it automatically creates another round, so that new players can join in as well. </p><p>The sweeps system also automatically selected the winners based on the race results, and transacted their winnings to their accounts directly.</p><p>We have also built an integrated invite, RSVP and door check-in system, that automated the entire process and helped manage the guests in an efficient manner, and also installed a photo booth with custom creative content developed exclusively for Liberty Place.</p>"
+        }
+      }
+    ]
+  },
+  {
     "title": "AMP Shopping Centres  - A Message from Santa",
     "slug": "a-message-from-santa",
     "isExternal": false,
@@ -623,7 +648,6 @@
       "title": "A Message from Santa",
       "client": "AMP Shopping Centres",
       "image": "./images/Img_MessageFromSanta_02@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -670,54 +694,6 @@
     ]
   },
   {
-    "title": "ANZ Tower Liberty Place - Melbourne Cup Event",
-    "slug": "melbourne-cup",
-    "isExternal": false,
-    "hero": {
-      "tag": "Our Work",
-      "background": "white",
-      "title": "Melbourne Cup Event",
-      "client": "ANZ Tower Liberty Place"
-    },
-    "card": {
-      "externalLink": null,
-      "isFeatured": false,
-      "slug": "melbourne-cup",
-      "tag": "WE MADE",
-      "title": "Melbourne Cup Event",
-      "client": "ANZ Tower Liberty Place",
-      "image": "./images/Img_MelCupLibertyPlace_02@2x.jpg",
-      "background": "white",
-      "alignment": "default"
-    },
-    "components": [
-      {
-        "type": "ImageFullScreen",
-        "shape": null,
-        "props": {
-          "image": {
-            "src": "./images/Img_MelCupLibertyPlace_01@2x.jpg",
-            "alt": "oxapalooza-1"
-          }
-        }
-      },
-      {
-        "type": "ContentHTMLWithImages",
-        "shape": null,
-        "props": {
-          "images": [
-            {
-              "src": "./images/Img_MelCupLibertyPlace_02@2x.jpg",
-              "alt": "oxapalooza-1"
-            }
-          ],
-          "title": "ANZ Tower Liberty Place - Melbourne Cup Event",
-          "content": "<p>We helped Liberty Place to take their annual Melbourne Cup Event for the Precinct to the next level, by integrating a number of innovative tools and activations to streamline and enhance the activities.</p><p>The key activation was the “Super Sweeps” which was developed as an innovative and automated new way to do the age-old “Melbourne Cup Office Sweeps” for the entire precinct, allowing hundreds of tenants to play in the same sweeps. </p><p>We have built a custom kiosk that automates the sweep entry process end to end; including payment collection via integrated “tap to pay” technology. It randomly assigns a horse to each player at the sweep value they’d like to play in, and once all horses in that value are taken, it automatically creates another round, so that new players can join in as well. </p><p>The sweeps system also automatically selected the winners based on the race results, and transacted their winnings to their accounts directly.</p><p>We have also built an integrated invite, RSVP and door check-in system, that automated the entire process and helped manage the guests in an efficient manner, and also installed a photo booth with custom creative content developed exclusively for Liberty Place.</p>"
-        }
-      }
-    ]
-  },
-  {
     "title": "JLL - World of AI",
     "slug": "world-of-ai",
     "isExternal": false,
@@ -735,7 +711,6 @@
       "title": " World of AI",
       "client": "JLL",
       "image": "./images/Img_WorldofAI_03@2x.jpg",
-      "background": "white",
       "alignment": "default"
     },
     "components": [
@@ -778,9 +753,8 @@
       "slug": "foot-tracking",
       "tag": "We Explored",
       "title": "Foot tracking model prototype",
-      "client": null,
+      "client": "AI Experiment",
       "image": "./images/Img_WeExperimented_06b@2x.jpg",
-      "background": "black",
       "alignment": "vertical"
     },
     "components": []
@@ -794,9 +768,8 @@
       "slug": "object-tracking",
       "tag": "We Explored",
       "title": "Object tracking demo for retail ",
-      "client": null,
+      "client": "AI Experiment",
       "image": "./images/Img_WeExperimented_05@2x.jpg",
-      "background": "black",
       "alignment": "vertical"
     },
     "components": []
@@ -810,9 +783,8 @@
       "slug": "machine-learning-ballet",
       "tag": "We Explored",
       "title": "Machine learning ballet critic",
-      "client": null,
+      "client": "AI Experiment",
       "image": "./images/Img_WeExperimented_07@2x.jpg",
-      "background": "black",
       "alignment": "vertical"
     },
     "components": []
@@ -828,7 +800,6 @@
       "title": "Scrooble a doodle. Bring it to life",
       "client": "By Google",
       "image": "./images/cards/scrooble.png",
-      "background": "white",
       "alignment": "vertical"
     },
     "components": []
@@ -844,7 +815,6 @@
       "title": "Freddiemeter. Can you sing like Freddy?",
       "client": "By Google & Youtube",
       "image": "./images/Img_WeLove_01@2x.jpg",
-      "background": "white",
       "alignment": "vertical"
     },
     "components": []
@@ -859,8 +829,7 @@
       "tag": "We said",
       "title": "New breed experiences via AI + AR",
       "client": null,
-      "image": "./images/Img_WeSaid_03@2x(1).jpg",
-      "background": "red",
+      "image": "./images/Img_WeSaid_03@2x.jpg",
       "alignment": "default"
     },
     "components": []
@@ -870,13 +839,12 @@
     "slug": "techsperiantial-picks",
     "isExternal": true,
     "card": {
-      "externalLink": "https://www.linkedin.com/feed/update/urn:li:ugcPost:6612895690794328064?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28*%2Curn%3Ali%3AugcPost%3A6612895690794328064%29",
+      "externalLink": "https://www.linkedin.com/pulse/my-top-10-techsperiential-picks-deniz-nalbantoglu/?trackingId=XT6QUPJFQzmjOYRC4lqYWA%3D%3D",
       "slug": "techsperiantial-picks",
       "tag": "We said",
       "title": "Top 10 Techsperiantial Picks ",
       "client": null,
-      "image": "./images/Img_WeSaid_03@2x.jpg",
-      "background": "red",
+      "image": "./images/Img_WeSaid_03@2x(1).jpg",
       "alignment": "default"
     },
     "components": []

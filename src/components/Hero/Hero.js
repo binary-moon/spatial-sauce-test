@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useMediaQuery } from 'react-responsive'
-import { ParallaxBanner, useController } from 'react-scroll-parallax';
+import { ParallaxBanner, withController } from 'react-scroll-parallax';
 
 import { HeroBackgroundImage } from './HeroBackgroundImage'
 import { HeroBackgroundImageMobile } from './HeroBackgroundImageMobile'
@@ -124,13 +124,15 @@ const ContentComponent = ({title, description}) => (
   </Content>
 )
 
-export const Hero = ({title, description}) => {
+export const Hero = withController(({title, description, parallaxController}) => {
 
-  const { parallaxController } = useController();
+  const isServer = typeof window === 'undefined'; 
 
   useEffect(() => {
     setTimeout(() => {
-      parallaxController.destroy()
+      if (!isServer) {
+        parallaxController.destroy()
+      }
     }, 300)
   }, [])
   
@@ -157,4 +159,4 @@ export const Hero = ({title, description}) => {
     >
     </StyledParallaxBanner>
   )
-}
+})

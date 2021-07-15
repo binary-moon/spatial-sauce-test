@@ -117,6 +117,7 @@ const TopButton = styled.button`
   position: absolute;
   bottom: ${rem(66)};
   right: ${rem(30)};
+  cursor: pointer;
 `
 
 const Arrow = styled.span`
@@ -163,8 +164,10 @@ const Circle = styled.div`
   }
 `
 
-const Footer = () => {
+const Footer = (props) => {
+  console.log(props)
   const { social } = navigationData;
+
   const scrollTop = () => {
     window.scroll(0, 0)
   } 

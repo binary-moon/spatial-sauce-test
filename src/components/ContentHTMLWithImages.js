@@ -66,7 +66,7 @@ const ImageContainer = styled.div`
 
 const Title = styled.h3`
   font-size: ${rem(14)};
-  line-height: ${rem(14)};
+  line-height: ${rem(20)};
   font-weight: 900;
   text-transform: uppercase;
   margin: 0;
@@ -99,14 +99,9 @@ const Copy = styled.p`
 
 const HTMLContent = styled.div`
   p {
-    font-size: ${rem(12)};
-    line-height: ${rem(14)};
+    font-size: ${rem(16)};
+    line-height: ${rem(24)};
     font-weight: 500;
-
-    ${props => props.theme.mediaQueries.desktop} {
-      font-size: ${rem(16)};
-      line-height: ${rem(24)};
-    }
   }
 
   > * + * {

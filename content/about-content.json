@@ -92,7 +92,7 @@
     "props": {
       "reverse": false,
       "images": [{
-        "src": "./images/AboutUs_05@2x.jpg",
+        "src": "./images/cherry-blossom-3.jpg",
         "alt": "WE ARE SPATIAL SAUCE"
       }],
       "title": null,
@@ -105,7 +105,7 @@
     "props": {
       "reverse": true,
       "images": [{
-        "src": "./images/AboutUs_05@2x.jpg",
+        "src": "./images/Img_WeExperimented_03@2x.jpg",
         "alt": "WE ARE SPATIAL SAUCE"
       }],
       "title": null,

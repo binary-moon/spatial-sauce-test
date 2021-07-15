@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import { useMediaQuery } from 'react-responsive'
-import { ParallaxBanner } from 'react-scroll-parallax';
+import { ParallaxBanner, useController } from 'react-scroll-parallax';
 
 import { HeroBackgroundImage } from './HeroBackgroundImage'
 import { HeroBackgroundImageMobile } from './HeroBackgroundImageMobile'
@@ -13,6 +13,10 @@ import { rem } from '../../utils/mixins'
 const StyledParallaxBanner = styled(ParallaxBanner)`
   width: 100%;
   height: ${rem(620)};
+
+  ${props => props.theme.mediaQueries.tablet} {
+    height: ${rem(720)};
+  }
 
   ${props => props.theme.mediaQueries.desktop} {
     height: ${rem(975)};
@@ -121,6 +125,14 @@ const ContentComponent = ({title, description}) => (
 )
 
 export const Hero = ({title, description}) => {
+
+  const { parallaxController } = useController();
+
+  useEffect(() => {
+    setTimeout(() => {
+      parallaxController.destroy()
+    }, 300)
+  }, [])
   
   return (
     <StyledParallaxBanner

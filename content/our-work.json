@@ -120,13 +120,13 @@
     ]
   },
   {
-    "title": "200 Women: The Listening Ground",
+    "title": "The Listening Ground",
     "slug": "200-women-listening-ground",
     "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "background": "white",
-      "title": "200 Women: The Listening Ground",
+      "title": "The Listening Ground",
       "client": "Westpac",
       "video": "https://player.vimeo.com/video/569685714?background=1"
     },
@@ -135,7 +135,7 @@
       "isFeatured": true,
       "slug": "200-women-listening-ground",
       "tag": "WE MADE",
-      "title": "200 Women: Listening Ground",
+      "title": "The Listening Ground",
       "client": "Westpac",
       "image": "./images/cards/200-women.png",
       "alignment": "default"
@@ -444,6 +444,10 @@
         "shape": null,
         "props": {
           "images": [
+            {
+              "src": "./images/Img_VirtuallyWild_03@2x.jpg",
+              "alt": "Img_VirtuallyWild_03@2x.jpg"
+            },
             {
               "src": "./images/Img_VirtuallyWild_04@2x.jpg",
               "alt": "Img_VirtuallyWild_03-3"
@@ -828,7 +832,7 @@
       "slug": "new-breed-experiences",
       "tag": "We said",
       "title": "New breed experiences via AI + AR",
-      "client": null,
+      "client": "Presentation",
       "image": "./images/Img_WeSaid_03@2x.jpg",
       "alignment": "default"
     },
@@ -843,7 +847,7 @@
       "slug": "techsperiantial-picks",
       "tag": "We said",
       "title": "Top 10 Techsperiantial Picks ",
-      "client": null,
+      "client": "Article",
       "image": "./images/Img_WeSaid_03@2x(1).jpg",
       "alignment": "default"
     },

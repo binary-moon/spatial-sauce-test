@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   margin-top: ${rem(-60)};
 
   ${props => props.theme.mediaQueries.desktop} {
-    margin-top: ${rem(-120)};
+    margin-top: ${rem(-100)};
   }
 `
 

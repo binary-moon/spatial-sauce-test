@@ -101,6 +101,8 @@ const Title = styled.span`
   font-size: ${rem(38)};
   line-height: ${rem(38)};
   margin-top: ${rem(24)};
+  hyphens: auto;
+  -webkit-hyphens: auto;
 
   ${props => props.theme.mediaQueries.desktop} {
     font-size: ${rem(58)};

@@ -101,7 +101,7 @@ const ContactForm = () => {
     <ContentWrapper>
       <Wrapper>
         <Title>It’s easy to get in touch. Pop in your details below or give<br />Deniz a call on <a href="tel:0414 760 035">0414 760 035</a></Title>
-        <Form method="POST" action="https://formspree.io/f/xpzkdgyj">
+        <Form method="POST" action="https://formspree.io/f/xdoyldlz">
           <FormRow>
             <label>First Name</label>
             <input name="firstName" />

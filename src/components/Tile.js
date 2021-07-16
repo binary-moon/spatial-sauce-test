@@ -74,7 +74,7 @@ const Content = styled.div`
   }
 
   ${props => props.theme.mediaQueries.desktop} {
-    padding: ${rem(82)} ${rem(32)};
+    padding: ${rem(64)} ${rem(32)};
   }
 
   .vertical & {
@@ -104,7 +104,7 @@ const Title = styled.span`
 
   ${props => props.theme.mediaQueries.desktop} {
     font-size: ${rem(58)};
-    line-height: ${rem(58)};
+    line-height: ${rem(66)};
   }
 `
 

@@ -99,7 +99,7 @@ const Tag = styled.span`
 const Title = styled.span`
   font-weight: 900;
   font-size: ${rem(38)};
-  line-height: ${rem(38)};
+  line-height: ${rem(44)};
   margin-top: ${rem(24)};
 
   ${props => props.theme.mediaQueries.desktop} {

@@ -9,7 +9,7 @@ import { theme } from '../utils/theme'
 
 const Layout = ({ children, noVideo, isOurWorkDetail }) => {
   return (
-    <div lang="en">
+    <div>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Header noVideo={noVideo} isOurWorkDetail={isOurWorkDetail} />

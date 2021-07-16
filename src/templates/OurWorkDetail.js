@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import classnames from 'classnames'
 import { graphql } from 'gatsby'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
 import ContentHero from '../components/ContentHero'
@@ -39,6 +40,10 @@ const OurWorkDetail = ({ data }) => {
 
   return (
     <ParallaxProvider>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Spatial Sauce - {pageData.hero.title}</title>
+      </Helmet>
       <Layout noVideo={!pageData.hero.video} isOurWorkDetail>
         <ContentHero {...hero} isOurWorkDetail />
         <StyledContentLifter className={classnames({noVideo: !video})}>

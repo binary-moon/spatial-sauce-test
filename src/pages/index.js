@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { Helmet } from 'react-helmet'
 
 import homeData from "../../content/home.json"
 
@@ -20,6 +21,10 @@ const IndexPage = () => {
   
   return (
     <ParallaxProvider>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Spatial Sauce</title>
+      </Helmet>
       <Layout>
         <Hero title={hero.title} description={hero.description} />
         <ContentLifter>

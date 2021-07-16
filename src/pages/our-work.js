@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
 import ContentHero from '../components/ContentHero'
@@ -23,6 +24,10 @@ const OurWork = () => {
   
   return (
     <ParallaxProvider>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Spatial Sauce - Our Work</title>
+      </Helmet>
       <Layout>
         <ContentHero {...hero} />
         <ContentLifter>

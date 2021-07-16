@@ -120,13 +120,13 @@
     ]
   },
   {
-    "title": "The Listening Ground",
+    "title": "200 Women: The Listening Ground",
     "slug": "200-women-listening-ground",
     "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "background": "white",
-      "title": "The Listening Ground",
+      "title": "200 Women: The Listening Ground",
       "client": "Westpac",
       "video": "https://player.vimeo.com/video/569685714?background=1"
     },
@@ -135,7 +135,7 @@
       "isFeatured": true,
       "slug": "200-women-listening-ground",
       "tag": "WE MADE",
-      "title": "The Listening Ground",
+      "title": "200 Women: The Listening Ground",
       "client": "Westpac",
       "image": "./images/cards/200-women.png",
       "alignment": "default"
@@ -165,7 +165,7 @@
               "alt": "vespa-1"
             }
           ],
-          "title": "Westpac - 200 Women: The Listening Ground",
+          "title": "200 Women: The Listening Ground",
           "content": "<p>This interactive exhibition was as inspiring as the amazing backdrop it was set in, at the concourse of the one and only Sydney Opera House.</p><p>Supported by Westpac, the exhibition is an extension of a storytelling project and book of the same name. It is founded on 200 interviews with women in different parts of the world and different circumstances, who are asked five fundamental questions on the theme; 'what is most important to them'.</p><p>The exhibition featured the stories of these 200 women from around the world in photos and video content presented via custom-built listening pods. Stories covering leadership, overcoming challenges and pain, happiness, and change. Stories from everyday women you wouldn’t recognise, and stories from the iconic and influential. Extraordinary women such as Rosie Batty, Collette Dinnigan, Miranda Tapsell, and Margaret Atwood.</p><p>Working closely with partner agencies, we have created these sculpturesque interactive pods that tell the stories of 200 remarkable women, using innovative technologies such as motion detection and spatial sound, driven by custom and unique UX design for the circular screens for creating a seamless experience, and a digital “guest book” for social advocacy that was installed in the central “beacon” structure.</p><p><small>*Our team has developed this project for Westpac’s agency Maverick.</small></p>"
         }
       }
@@ -749,14 +749,14 @@
     ]
   },
   {
-    "title": "Foot tracking model prototype",
+    "title": "Foot tracking prototype",
     "slug": "foot-tracking",
     "isExternal": true,
     "card": {
       "externalLink": "https://www.linkedin.com/posts/deniznalbantoglu_machinelearning-neuralnetworks-unity3d-activity-6544054612989698048-W1-R",
       "slug": "foot-tracking",
       "tag": "We Explored",
-      "title": "Foot tracking model prototype",
+      "title": "Foot tracking prototype",
       "client": "AI Experiment",
       "image": "./images/Img_WeExperimented_06b@2x.jpg",
       "alignment": "vertical"
@@ -809,14 +809,14 @@
     "components": []
   },
   {
-    "title": "Freddiemeter. Can you sing like Freddy?",
+    "title": "Freddie Meter. Can you sing like Freddy?",
     "slug": "freddiemeter",
     "isExternal": true,
     "card": {
       "externalLink": "https://freddiemeter.withyoutube.com/",
       "slug": "freddiemeter",
       "tag": "We love",
-      "title": "Freddiemeter. Can you sing like Freddy?",
+      "title": "Freddie Meter. Can you sing like Freddy?",
       "client": "By Google & Youtube",
       "image": "./images/Img_WeLove_01@2x.jpg",
       "alignment": "vertical"
@@ -839,14 +839,14 @@
     "components": []
   },
   {
-    "title": "Top 10 “Techsperiantial” Picks ",
+    "title": "Top 10 “Techs periantial” Picks ",
     "slug": "techsperiantial-picks",
     "isExternal": true,
     "card": {
       "externalLink": "https://www.linkedin.com/pulse/my-top-10-techsperiential-picks-deniz-nalbantoglu/?trackingId=XT6QUPJFQzmjOYRC4lqYWA%3D%3D",
       "slug": "techsperiantial-picks",
       "tag": "We said",
-      "title": "Top 10 Techsperiantial Picks ",
+      "title": "Top 10 Techs periantial Picks ",
       "client": "Article",
       "image": "./images/Img_WeSaid_03@2x(1).jpg",
       "alignment": "default"

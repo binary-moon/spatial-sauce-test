@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { Helmet } from 'react-helmet'
 
 import Layout from '../components/Layout'
 import ContentHero from '../components/ContentHero'
@@ -25,6 +26,10 @@ const AboutUs = ({ data }) => {
 
   return (
     <ParallaxProvider>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Spatial Sauce - About Us</title>
+      </Helmet>
       <Layout>
         <ContentHero {...hero} aboutUsHero />
         <ContentLifter>

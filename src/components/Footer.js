@@ -165,7 +165,6 @@ const Circle = styled.div`
 `
 
 const Footer = (props) => {
-  console.log(props)
   const { social } = navigationData;
 
   const scrollTop = () => {

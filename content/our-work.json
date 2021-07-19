@@ -288,14 +288,14 @@
     ]
   },
   {
-    "title": "AMP Shopping Centres  -  Meet the Natives",
+    "title": "AMP Capital Shopping Centres  -  Meet the Natives",
     "slug": "meet-the-natives",
     "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "background": "white",
       "title": " Meet the Natives",
-      "client": "AMP Shopping Centres",
+      "client": "AMP Capital Shopping Centres",
       "video": "https://player.vimeo.com/video/569719134?background=1"
     },
     "card": {
@@ -304,7 +304,7 @@
       "slug": "meet-the-natives",
       "tag": "WE MADE",
       "title": " Meet the Natives",
-      "client": "AMP Shopping Centres",
+      "client": "AMP Capital Shopping Centres",
       "image": "./images/Img_MeetTheNatives_02@2x.jpg",
       "alignment": "default"
     },
@@ -333,7 +333,7 @@
               "alt": "oxapalooza-2"
             }
           ],
-          "title": "AMP Shopping Centres  -  Meet the Natives",
+          "title": "AMP Capital Shopping Centres  -  Meet the Natives",
           "content": "<p>Santa’s Secret Garden is an unique Christmas Santa Set built for Macquarie Centre; with a design  based on Australian native fauna and flora, made of thousands of live Australian native plants.</p><p>We wanted to also feature native Australian animals as a part of the experience, but it’s not as easy to have live animals on set as it is to have live plants of course. So, we have used the power of AR in the form of a custom Instagram / Facebook filter, one that the visitors can activate on location and seek, find and experience Australian native animals within the set virtually.</p><p>The UI of the app works like a “sonar” which encourages the user to “scan” the area and follow the “blips” until they hone in on the location of the animal and reveal it in AR. Each animal has different behaviour, animations and custom soundscape, making the experience fun and exciting for the little ones.</p><p>Meet the Natives is a lighthearted, quick and fun Instagram AR filter that augments the existing physical set, and gives the visitors another reason to explore it and spend more time on location. The filter also encourages users to record their animal encounters and share as an Instagram story, achieving social advocacy and spread for the Centre.</p>"
         }
       },
@@ -342,7 +342,7 @@
         "shape": null,
         "props": {
           "videoSrc": "https://www.youtube.com/embed/lDQf6q_ouJU",
-          "title": "AMP Shopping Centres - Meet the Natives"
+          "title": "AMP Capital Shopping Centres - Meet the Natives"
         }
       }
     ]
@@ -468,14 +468,14 @@
     ]
   },
   {
-    "title": "AMP Shopping Centres - The Little BIG Roadtrip",
+    "title": "AMP Capital Shopping Centres - The Little BIG Roadtrip",
     "slug": "little-big-roadtrip",
     "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "background": "white",
       "title": "The Little BIG Roadtrip",
-      "client": "AMP Shopping Centres"
+      "client": "AMP Capital Shopping Centres"
     },
     "card": {
       "externalLink": null,
@@ -483,7 +483,7 @@
       "slug": "little-big-roadtrip",
       "tag": "WE MADE",
       "title": "The Little BIG Roadtrip",
-      "client": "AMP Shopping Centres",
+      "client": "AMP Capital Shopping Centres",
       "image": "./images/Img_LittleBigRoadtrip_02@2x.jpg",
       "alignment": "default"
     },
@@ -508,8 +508,8 @@
               "alt": "oxapalooza-1"
             }
           ],
-          "title": "AMP Shopping Centres - The Little BIG Roadtrip",
-          "content": "<p>We have developed “The Little BIG Roadtrip” AR Campaign for the portfolio of AMP Shopping Centres in Australia and New Zealand targeting family audiences, encouraging them to make multiple visits to the Centres during the Easter school break.</p><p>School breaks used to mean family holidays and road trips. But not lately, as we are all pretty much stranded. So, we decided to take our visitors on a road trip around Australia as a short, fun and irreverent getaway; without leaving the Centres.</p><p>The Little BIG Roadtrip AR campaign takes shoppers on a virtual road trip collecting tokens and winning Prizes, one \"big thing\" at a time! From BIG Banana to BIG Galah, from BIG Prawn to BIG Pineapple, these beloved novelty slices of Australiana are as much fun in AR as they are IRL, and appeal to parents and kids alike.</p><p>Users were encouraged to seek and find all eight BIG landmarks in the Centre by solving the riddles about the location of the next, and each landmark gave them more tokens for a draw to win prizes. </p>"
+          "title": "AMP Capital Shopping Centres - The Little BIG Roadtrip",
+          "content": "<p>We have developed “The Little BIG Roadtrip” AR Campaign for the portfolio of AMP Capital Shopping Centres in Australia and New Zealand targeting family audiences, encouraging them to make multiple visits to the Centres during the Easter school break.</p><p>School breaks used to mean family holidays and road trips. But not lately, as we are all pretty much stranded. So, we decided to take our visitors on a road trip around Australia as a short, fun and irreverent getaway; without leaving the Centres.</p><p>The Little BIG Roadtrip AR campaign takes shoppers on a virtual road trip collecting tokens and winning Prizes, one \"big thing\" at a time! From BIG Banana to BIG Galah, from BIG Prawn to BIG Pineapple, these beloved novelty slices of Australiana are as much fun in AR as they are IRL, and appeal to parents and kids alike.</p><p>Users were encouraged to seek and find all eight BIG landmarks in the Centre by solving the riddles about the location of the next, and each landmark gave them more tokens for a draw to win prizes. </p>"
         }
       },
       {
@@ -517,7 +517,7 @@
         "shape": null,
         "props": {
           "videoSrc": "https://www.youtube.com/embed/4okaHqIv68U",
-          "title": "AMP Shopping Centres - The Little BIG Roadtrip"
+          "title": "AMP Capital Shopping Centres - The Little BIG Roadtrip"
         }
       }
     ]
@@ -634,14 +634,14 @@
     ]
   },
   {
-    "title": "AMP Shopping Centres  - A Message from Santa",
+    "title": "AMP Capital Shopping Centres  - A Message from Santa",
     "slug": "a-message-from-santa",
     "isExternal": false,
     "hero": {
       "tag": "Our Work",
       "background": "white",
       "title": "A Message from Santa",
-      "client": "AMP Shopping Centres",
+      "client": "AMP Capital Shopping Centres",
       "video": "https://player.vimeo.com/video/569719715?background=1"
     },
     "card": {
@@ -650,7 +650,7 @@
       "slug": "a-message-from-santa",
       "tag": "WE MADE",
       "title": "A Message from Santa",
-      "client": "AMP Shopping Centres",
+      "client": "AMP Capital Shopping Centres",
       "image": "./images/Img_MessageFromSanta_02@2x.jpg",
       "alignment": "default"
     },
@@ -683,8 +683,8 @@
               "alt": "oxapalooza-1"
             }
           ],
-          "title": "AMP Shopping Centres  - A Message from Santa",
-          "content": "<p>“A Message from Santa” is a digital building brand campaign targeting the holiday period, developed for the AMP Shopping Centres portfolio running across 18 centres in Australia and New Zealand.</p><p>Offered as a complimentary service for the shoppers and the local communities, the activity aims to provide a way to allow the kids to “meet Santa” -albeit virtually - at a time many Santa visits at the Centres are cancelled.</p><p>The custom designed website allows parents to securely enter information about their children, which results in a personalised video message from Santa being sent to them, bringing Christmas joy to kids of all ages and their families.</p><p>In the video, Santa greets them by their name, and knows details about them such as their age, grade and siblings, which makes it a very believable and magical experience for the young ones. They also get to find out that they have been Nice this year, and they will be getting the gift they asked for. </p><p>Campaign has yielded great results as well, with over 16,000 visitors creating over 6,000 unique videos which ended up being watched over 24,000 times. Merry Christmas indeed!</p>"
+          "title": "AMP Capital Shopping Centres  - A Message from Santa",
+          "content": "<p>“A Message from Santa” is a digital building brand campaign targeting the holiday period, developed for the AMP Capital Shopping Centres portfolio running across 18 centres in Australia and New Zealand.</p><p>Offered as a complimentary service for the shoppers and the local communities, the activity aims to provide a way to allow the kids to “meet Santa” -albeit virtually - at a time many Santa visits at the Centres are cancelled.</p><p>The custom designed website allows parents to securely enter information about their children, which results in a personalised video message from Santa being sent to them, bringing Christmas joy to kids of all ages and their families.</p><p>In the video, Santa greets them by their name, and knows details about them such as their age, grade and siblings, which makes it a very believable and magical experience for the young ones. They also get to find out that they have been Nice this year, and they will be getting the gift they asked for. </p><p>Campaign has yielded great results as well, with over 16,000 visitors creating over 6,000 unique videos which ended up being watched over 24,000 times. Merry Christmas indeed!</p>"
         }
       },
       {
@@ -692,7 +692,7 @@
         "shape": null,
         "props": {
           "videoSrc": "https://www.youtube.com/embed/r6h01BF0mx4",
-          "title": "AMP Shopping Centres - A Message From Santa"
+          "title": "AMP Capital Shopping Centres - A Message From Santa"
         }
       }
     ]

@@ -13,6 +13,13 @@ module.exports = {
     "gatsby-transformer-json",
     "gatsby-plugin-react-helmet",
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "G-0D9PH27LK1",
+        includeInDevelopment: false
+      }
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {

@@ -19,7 +19,7 @@ const IndexPage = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        desktop: file(relativePath: { eq: "hero.png" }) {
+        desktop: file(relativePath: { eq: "ogimage.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 1200) {
               ...GatsbyImageSharpFluid_withWebp
@@ -32,8 +32,6 @@ const IndexPage = () => {
 
   // Set ImageData.
   const ogImageSrc = data.desktop.childImageSharp.fluid.src
-
-  console.log({data})
 
   useEffect(() => {
     updateBackgroundColor('redBlue');

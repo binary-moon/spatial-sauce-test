@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax'
 import { Helmet } from 'react-helmet'
+import { graphql, useStaticQuery } from 'gatsby'
 
 import homeData from "../../content/home.json"
 
@@ -15,6 +16,25 @@ import { updateBackgroundColor } from '../utils/theme'
 const IndexPage = () => {
   const { hero } = homeData;
 
+  const data = useStaticQuery(
+    graphql`
+      query {
+        desktop: file(relativePath: { eq: "hero.png" }) {
+          childImageSharp {
+            fluid(quality: 90, maxWidth: 1200) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    `
+  )
+
+  // Set ImageData.
+  const ogImageSrc = data.desktop.childImageSharp.fluid.src
+
+  console.log({data})
+
   useEffect(() => {
     updateBackgroundColor('redBlue');
   }, [])
@@ -24,6 +44,7 @@ const IndexPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Spatial Sauce</title>
+        <meta property='og:image' content={ogImageSrc} />
       </Helmet>
       <Layout>
         <Hero title={hero.title} description={hero.description} />

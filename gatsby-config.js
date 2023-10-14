@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-transformer-json",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-netlify",
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
